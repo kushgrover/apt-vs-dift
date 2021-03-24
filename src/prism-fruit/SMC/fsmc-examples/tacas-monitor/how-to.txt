@@ -1,0 +1,8 @@
+export PATH=$PATH:/home/maxi/.cargo/bin/  # for finding pueue
+pueue start # starts pueue. Groups for CPUs are still ok, I think
+python3 run_experiments.py -e tacas-monitor/cav21-exp.set -b tacas-monitor/cav21-set.set -r 2 > commands # writes all commands into the commands file. Make sure exp, set and r are set correctly and don't confuse exp and set
+bash commands # executes commands and adds runs to pueue
+# (for f in logs/*.log; do python3 result_parser.py $f; done) > output.csv # this is the old version, but it doesn't read all I need
+python tacas21/improved_reader.py > output.csv
+
+

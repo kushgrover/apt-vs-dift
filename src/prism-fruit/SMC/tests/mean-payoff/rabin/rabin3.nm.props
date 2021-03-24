@@ -1,0 +1,5 @@
+// RESULT : 2.7580067
+R{"trying"}max=? [ MP ]
+
+// RESULT : 0.8571428
+R{"critical"}max=? [ MP ]

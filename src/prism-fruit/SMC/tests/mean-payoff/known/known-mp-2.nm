@@ -1,0 +1,20 @@
+// Minimal counter-example to Puterman's general 
+// convergence conjecture (by Tobias)
+mdp
+
+module putercx
+
+	s : [0..1] init 0;
+	[a] s=0 -> 0.9:(s'=0) + 0.1:(s'=1);
+	[d] s=0 -> (s'=0);
+	[b] s=1 -> (s'=1);
+	[c] s=1 -> (s'=0);
+
+endmodule
+
+rewards
+	[a] true : 0;
+	[b] true : 0.1;
+	[c] true : 0;
+	[d] true : 0.9;
+endrewards

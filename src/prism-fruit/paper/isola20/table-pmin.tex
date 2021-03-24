@@ -1,0 +1,17 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{lscape}
+\begin{table}[t]
+	\centering
+	\caption{Effect of $\pmin$ on black SMC runtimes (in seconds) on some of the benchmarks. Lower $\pmin$ demands stronger candidates, due to which black SMC has to sample longer paths.}
+	\label{tab:fsmc-vary-pmin}
+	\setlength{\tabcolsep}{10pt} % Default value: 6pt
+	\begin{tabular}{@{}lrrrrr@{}}
+		\toprule
+		                                           &                             \multicolumn{4}{c}{Black SMC/$\pmin$}  & \multirow{2}{*}{Grey SMC}                           \\
+		\cmidrule(l){2-5}
+		Model & $1 \times 10^{-2}$ & $1 \times 10^{-3}$ & $1 \times 10^{-4}$ & $1 \times 10^{-5}$ &  \\ \midrule
+		\texttt{brp\_nodl(10K,10K)}         & 86                & 93                 & 183                & TO    & \textbf{84}             \\
+		\texttt{crowds\_nodl(8,20)}         & 11                 & 41                 & 334                & TO     & \textbf{9}            \\
+		\texttt{egl(20,20)}                 & 47                 & 106                 & 875                & TO     & \textbf{44}            \\ \bottomrule
+	\end{tabular}
+\end{table}

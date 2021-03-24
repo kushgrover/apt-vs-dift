@@ -1,0 +1,4 @@
+# short name of the experiment; long name; cmd arguments
+
+#simcnd;Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000);-sim -simcandidate -simmethod sprte -simfalsecnd 0.001 -simratio 0.5 -simconf 0.01 -simwidth 0.01 -simpathlen 10000000 -simcheckbound 1000
+simcnd_cb1;Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1);-sim -simcandidate -simmethod sprte -simfalsecnd 0.001 -simratio 0.5 -simconf 0.01 -simwidth 0.01 -simpathlen 10000000 -simcheckbound 1

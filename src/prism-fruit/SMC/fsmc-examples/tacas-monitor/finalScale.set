@@ -1,0 +1,6 @@
+# model;property;constants (if any);minimum probability; additional arguments for numerical model checking (if any)
+
+examples/scale/scale.pm;examples/scale/prop2_qual.pctl;N=5,M=50;0.5;
+#examples/scale/scale.pm;examples/scale/prop2_qual.pctl;N=10,M=50;0.5;
+#examples/scale/scale.pm;examples/scale/prop2_qual.pctl;N=20,M=50;0.5;
+	

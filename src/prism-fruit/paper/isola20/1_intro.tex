@@ -1,0 +1,219 @@
+\section{Introduction}
+
+Classical \emph{probabilistic verification} techniques rely on iterative approximation algorithms for linear equation systems and linear programs, such as \emph{value iteration (VI)}, e.g.\  \cite{Puterman}.
+However, the scalability of such numeric analyses is severely limited, compared to standard non-quantitative (hardware or software) verification, since exact transformations, such as abstraction or partial-order reduction, are more difficult to use.
+Consequently, weaker guarantees such as \emph{probably approximately correct (PAC)} results become acceptable even for completely known systems (\emph{white box}) and not only in contexts where the system is executable but unknown (\emph{black box}), and where thus absolute guarantees are principally impossible.
+
+\begin{example}
+	Consider the task of model checking a reachability property of a~probabilistic communication protocol, which starts by generating a few, say $k$, random bits.
+	Thus the execution immediately branches into $2^k$ states.
+	If there are only few or hard-to-find symmetries in the behaviour, standard analysis quickly becomes infeasible. 
+	In the following, we discuss drawbacks of previously studied alternative approaches; then we suggest a new one that overcomes the difficulties for a wide class of models.
+\end{example}
+
+%prob.verif. (say reach/LTL) of a protocol with wide branching but hard-to-find/few symmetries, e.g. starting with generating a random number? ! standard impossible, what are the answers? don't work, we give a better one SMC with white; "we tell the story now"
+
+The exponential state-space explosion quickly renders explicit VI unable to propagate information by more than a single step.
+Besides, if the transition probabilities depend on the generated bits, even the symbolic variants of VI \cite{DBLP:conf/icalp/BaierCHKR97} cannot help much.
+There have been two major alternatives proposed, both relying on extensive use of simulations.
+
+%standard = vi, better than LP or oten SI but simple does not scale that much
+
+$\bullet$ (I) For large and possibly \emph{unknown} systems, \emph{statistical model checking (SMC)} \cite{Younes02} reincarnates the Monte Carlo method.
+It runs simulations of the system; the resulting statistics then yields confidence intervals, i.e.~PAC results. 
+However, for unbounded-horizon properties, such as reachability or linear temporal logic (LTL) \cite{pnueli1977temporal}, performing simulations of finite length requires some information about the model \cite{isola-survey}:
+\begin{enumerate}
+	\item Either the second eigenvalue of the transition matrix can be bounded \cite{DBLP:journals/apal/LassaigneP08,YCZ10}, which requires essentially the complete knowledge of the system ({white box}) and is as hard as solving the model checking problem, or 
+	\item the topology of the underlying state-graph is known \cite{YCZ10,ase10} (sometimes called \emph{grey box}, e.g. \cite{cav19})  and the whole system is preprocessed, which beats the purpose of sublinear analysis, or 
+	\item a bound on the minimum transition probability $\pmin$ is known as is the case in~\cite{atva14,DHKPjournal}. This is the closest to black box, thus called \emph{black SMC} here.
+\end{enumerate}
+
+
+In black SMC, long enough simulations can be run to ensure the system passes from the transient to the recurrent part and reliable information on the whole infinite run is obtained.
+While the a-priori length is practically infeasible \cite{atva14}, early detection of recurrent behaviour has been proposed \cite{DHKPjournal} as follows.
+Based on the observed part of a simulation run, a hypothesis on the topology of the system is made, answering what bottom strongly connected component (BSCC) this run ends up in.
+With repetitive observations of transitions over the run, the confidence grows that what currently looks as a BSCC indeed is a BSCC.
+Since quite a few repetitions of \emph{all} transitions in the BSCC are required, this approach turns out practical only for systems with small BSCCs and not too small $\pmin$.
+
+
+%- large or unknown - smc and pac is ok - unbounded required essentially white (globally hence slow) or too long sim (slow) - fast smc (idea) - larger bsccs? ! locally to make them shorter
+
+In this paper, assuming knowledge of the system (white-box setting), we twist the technique to a more efficient one as follows.
+After quickly gaining (unreliably low) confidence that the run entered a BSCC, we use the knowledge of the topology to confirm this information---again very quickly since not the whole model is built but only the \emph{local} BSCC.
+Consequently, BSCCs are detected fast even in the case with larger BSCCs or small $\pmin$.
+As the information used turns out quite limited, corresponding to the grey-box setting, we call this approach \emph{grey SMC}.
+
+$\bullet$ (II) The other alternative to VI, now in the context or large but \emph{known} systems, is the \emph{asynchronous value iteration}, e.g. \cite{10.5555/59912}, a generalization of the Gauss-Seidel method and the core of reinforcement learning and approximate dynamic programming. There, the VI updates on states of the system are performed in varying orders, in particular possibly entirely skipping some states.
+The class of algorithms providing guarantees is represented by \emph{bounded real-time dynamic programming (BRTDP)} \cite{BRTDP,atva14,cav19} where the states to be updated at each moment are those appearing on a current simulation run.
+Consequently, states with low probability of visiting and thus low impact on the overall value are ignored.
+While this allows for treating very ``wide'' systems with lots of unimportant branches, the scalability problem persists as soon as the branching is very uniform (see also Example \ref{ex:adv} on Fig.~\ref{fig:adv}).
+From this perspective, grey SMC relaxes the rigorous approximation in the transient part and replaces it with a statistical estimate.
+
+%- large (wide) but known - brtdp - (uniformly very) wide? ! relax to PAC but still use white
+
+Overall, grey SMC fills the gap in the following spectrum:
+
+\smallskip
+\begin{tabular}{|@{\hskip 5mm}c@{\hskip 9mm}c@{\hskip 9mm}c@{\hskip 9mm}c@{\hskip 5mm}|}
+	\hline
+	VI&BRTDP&grey SMC&black SMC\\
+	\multirow {2}{*}{analysis} & analysis with   & simulation with  &  \multirow {2}{*}{simulation}\\
+	&simulation inside& analysis inside &\\\hline
+\end{tabular}
+\smallskip
+
+\noindent
+On the one end, numeric analysis (VI) provides reliable results; in BRTDP, simulations are additionally used in the analysis to improve the performance while preserving the guarantees.
+On the other end, simulations (SMC) provide PAC guarantees; grey SMC then improves the performance by additional analysis in the simulation. 
+
+%analysis (VI) / simulation inside analysis (BRTDP) / analysis inside simulation (white SMC) / simulation (SMC)
+
+\emph{Our contribution} can be summarized as follows:
+\begin{itemize}
+	\item We modify the black SMC for unbounded properties of \cite{DHKPjournal} to perform better in the white-box (and actually also in the so-called grey-box) setting.
+	\item We compare our grey SMC to black SMC, BRTDP and VI both conceptually, illustrating advantages on examples, as well as experimentally, comparing the runtimes on standard benchmarks.
+	\item We present all algorithms within a unified framework, which in our opinion eases understanding and comparison, provides a more systematic insight, and is pedagogically more valuable.
+\end{itemize}
+
+
+\emph{Outline of the paper:}
+After recalling necessary definitions in Section~\ref{sec:prelim}, we describe and exemplify the algorithms in Section \ref{sec:algos} and the respective key sub-procedure in Section \ref{sec:stuck}.
+Then we compare the algorithms and other related work in Section \ref{sec:discussion}, discussing the expected implications, which we confirm experimentally in Section \ref{sec:experiments}.
+For a broader account on related work on SMC in the context of unbounded-horizon properties, we refer the interested reader to the survey \cite{isola-survey}.
+
+
+%\todo{Jan: Write intro. Below is first the notes of Pranav and then the intro of CAV19 paper as inspiration. Also, the intro of FSMC \cite{DHKP16} probably is very relevant.}
+%
+%\subsection{Pranav's notes}
+%White FMSC - SMC for unbounded
+%
+%DIfference bw brtdp/smc
+%
+%- Extrmeme stochastic branching (brtdp will fail because it has to explore everything)
+%WhiteFSMC better
+%
+%- FSMC Reviewers complained FSMC was only working with trivial end components
+%
+%White SMC
+%- Built partial model and explore a few more unseen states.
+%
+%
+%SMC is not entirely reliable, but sometimes its the only choice.
+%New thing was BRTDP, but it doesn't always work.
+%We now use guaranteed thing inside SMC.
+%
+%Unbounded reachability
+%- He et. al. 2010 - take a look in a bit more detail
+%- Preprocess model to find 0 states. Stop on reaching such states. (unable to find ref)
+%- Weighing with expectation, but bounded reach (?)
+%
+%Check FMSC related work for related work
+%
+%Approaches before were not using local whitebox info. We want to use that.
+%
+%\subsection{CAV19 intro}
+%
+%\para{Statistical model checking (SMC)} \cite{YS02} is an analysis technique for probabilistic systems based on 
+%\begin{compactenum}
+%	\item simulating finitely many finitely long runs of the system,
+%	\item statistical analysis of the obtained results,
+%	\item yielding a confidence interval/probably approximately correct (PAC) result on the probability of satisfying a given property, i.e., there is a non-zero probability that the bounds are incorrect, but they are correct with probability that can be set arbitrarily close to $1$.
+%\end{compactenum}
+%One of the advantages is that it can avoid the state-space explosion problem, albeit at the cost of weaker guarantees.
+%Even more importantly, this technique is applicable even when the model is not known (\emph{black-box} setting) or only qualitatively known (\emph{grey-box} setting), where the exact transition probabilities are unknown such as in many cyber-physical systems.
+%
+%In the basic setting of Markov chains \cite{norris1998markov} with (time- or step-)bounded properties, the technique is very efficient and has been applied to numerous domains, e.g.\ biological \cite{DBLP:conf/cmsb/JhaCLLPZ09,DBLP:conf/cmsb/PalaniappanG0HT13}, hybrid \cite{DBLP:conf/hybrid/ZulianiPC10,DBLP:journals/corr/abs-1208-3856,DBLP:conf/formats/EllenGF12,DBLP:conf/formats/Larsen12} or cyber-physical \cite{DBLP:conf/forte/BasuBBCDL10,DBLP:conf/atva/ClarkeZ11,DBLP:conf/nfm/DavidDLLM13} systems and a substantial tool support is available \cite{DBLP:conf/tacas/JegourelLS12,DBLP:journals/corr/abs-1207-1272,DBLP:conf/qest/BoyerCLS13,DBLP:conf/mmb/BogdollHH12}.
+%In contrast, whenever either (i)~infinite time-horizon properties, e.g. reachability, are considered or (ii)~non-determinism is present in the system, providing any guarantees becomes significantly harder.
+%
+%Firstly, for \emph{infinite time-horizon properties} we need a stopping criterion such that the infinite-horizon property can be reliably evaluated based on a finite prefix of the run yielded by simulation.
+%This can rely on the the complete knowledge of the system (\emph{white-box} setting) \cite{sbmf11,DBLP:journals/apal/LassaigneP08}, the topology of the system (grey box) \cite{sbmf11,ase10}, or a lower bound $\pmin$ on the minimum transition probability in the system (black box) \cite{DHKP16,BCC+14}.
+%
+%Secondly, for Markov decision processes (MDP) \cite{Puterman} with (non-trivial) \emph{non-determinism}, \cite{DBLP:conf/qest/HenriquesMZPC12} and \cite{LP12} employ reinforcement learning~\cite{SB98} in the setting of bounded properties or discounted (and for the purposes of approximation thus also bounded) properties, respectively.
+%The latter also yields PAC guarantees.
+%
+%Finally, for MDP with unbounded properties, \cite{DBLP:conf/forte/BogdollFHH11} deals with MDP with spurious non-determinism, where the way it is resolved does not affect the desired property.
+%The general non-deterministic case is treated in \cite{DBLP:conf/rss/FuT14,BCC+14}, yielding PAC guarantees.
+%However, the former requires the knowledge of mixing time, which is at least as hard to compute; the algorithm in the latter is purely theoretical since before a single value is updated in the learning process, one has to simulate longer than the age of universe even for a system as simple as a Markov chain with 12 states having at least 4 successors for some state. 
+%
+%
+%\para{Our contribution} is an SMC algorithm with PAC guarantees for (i) MDP and unbounded properties, which runs for realistic benchmarks \cite{qcomp} and confidence intervals in orders of minutes, and (ii) is the first algorithm for stochastic games (SG).
+%It relies on different techniques from literature.
+%\begin{enumerate}
+%	\item The increased practical performance rests on two pillars:
+%	\begin{itemize}
+%		\item extending early detection of bottom strongly connected components in Markov chains by \cite{DHKP16} to end components for MDP and simple end components for SG;
+%		\item improving the underlying PAC Q-learning technique of \cite{Strehl}: 
+%		\begin{enumerate}
+%			\item learning is now model-based with better information reuse instead of model-free, but in realistic settings with the same memory requirements,
+%			\item better guidance of learning due to interleaving with precise computation, which yields more precise value estimates.
+%			\item splitting confidence over all relevant transitions, allowing for variable width of confidence intervals on the learnt transition probabilities.
+%		\end{enumerate}
+%	\end{itemize}
+%	\item The transition from algorithms for MDP to SG is possible via extending the over-approximating value iteration from MDP \cite{BCC+14} to SG by \cite{KKKW18}.
+%\end{enumerate}
+%To summarize, we give an anytime PAC SMC algorithm for (unbounded) reachability.
+%It is the first such algorithm for SG and the first practical one for MDP.
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%\subsection*{Related work}
+%
+%
+%Most of the previous efforts in SMC have focused on the analysis of properties 
+%with \emph{bounded} horizon 
+%\cite{Younes02,Sen04,DBLP:journals/sttt/YounesKNP06,DBLP:conf/cmsb/JhaCLLPZ09,DBLP:conf/tacas/JegourelLS12,DBLP:journals/corr/abs-1207-1272}.
+%
+%SMC of \emph{unbounded} properties was first considered in \cite{vmcai04} and the first approach was proposed in \cite{cav05}, but observed incorrect in \cite{ase10}.
+%Notably, in~\cite{sbmf11} two approaches are described. 
+%The {first approach} proposes to terminate sampled paths at every step with some probability $p_{term}$ and re-weight the result accordingly.
+%In order to guarantee the asymptotic convergence of this method, the second eigenvalue $\lambda$ of 
+%the chain and its mixing time must be computed, which is as hard as the verification problem itself and requires the complete knowledge of the system ({white box} setting).
+%The correctness of \cite{DBLP:journals/apal/LassaigneP08} 
+%relies on the knowledge of the second eigenvalue $\lambda$, too.
+%The {second approach} of~\cite{sbmf11} requires the knowledge of the chain's 
+%topology (grey box), which is used to transform the chain so that all potentially 
+%infinite paths are eliminated.
+%In \cite{ase10}, a similar transformation is performed, again requiring 
+%knowledge of the topology.
+%In \cite{DHKP16}, only (a~lower bound on) the minimum transition probability $\pmin$ is assumed and PAC guarantees are derived.
+%While unbounded properties cannot be analyzed without any  information on the system, knowledge of $\pmin$ is a relatively light assumption in many realistic scenarios \cite{DHKP16}. 
+%For instance, bounds on the rates for reaction kinetics in chemical reaction systems are typically known; for models in the PRISM language \cite{prism}, the bounds can be easily inferred without constructing the respective state space.
+%In this paper, we thus adopt this assumption.
+%
+%	
+%	
+%	In the case with general \emph{non-determinism},
+%	one approach is to give the non-determinism a probabilistic semantics,
+%	e.g., using a uniform distribution instead, as for timed automata
+%	in \cite{DBLP:conf/formats/DavidLLMPVW11,DBLP:conf/cav/DavidLLMW11,DBLP:conf/ifm/Larsen13}.
+%	Others~\cite{LP12,DBLP:conf/qest/HenriquesMZPC12,BCC+14} aim to quantify over all strategies and produce an $\epsilon$-optimal strategy.
+%	In \cite{DBLP:conf/qest/HenriquesMZPC12}, candidates for optimal strategies are generated and gradually improved, but ``at any given point we cannot quantify how close to optimal the candidate scheduler is'' (cited from~\cite{DBLP:conf/qest/HenriquesMZPC12}) and the algorithm 
+%	%does not estimate the maximum probability of the property'' 
+%	``does not in general converge to the true optimum''
+%	(cited from~\cite{DBLP:conf/sefm/LegayST14}). Further, \cite{DBLP:conf/sefm/LegayST14,DBLP:journals/sttt/DArgenioLST15,DBLP:conf/isola/DArgenioHS18} randomly sample compact representation of strategies, resulting in useful lower bounds if $\varepsilon$-schedulers are frequent.
+%	\cite{DBLP:conf/tacas/HahnPSSTW19} gives a convergent model-free algorithm (with no bounds on the current error) and identifies that the previous \cite{DBLP:conf/cdc/SadighKCSS14} ``has two faults, the second of which also affects approaches [...] \cite{DBLP:journals/corr/abs-1801-08099,DBLP:journals/corr/abs-1902-00778}''.
+%%
+%
+%	Several approaches provide SMC for MDPs and unbounded properties with \emph{PAC guarantees}.
+%Firstly, similarly to \cite{DBLP:journals/apal/LassaigneP08,sbmf11}, \cite{DBLP:conf/rss/FuT14} requires (1) the mixing time $T$ of the MDP. The algorithm then yields PAC bounds in time polynomial in $T$ (which in turn can of course be exponential in the size of the MDP). Moreover, the algorithm requires (2) the ability to restart simulations also in non-initial states, (3) it only returns the strategy once all states have been visited (sufficiently many times), and thus (4) requires the size of the state space $|S|$.
+%Secondly, \cite{BCC+14}, based on delayed Q-learning (DQL) \cite{Strehl}, lifts the assumptions (2) and (3) and instead of (1) mixing time requires only (a bound on) the minimum transition probability $\pmin$.
+%Our approach additionally lifts the assumption (4) and allows for running times faster than those given by $T$, even without the knowledge of $T$.
+%
+%
+%
+%    Reinforcement learning (without PAC bounds) for stochastic games has been considered already in \cite{DBLP:journals/mor/LakshmivarahanN81,DBLP:conf/icml/Littman94,DBLP:conf/ijcai/BrafmanT99}.
+%	\cite{DBLP:conf/ijcai/WenT16} combines the special case of almost-sure satisfaction of a specification with optimizing quantitative objectives.
+%	We use techniques of \cite{KKKW18}, which however assumes access to the transition probabilities.
+% 	
+%
+%
+%
+%	

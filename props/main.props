@@ -1,0 +1,1 @@
+<<defender>> ( R{"targetreached"}<=0 [ C ] & R{"trapped"}>=1 [ C ] & R{"cost"}<=0 [ C ] )

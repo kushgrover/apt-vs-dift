@@ -1,0 +1,6 @@
+// only one leader is elected
+//fiter(forall, leaders<=1)
+
+// with probability 1 eventually a leader is elected
+Pmax=? [ F "elected" ]
+

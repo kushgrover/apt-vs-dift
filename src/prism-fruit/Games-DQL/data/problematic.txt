@@ -1,0 +1,5 @@
+models/haddad-monmege.pm properties/haddad-monmege.props -prop targt -const N=20,p=0.7 -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 2 -colourParams "S:41;Av:1;e:1e-8;d:0.01;p:0.30000000000000004;post:2"
+models/firewire.true.prism properties/firewire.true.props -prop deadline -const delay=3,deadline=200 -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 2 -colourParams "S:83153;Av:3;e:1e-8;d:0.01;p:0.5;post:2"
+models/mdsm.prism properties/mdsm.props -prop player_1_deviate -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 2 -colourParams "S:62245;Av:2;e:1e-8;d:0.01;p:0.0684;post:5"
+models/mdsm.prism properties/mdsm.props -prop player_2_deviate -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 2 -colourParams "S:62245;Av:2;e:1e-8;d:0.01;p:0.0684;post:5"
+models/team-form-3.prism properties/team-form.props -prop completed -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 2 -colourParams "S:12476;Av:3;e:1e-8;d:0.01;p:0.02040816326530612;post:49"

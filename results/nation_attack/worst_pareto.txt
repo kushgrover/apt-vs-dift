@@ -1,0 +1,70 @@
+PRISM-games
+===========
+
+Version: 3.0.dev (based on PRISM 4.6.dev)
+Date: Wed Mar 24 19:11:30 CET 2021
+Hostname: kush-ThinkPad-P53
+Memory limits: cudd=1g, java(heap)=910.5m
+Command line: prism-games results/nation_attack/worst.prism props/main.props -pareto
+
+Parsing model file "results/nation_attack/worst.prism"...
+
+Type:        SMG
+Modules:     game 
+Variables:   s p 
+
+Switching to explicit engine, which supports SMGs...
+
+Parsing properties file "props/main.props"...
+
+1 property:
+(1) <<defender>>((R{"targetreached"}<=0 [ C ]&R{"trapped"}>=1 [ C ]&R{"cost"}<=0 [ C ]))
+
+---------------------------------------------------------------------
+
+Model checking: <<defender>>((R{"targetreached"}<=0 [ C ]&R{"trapped"}>=1 [ C ]&R{"cost"}<=0 [ C ]))
+
+Building model...
+
+Computing reachable states... 43 states
+Reachable states exploration and model construction done in 0.016 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.024 seconds.
+
+Warning: Deadlocks detected and fixed in 2 states
+
+Type:        SMG
+States:      43 (1 initial)
+Transitions: 141
+Choices:     122
+Max/avg:     11/2.84
+
+Reducing multi-objective query to CNF: R{"targetreached"}<=0 [ C ]&R{"trapped"}>=1 [ C ]&R{"cost"}<=0 [ C ]
+expr: [[R{"targetreached"}<=0 [ C ]], [R{"trapped"}>=1 [ C ]], [R{"cost"}<=0 [ C ]]]
+
+Warning: Expressions not folded in Pareto set:
+	R{"targetreached"}<=0 [ C ]
+	R{"trapped"}>=1 [ C ]
+	R{"cost"}<=0 [ C ]
+
+/////////////////   NEW (DIRECT) MODEL CHECKING TASK     /////////////////////
+Property:
+	[[R{"targetreached"}<=0 [ C ]], [R{"trapped"}>=1 [ C ]], [R{"cost"}<=0 [ C ]]]
+
+initial state: 0
+operation: Pareto set computation
+Pareto set computation took 0.122657 s
+Resulting Pareto set:
+maxcorners=9. state 0:
+[r:[0.0000, -1.0000, 0.0000]r:[0.0000, 0.0000, 1.0000]r:[1.0000, 0.0000, 0.0000][0.1485, 0.8515, 1.0100][1.0100, -0.0100, 0.0100]]
+
+Pareto set computation result evaluated
+Time for model checking: 0.14300000000000002 seconds.
+
+Result: Pareto Set
+
+---------------------------------------------------------------------
+
+Note: There were 2 warnings during computation.
+

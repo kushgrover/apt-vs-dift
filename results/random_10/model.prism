@@ -1,0 +1,58 @@
+smg
+
+const int n = 9;
+global s: [0 .. (n+3)];    	// order: d, tau, phi
+global p: [0 .. 1];
+
+player defender
+	[trap], [notrap]
+endplayer
+
+player attacker
+	game, [dropout], [target]
+endplayer
+
+module game
+	// defender actions
+	[notrap] s<=n-1 & p=0 -> (p'=1);
+	[trap] s=0 & p=0 -> 0.878410405462219 : (s'=n+1) + 0.12158959453778095 : (p'=1);
+	[trap] s=1 & p=0 -> 0.6776343961358272 : (s'=n+1) + 0.3223656038641728 : (p'=1);
+	[trap] s=2 & p=0 -> 0.8916435371857676 : (s'=n+1) + 0.10835646281423239 : (p'=1);
+	[trap] s=3 & p=0 -> 0.5380188922156768 : (s'=n+1) + 0.4619811077843232 : (p'=1);
+	[trap] s=4 & p=0 -> 0.6433915555729679 : (s'=n+1) + 0.3566084444270321 : (p'=1);
+	[trap] s=5 & p=0 -> 0.7302897732621333 : (s'=n+1) + 0.2697102267378667 : (p'=1);
+	[trap] s=6 & p=0 -> 0.8218679691359941 : (s'=n+1) + 0.17813203086400586 : (p'=1);
+	[trap] s=7 & p=0 -> 0.7434112182625908 : (s'=n+1) + 0.2565887817374092 : (p'=1);
+	[trap] s=8 & p=0 -> 0.57877809899669 : (s'=n+1) + 0.42122190100331003 : (p'=1);
+
+	// sink transitions
+	[] s=n -> (s'=n+3);
+	[] s=n+1 -> (s'=n+3);
+	[] s=n+2 -> (s'=n+3);
+
+	// attacker actions
+	[dropout] s<=n-1 & p=1 -> (s'=n+2);
+	[] (s=0) & p=1 -> (s'=1) & (p'=0);
+	[] (s=1) & p=1 -> (s'=2) & (p'=0);
+	[] (s=0) & p=1 -> (s'=3) & (p'=0);
+	[] (s=3) & p=1 -> (s'=4) & (p'=0);
+	[] (s=0 | s=4 | s=1 | s=2) & p=1 -> (s'=5) & (p'=0);
+	[] (s=3 | s=2 | s=1 | s=5) & p=1 -> (s'=6) & (p'=0);
+	[] (s=1 | s=2 | s=0 | s=3) & p=1 -> (s'=7) & (p'=0);
+	[] (s=2 | s=5 | s=6 | s=4 | s=7 | s=0 | s=3 | s=1) & p=1 -> (s'=8) & (p'=0);
+	[target] (s=4 | s=0 | s=6 | s=2 | s=3 | s=7) & p=1 -> (s'=n);
+endmodule
+
+rewards "targetreached"
+	s=n : 1;
+endrewards
+
+rewards "trapped"
+	s=n+1 : 1;
+endrewards
+
+rewards "cost"
+	[trap] true: 1;
+	[notrap] true: 0;
+endrewards
+

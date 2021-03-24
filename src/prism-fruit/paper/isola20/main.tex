@@ -1,0 +1,70 @@
+\documentclass[runningheads]{llncs}
+
+\pagestyle{plain}
+
+\input{format/packages}
+\input{format/tikz-defs}
+\input{format/macros}
+
+% for all space hacks, gaps between captions, floats, texts and so on
+%\input{format/spacing.tex}
+
+%\usepackage{setspace}
+%\setstretch{0.98}
+%\def\baselinestretch{0.98}
+
+%\renewcommand{\baselinestretch}{0.98} % >=0.97
+%\advance\textwidth4mm % <= 5mm
+%\advance\hoffset-2mm
+%\advance\textheight4mm
+%\advance\voffset-2mm
+
+%	White SMC\\~\\
+%	B/W SMC\\~\\
+%	SMC: Black or White?\\~\\
+\title{Statistical Model Checking: Black or White?
+\thanks{This research was funded in part by TUM IGSSE Grant 10.06 (PARSEC) and the German Research Foundation (DFG) project 383882557 \emph{Statistical Unbounded Verification} (KR 4890/2-1).}
+}
+\author{Pranav Ashok \and Przemys\l{}aw Daca \and Jan K\v ret\'insk\'y \and Maximilian Weininger}
+\institute{Technical University of Munich, Germany} 
+% for final version: Przemek with Google Zurich
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+One of the advantages of statistical model checking (SMC) is its applicability to black-box systems.
+In this paper, we discuss the advantages gained when SMC is applied to white-box systems, utilizing the knowledge of their internals.
+We focus on the setting of unbounded-horizon properties such as reachability or LTL.
+We compare our approach to other statistical and numerical techniques both conceptually as instantiations of the same framework, and experimentally. 
+It not only clearly preserves scalability advantages of black-box SMC compared to classical model checking (while providing high level of guarantees), but it also scales yet better than either of the two for a wide class of models.
+\end{abstract} 
+
+%\input{try0.tex}
+%\newpage
+
+\input{1_intro.tex}
+
+\input{2_prelims.tex} 
+
+%\input{3_example.tex}
+
+\input{4_content.tex}
+
+\input{5_experimental.tex}
+
+\input{6_conclusion.tex}
+
+
+\bibliographystyle{alpha}
+%\bibliographystyle{splncs04}
+\bibliography{ref,survey}
+
+%\pagebreak
+%\appendix
+%\section*{Appendix}
+%\input{appendix.tex}
+
+\end{document}

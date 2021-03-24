@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lp_solve_5.5_java1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/lp_solve_5.5_java1/unittests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/lp_solve_5.5_java1/Demo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

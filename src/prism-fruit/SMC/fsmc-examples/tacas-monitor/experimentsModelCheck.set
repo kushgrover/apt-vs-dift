@@ -1,0 +1,7 @@
+# short name of the experiment; long name; cmd arguments
+
+#cautious1;Cautious Monitor with delta 0.1;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.1
+#cautious5;Cautious Monitor with delta 0.5;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.5
+#bold1;Bold Monitor with delta 0.1;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.1
+#bold5;Bold Monitor with delta 0.5;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.5
+mc;Model Checker for result;-javamaxmem 32g

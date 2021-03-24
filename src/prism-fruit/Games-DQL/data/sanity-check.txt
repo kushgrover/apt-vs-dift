@@ -1,0 +1,5 @@
+# Each line is composed as follows
+# (MODELFILE; PROPERTYFILE; PROPERTYNAME; CONSTS; COLOR; EXPECTEDRESULT)
+# COLOR : 0 = white, 1 = grey, 2 = black
+(crowds.prism; crowds.props; positive; TotalRuns=3,CrowdSize=5; 1; 0.05296253509523565)
+(haddad-monmege.pm; haddad-monmege.props; targt; N=100,p=0.7; 1; 0.7)

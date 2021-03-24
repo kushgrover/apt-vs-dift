@@ -1,0 +1,101 @@
+\section{Preliminaries}\label{sec:prelim}
+
+A \emph{probability distribution} on a finite set $X$ is a mapping $\delta: X \to [0,1]$, such that $\sum_{x\in X} \delta(x) = 1$.
+The set of all probability distributions on $X$ is denoted by $\Distributions(X)$.
+
+%\subsection{Markov chains}
+
+
+\begin{definition}[MC]%Markov chain (MC)]
+	A \emph{Markov chain} (MC) is a tuple 
+	$(\states,\initstate,\trans)$, 
+	where $\states$ is a finite set of \emph{states} with a designated \emph{initial state} $\initstate\in\states$, and $\trans: \states \to \Distributions(\states)$ is a \emph{transition function} that given a state $\mathsf s$ yields a probability distribution $\trans(\mathsf s)$ over \emph{successor} states.
+	For ease of notation, we write $\trans(\mathsf s, \mathsf t)$ instead of $\trans(\mathsf s)(\mathsf t)$ 
+	and $\post(\mathsf s) := \set{\mathsf t \mid \trans(\mathsf s, \mathsf t) > 0}$ to denote the set of successors of a state.
+\end{definition}
+
+%\subsection{Semantics}
+
+The semantics of an MC is given in the usual way by the probability space on paths.
+An \emph{infinite path} $\path$ is an infinite sequence $\path = \mathsf{s_0} \mathsf{s_1} \cdots \in (\states)^\omega$, such that for every $i \in \Naturals$ we have $\mathsf{s_{i+1}} \in \post(\mathsf{s_{i}})$.
+A finite path is a finite prefix of an infinite path.
+The Markov chain together with a state $\mathsf s$ induces a unique probability distribution $\pr_{\mathsf s}$ over measurable sets of infinite paths \cite[Ch.~10]{BK08}. 
+
+%\subsection{Reachability objective}\label{sec:prelimReach}
+
+\begin{definition}[Reachability probability]
+For a target set $\targetset\subseteq\states$, we write $\Diamond \targetset:=\set{\mathsf{s_0} \mathsf{s_1} \cdots  \mid \exists i \in \Naturals: \mathsf{s_{i}}\in\targetset}$ to denote the (measurable) set of all infinite paths which eventually reach $\targetset$.
+For each $\state\in\states$, we define
+the \emph{value} in $\state$ as 
+\[\val(\state) \eqdef \pr_{s}(\Diamond \targetset).\]
+%
+%t $\sinks$ be the set of states, from which there is no finite path to any state in $\targetset$. 
+The \emph{reachability probability} is then the value of the initial state $\val(\initstate)$.
+\end{definition}
+
+The value function $\val$ satisfies the following system of equations, which is referred to as the \emph{Bellman equations}:
+\begin{equation}\label{eq:Vs}
+\val(\state) =  \begin{cases}
+1 &\mbox{if } \state \in \targetset \\
+%0 &\mbox{if } \state \in \sinks \\
+\sum_{\mathsf{s'} \in \states} \trans(\state,\state') \cdot \val(\state')		&\mbox{otherwise }
+\end{cases}
+\end{equation}
+Moreover, $\val$ is the \emph{least} solution to the Bellman equations, see e.g. \cite{visurvey}.
+
+%Usually, we are not interested in the value of all states, but only the value of an initial state $\initstate$.
+%Sometimes people have an initial distribution $\mu$ of initial states, which is equivalent to adding a new initial state $\initstate$ with $\trans(\initstate)=\mu$.\todo{initstate in MC? I like it as part of the objective, but it might confuse people...}
+
+
+
+
+Certain parts of the state space are of special interest for the analysis of MC with respect to unbounded-horizon properties, such as reachability: 
+\begin{definition}[SCC, BSCC]%Strongly connected component (SCC)]
+	\label{def:SCC}
+	A non-empty set $T\subseteq \states$ of states is \emph{strongly connected} if for every pair $\mathsf s, \mathsf{s'} \in \states$ there is a path (of non-zero length) from $\mathsf s$ to $\mathsf s'$. 
+	Such a set $T$ is a \emph{strongly connected component (SCC)} if it is maximal w.r.t. set inclusion, i.e. there exists no strongly connected $T'$ with $T \subsetneq T'$.
+	An SCC $T$ is called \emph{bottom (BSCC)}, if for all states $\state \in T$ we have $\post(\state) \subseteq T$, i.e. no transition leaves the SCC.
+\end{definition}
+
+Note that the SCCs of an MC are disjoint and that, with probability 1, infinitely often reached states on a path form a BSCC.
+
+
+
+
+
+
+%\subsection{Setting}
+
+We consider algorithms that have a limited information about the MC:
+
+\begin{definition}[Black box and grey box setting]\label{def:limit}
+An algorithm inputs an MC as \emph{black box} if it cannot access the whole tuple, but
+\begin{itemize}
+	\item it knows the initial state,
+	\item for a given state, it can sample a successor $\mathsf t$ according to $\trans(\state)$,\footnote{Up to this point, this definition conforms to black box systems in the sense of \cite{Sen04} with sampling from the initial state, being stricter than \cite{Younes02} or \cite{atva09}, where simulations can  be run from any desired state.}
+    \item it knows $\displaystyle p_{\min} \leq \min_{\mathsf s \in \states, \mathsf t \in \post(\mathsf s)} \trans(\mathsf s, \mathsf t)$, an under-approximation of the minimum transition probability.
+\end{itemize}
+When input as \emph{grey box}, it additionally knows the number $\abs{\post(\state)}$ of successors for each state $\state$.\footnote{This requirement is slightly weaker than the knowledge of the whole topology, i.e. $\post(\state)$ for each $\state$.}%\todo{grey box suffices for the better FSMC checking, as done in our CAV19. But we do not really want to talk about it, do we?}
+\end{definition}
+
+
+
+%
+%
+%\vspace{1ex}
+%\noindent\textbf{Bounded value iteration:} 
+%For the standard bounded value iteration algorithm, Line \ref{line:relevantStates} does not run a simulation, but just assigns the whole state space $\states$ to $X$.%
+%\footnote{Since we mainly talk about simulation based algorithms, we included this line to make their structure clearer.}
+%Then it updates all values according to the Bellman equations.
+%After that it finds all the problematic components, the MSECs, and ``deflates'' them as described in~\cite{KKKW18}, i.e. it reduces their values to ensure the convergence to the least fixpoint. 
+%This suffices for the bounds to converge and the algorithm to terminate~\cite[Theorem 2]{KKKW18}.
+%
+%\vspace{1ex}
+%\noindent\textbf{Asynchronous bounded value iteration:}
+%To tackle the state space explosion problem, \emph{asynchronous} simulation/learning-based algorithms have been developed \cite{BRTDP,BCC+14,KKKW18}. 
+%The idea is not to update and deflate all states at once, since there might be too many, or since we only have limited information.
+%%The mentioned approaches are simulation/learning-based.
+%Instead of considering the whole state space, a path through the SG is sampled by picking in every state one of the actions that look optimal according to the current over-/under-approximation and then sampling a successor of that action. 
+%This is repeated until either a target is found, or until the simulation is looping in an EC; the latter case occurs if the heuristic that picks the actions generates a pair of strategies under which both players only pick staying actions in an EC. 
+%After the simulation, only the bounds of the states on the path are updated and deflated.
+%Since we pick actions which look optimal in the simulation, we almost surely find an $\epsilon$-optimal strategy and the algorithm terminates~\cite[Theorem 3]{BCC+14}.

@@ -1,0 +1,16 @@
+// Known mean-payoff example 0
+
+mdp
+
+module knownmp0
+	s : [0 .. 1] init 0;
+
+	[a] s=0 -> 0.5:(s'=0) + 0.5:(s'=1);
+	[b] s=0 -> 1:(s'=0);
+	[a] s=1 -> 1:(s'=1);
+endmodule
+
+rewards	
+	[a] true : 1;
+	[b] true : 0;
+endrewards

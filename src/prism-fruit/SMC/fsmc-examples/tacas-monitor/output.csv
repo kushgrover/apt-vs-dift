@@ -1,0 +1,941 @@
+Model;Approach;Repetition;Stats;lastCandPrint
+bluetooth_oneinit.pm(mrec=4);cautious1;4;Resets 2 ;stepsInResetRuns 954;Resets: 2 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;5;Resets 0 ;stepsInResetRuns 0;init
+bluetooth_oneinit.pm(mrec=4);cautious1;6;Resets 6 ;stepsInResetRuns 2990;Resets: 6 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;7;Resets 1 ;stepsInResetRuns 365;Resets: 1 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;8;Resets 7 ;stepsInResetRuns 3835;Resets: 7 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;9;Resets 13 ;stepsInResetRuns 6249;Resets: 13 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;10;Resets 3 ;stepsInResetRuns 1703;Resets: 3 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;11;Resets 2 ;stepsInResetRuns 1114;Resets: 2 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;12;Resets 4 ;stepsInResetRuns 1716;Resets: 4 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;13;Resets 3 ;stepsInResetRuns 1543;Resets: 3 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;14;Resets 1 ;stepsInResetRuns 237;Resets: 1 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;15;Resets 3 ;stepsInResetRuns 1703;Resets: 3 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;16;Resets 7 ;stepsInResetRuns 3867;Resets: 7 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;17;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);cautious1;1;Resets 9 ;stepsInResetRuns 12618;Resets: 9 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;18;Resets 5 ;stepsInResetRuns 2497;Resets: 5 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;19;Resets 6 ;stepsInResetRuns 3502;Resets: 6 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;0;Resets 10 ;stepsInResetRuns 14020;Resets: 10 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;2;Resets 10 ;stepsInResetRuns 14020;Resets: 10 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;3;Resets 6 ;stepsInResetRuns 8412;Resets: 6 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;4;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);cautious1;5;Resets 7 ;stepsInResetRuns 9814;Resets: 7 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;6;Resets 3 ;stepsInResetRuns 4206;Resets: 3 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;8;Resets 14 ;stepsInResetRuns 19628;Resets: 14 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;9;Resets 20 ;stepsInResetRuns 28040;Resets: 20 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;7;Resets 11 ;stepsInResetRuns 15422;Resets: 11 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;12;Resets 2 ;stepsInResetRuns 2804;Resets: 2 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;13;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);cautious1;19;Resets 4 ;stepsInResetRuns 5608;Resets: 4 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;16;Resets 11 ;stepsInResetRuns 15422;Resets: 11 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;18;Resets 0 ;stepsInResetRuns 0;init
+herman17_oneinit.pm();cautious1;2;TO;Resets: 15047 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;0;TO;Resets: 15739 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;4;TO;Resets: 16193 visitNo: 1 candSize: 34
+
+herman17_oneinit.pm();cautious1;17;TO;Resets: 17595 visitNo: 1 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);cautious1;0;Resets 9 ;stepsInResetRuns 4597;Resets: 9 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;1;Resets 0 ;stepsInResetRuns 0;init
+bluetooth_oneinit.pm(mrec=4);cautious1;2;Resets 4 ;stepsInResetRuns 2068;Resets: 4 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious1;3;Resets 4 ;stepsInResetRuns 1748;Resets: 4 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;10;Resets 4 ;stepsInResetRuns 5608;Resets: 4 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;11;Resets 3 ;stepsInResetRuns 4206;Resets: 3 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;14;Resets 5 ;stepsInResetRuns 7010;Resets: 5 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;15;Resets 8 ;stepsInResetRuns 11216;Resets: 8 visitNo: 1 candSize: 1
+
+nand.pm(N=50,K=3);cautious1;17;Resets 4 ;stepsInResetRuns 5608;Resets: 4 visitNo: 1 candSize: 1
+
+herman17_oneinit.pm();cautious1;1;TO;Resets: 15943 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;3;TO;Resets: 14680 visitNo: 1 candSize: 34
+
+herman17_oneinit.pm();cautious1;8;TO;Resets: 16452 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;6;TO;Resets: 15988 visitNo: 1 candSize: 34
+
+herman17_oneinit.pm();cautious1;9;Resets 2232 ;stepsInResetRuns 245527;Resets: 2232 visitNo: 1 candSize: 1
+
+herman17_oneinit.pm();cautious1;5;TO;Resets: 15743 visitNo: 1 candSize: 34
+
+herman17_oneinit.pm();cautious1;10;TO;Resets: 16142 visitNo: 1 candSize: 34
+
+herman17_oneinit.pm();cautious1;7;TO;Resets: 14978 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;11;TO;Resets: 16290 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;12;TO;Resets: 16902 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;15;TO;Resets: 15169 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;14;TO;Resets: 14323 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;16;TO;Resets: 15243 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;13;TO;Resets: 15502 visitNo: 1 candSize: 34
+
+gridworld.pm(N=50,p=0.999);cautious1;9;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;7;Resets 744 ;stepsInResetRuns 2243;Resets: 744 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;1;Resets 2 ;stepsInResetRuns 940;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;19;Resets 8 ;stepsInResetRuns 4080;Resets: 8 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;17;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+herman17_oneinit.pm();cautious10;15;TO;Resets: 15698 visitNo: 10 candSize: 34
+
+scale.pm(N=10,M=50);cautious1;17;Resets 11087 ;stepsInResetRuns 33538;Resets: 11087 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;19;TO;Resets: 17621 visitNo: 1 candSize: 34
+
+scale.pm(N=10,M=50);cautious1;0;Resets 387 ;stepsInResetRuns 1151;Resets: 387 visitNo: 1 candSize: 2
+
+herman17_oneinit.pm();cautious1;18;TO;Resets: 16461 visitNo: 1 candSize: 34
+
+scale.pm(N=10,M=50);cautious1;1;Resets 3756 ;stepsInResetRuns 11277;Resets: 3756 visitNo: 1 candSize: 3
+
+scale.pm(N=10,M=50);cautious1;2;Resets 637 ;stepsInResetRuns 1916;Resets: 637 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;6;Resets 2502 ;stepsInResetRuns 7493;Resets: 2502 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;15;Resets 2026 ;stepsInResetRuns 6206;Resets: 2026 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;4;Resets 84 ;stepsInResetRuns 245;Resets: 84 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;3;Resets 1439 ;stepsInResetRuns 4274;Resets: 1439 visitNo: 1 candSize: 3
+
+scale.pm(N=10,M=50);cautious1;8;Resets 2841 ;stepsInResetRuns 8574;Resets: 2841 visitNo: 1 candSize: 3
+
+scale.pm(N=10,M=50);cautious1;5;Resets 19 ;stepsInResetRuns 50;Resets: 19 visitNo: 1 candSize: 3
+
+scale.pm(N=10,M=50);cautious1;9;Resets 1411 ;stepsInResetRuns 4342;Resets: 1411 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;10;Resets 851 ;stepsInResetRuns 2536;Resets: 851 visitNo: 1 candSize: 4
+
+scale.pm(N=10,M=50);cautious1;18;Resets 300 ;stepsInResetRuns 913;Resets: 300 visitNo: 1 candSize: 5
+
+gridworld.pm(N=50,p=0.999);cautious1;0;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;19;Resets 3 ;stepsInResetRuns 7;Resets: 3 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;13;Resets 884 ;stepsInResetRuns 2660;Resets: 884 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;12;Resets 370 ;stepsInResetRuns 1055;Resets: 370 visitNo: 1 candSize: 5
+
+scale.pm(N=10,M=50);cautious1;14;Resets 1406 ;stepsInResetRuns 4157;Resets: 1406 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;1;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+scale.pm(N=10,M=50);cautious1;11;Resets 4165 ;stepsInResetRuns 12553;Resets: 4165 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;6;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;7;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;8;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;13;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 3
+
+gridworld.pm(N=50,p=0.999);cautious1;18;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;16;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+gridworld.pm(N=50,p=0.999);cautious1;17;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;0;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+gridworld.pm(N=50,p=0.999);cautious1;11;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;10;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;12;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 3
+
+gridworld.pm(N=50,p=0.999);cautious1;19;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 3
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;1;Resets 4 ;stepsInResetRuns 360;Resets: 4 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;6;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;11;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;16;Resets 1 ;stepsInResetRuns 110;Resets: 1 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;0;Resets 3 ;stepsInResetRuns 1762;Resets: 3 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;15;Resets 6 ;stepsInResetRuns 483;Resets: 6 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;18;Resets 2 ;stepsInResetRuns 185;Resets: 2 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;9;Resets 3 ;stepsInResetRuns 253;Resets: 3 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;8;Resets 1 ;stepsInResetRuns 91;Resets: 1 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;17;Resets 3 ;stepsInResetRuns 259;Resets: 3 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;10;Resets 1 ;stepsInResetRuns 58;Resets: 1 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;19;Resets 3 ;stepsInResetRuns 209;Resets: 3 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;7;Resets 1 ;stepsInResetRuns 64;Resets: 1 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;2;Resets 6 ;stepsInResetRuns 3300;Resets: 6 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;3;Resets 9 ;stepsInResetRuns 4870;Resets: 9 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;4;Resets 3 ;stepsInResetRuns 1762;Resets: 3 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;9;Resets 2 ;stepsInResetRuns 1132;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;14;Resets 2 ;stepsInResetRuns 1004;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;12;Resets 2 ;stepsInResetRuns 876;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;16;Resets 7 ;stepsInResetRuns 2938;Resets: 7 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;13;Resets 1 ;stepsInResetRuns 726;Resets: 1 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;18;Resets 4 ;stepsInResetRuns 1560;Resets: 4 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;7;Resets 3 ;stepsInResetRuns 1570;Resets: 3 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;6;Resets 4 ;stepsInResetRuns 2200;Resets: 4 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;15;Resets 2 ;stepsInResetRuns 972;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;8;Resets 0 ;stepsInResetRuns 0;init
+bluetooth_oneinit.pm(mrec=4);cautious10;17;Resets 3 ;stepsInResetRuns 1730;Resets: 3 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;5;Resets 4 ;stepsInResetRuns 1976;Resets: 4 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;0;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;1;Resets 6 ;stepsInResetRuns 8466;Resets: 6 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;2;Resets 3 ;stepsInResetRuns 4233;Resets: 3 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;7;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;12;Resets 2 ;stepsInResetRuns 2822;Resets: 2 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;10;Resets 10 ;stepsInResetRuns 14110;Resets: 10 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;14;Resets 3 ;stepsInResetRuns 4233;Resets: 3 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;11;Resets 16 ;stepsInResetRuns 22576;Resets: 16 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;16;Resets 8 ;stepsInResetRuns 11288;Resets: 8 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;5;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;13;Resets 2 ;stepsInResetRuns 2822;Resets: 2 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;4;Resets 2 ;stepsInResetRuns 2822;Resets: 2 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;15;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;6;Resets 19 ;stepsInResetRuns 26809;Resets: 19 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;3;Resets 3 ;stepsInResetRuns 4233;Resets: 3 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;18;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;19;Resets 1 ;stepsInResetRuns 1411;Resets: 1 visitNo: 10 candSize: 1
+
+herman17_oneinit.pm();cautious10;0;TO;Resets: 16064 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;5;TO;Resets: 14889 visitNo: 10 candSize: 33
+
+herman17_oneinit.pm();cautious10;10;TO;Resets: 15962 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;12;TO;Resets: 16016 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;8;TO;Resets: 14806 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;14;TO;Resets: 16476 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;9;TO;Resets: 15563 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;3;TO;Resets: 15398 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;11;TO;Resets: 15670 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;2;TO;Resets: 14959 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;13;TO;Resets: 16138 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;16;TO;Resets: 15864 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;1;TO;Resets: 14919 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;4;TO;Resets: 14995 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;17;TO;Resets: 15895 visitNo: 10 candSize: 34
+
+scale.pm(N=10,M=50);cautious10;13;Resets 3 ;stepsInResetRuns 10901;Resets: 3 visitNo: 10 candSize: 50
+
+gridworld.pm(N=50,p=0.999);cautious10;11;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;9;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;7;Resets 5 ;stepsInResetRuns 4854;Resets: 5 visitNo: 932 candSize: 1
+
+nand.pm(N=50,K=3);bold01;5;Resets 2 ;stepsInResetRuns 3080;Resets: 2 visitNo: 213 candSize: 1
+
+herman17_oneinit.pm();bold01;3;TO;Resets: 0 visitNo: 7001354 candSize: 34
+
+scale.pm(N=10,M=50);cautious1;16;Resets 1666 ;stepsInResetRuns 4966;Resets: 1666 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+gridworld.pm(N=50,p=0.999);cautious1;15;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 2
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;12;Resets 5 ;stepsInResetRuns 455;Resets: 5 visitNo: 1 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious1;13;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 1 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;10;Resets 3 ;stepsInResetRuns 1858;Resets: 3 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);cautious10;11;Resets 7 ;stepsInResetRuns 3386;Resets: 7 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);cautious10;8;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);cautious10;9;Resets 15 ;stepsInResetRuns 21165;Resets: 15 visitNo: 10 candSize: 1
+
+herman17_oneinit.pm();cautious10;18;TO;Resets: 17210 visitNo: 10 candSize: 34
+
+herman17_oneinit.pm();cautious10;6;TO;Resets: 16013 visitNo: 10 candSize: 34
+
+scale.pm(N=10,M=50);cautious10;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;8;Resets 1 ;stepsInResetRuns 2540;Resets: 1 visitNo: 10 candSize: 50
+
+herman17_oneinit.pm();cautious10;7;TO;Resets: 16199 visitNo: 10 candSize: 34
+
+scale.pm(N=10,M=50);cautious10;10;Resets 5 ;stepsInResetRuns 19056;Resets: 5 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;6;Resets 2 ;stepsInResetRuns 8685;Resets: 2 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;12;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;7;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;1;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;9;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;0;Resets 2 ;stepsInResetRuns 4905;Resets: 2 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;11;Resets 1 ;stepsInResetRuns 4459;Resets: 1 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+herman17_oneinit.pm();cautious10;19;TO;Resets: 16406 visitNo: 10 candSize: 34
+
+scale.pm(N=10,M=50);cautious10;2;Resets 1 ;stepsInResetRuns 5815;Resets: 1 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;15;Resets 6 ;stepsInResetRuns 17128;Resets: 6 visitNo: 10 candSize: 50
+
+gridworld.pm(N=50,p=0.999);cautious10;1;Resets 1 ;stepsInResetRuns 195567;Resets: 1 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;6;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;8;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;10;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+scale.pm(N=10,M=50);cautious10;19;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+gridworld.pm(N=50,p=0.999);cautious10;7;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+scale.pm(N=10,M=50);cautious10;18;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+gridworld.pm(N=50,p=0.999);cautious10;9;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;12;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;0;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;13;Resets 1 ;stepsInResetRuns 245954;Resets: 1 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;17;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;16;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;8;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;5;Resets 3 ;stepsInResetRuns 303;Resets: 3 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;10;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;2;Resets 9 ;stepsInResetRuns 11506;Resets: 9 visitNo: 1442 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;6;Resets 0 ;stepsInResetRuns 0;init
+bluetooth_oneinit.pm(mrec=4);bold01;1;Resets 9 ;stepsInResetRuns 11858;Resets: 9 visitNo: 1442 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;3;Resets 4 ;stepsInResetRuns 3718;Resets: 4 visitNo: 804 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;0;Resets 5 ;stepsInResetRuns 4918;Resets: 5 visitNo: 932 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;8;Resets 6 ;stepsInResetRuns 6758;Resets: 6 visitNo: 1059 candSize: 1
+
+nand.pm(N=50,K=3);bold01;0;Resets 12 ;stepsInResetRuns 21450;Resets: 12 visitNo: 708 candSize: 1
+
+nand.pm(N=50,K=3);bold01;4;Resets 0 ;stepsInResetRuns 0;init
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;11;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;19;Resets 5 ;stepsInResetRuns 5366;Resets: 5 visitNo: 932 candSize: 1
+
+gridworld.pm(N=50,p=0.999);cautious10;19;Resets 2 ;stepsInResetRuns 504222;Resets: 2 visitNo: 10 candSize: 2499
+
+nand.pm(N=50,K=3);bold01;1;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);bold01;6;Resets 3 ;stepsInResetRuns 4694;Resets: 3 visitNo: 263 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;18;Resets 1 ;stepsInResetRuns 626;Resets: 1 visitNo: 422 candSize: 1
+
+nand.pm(N=50,K=3);bold01;18;Resets 1 ;stepsInResetRuns 1515;Resets: 1 visitNo: 164 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;6;Resets 2 ;stepsInResetRuns 203;Resets: 2 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;15;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;9;Resets 5 ;stepsInResetRuns 5750;Resets: 5 visitNo: 932 candSize: 1
+
+herman17_oneinit.pm();bold01;2;TO;Resets: 0 visitNo: 6475039 candSize: 34
+
+nand.pm(N=50,K=3);bold01;17;Resets 15 ;stepsInResetRuns 27926;Resets: 15 visitNo: 857 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+nand.pm(N=50,K=3);bold01;19;Resets 5 ;stepsInResetRuns 8071;Resets: 5 visitNo: 362 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;7;Resets 3 ;stepsInResetRuns 258;Resets: 3 visitNo: 10 candSize: 1
+
+herman17_oneinit.pm();bold01;4;TO;Resets: 0 visitNo: 8053985 candSize: 34
+
+herman17_oneinit.pm();bold01;16;TO;Resets: 0 visitNo: 7001354 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);bold01;4;Resets 2 ;stepsInResetRuns 1988;Resets: 2 visitNo: 549 candSize: 1
+
+nand.pm(N=50,K=3);bold01;16;Resets 2 ;stepsInResetRuns 3080;Resets: 2 visitNo: 213 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;13;Resets 10 ;stepsInResetRuns 13824;Resets: 10 visitNo: 1570 candSize: 1
+
+nand.pm(N=50,K=3);bold01;7;Resets 7 ;stepsInResetRuns 11646;Resets: 7 visitNo: 461 candSize: 1
+
+herman17_oneinit.pm();bold01;15;TO;Resets: 0 visitNo: 7527670 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);bold01;12;Resets 2 ;stepsInResetRuns 1860;Resets: 2 visitNo: 549 candSize: 1
+
+herman17_oneinit.pm();bold01;17;TO;Resets: 0 visitNo: 5422409 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);bold01;5;Resets 9 ;stepsInResetRuns 11794;Resets: 9 visitNo: 1442 candSize: 1
+
+herman17_oneinit.pm();bold01;14;TO;Resets: 0 visitNo: 7001354 candSize: 34
+
+nand.pm(N=50,K=3);bold01;2;Resets 1 ;stepsInResetRuns 1515;Resets: 1 visitNo: 164 candSize: 1
+
+herman17_oneinit.pm();bold01;5;TO;Resets: 0 visitNo: 10159246 candSize: 34
+
+nand.pm(N=50,K=3);bold01;11;Resets 1 ;stepsInResetRuns 1515;Resets: 1 visitNo: 164 candSize: 1
+
+nand.pm(N=50,K=3);bold01;10;Resets 3 ;stepsInResetRuns 4694;Resets: 3 visitNo: 263 candSize: 1
+
+nand.pm(N=50,K=3);bold01;3;Resets 5 ;stepsInResetRuns 8071;Resets: 5 visitNo: 362 candSize: 1
+
+herman17_oneinit.pm();bold01;0;TO;Resets: 0 visitNo: 8053985 candSize: 34
+
+herman17_oneinit.pm();bold01;9;TO;Resets: 0 visitNo: 8053985 candSize: 34
+
+herman17_oneinit.pm();bold01;8;TO;Resets: 0 visitNo: 7527670 candSize: 34
+
+herman17_oneinit.pm();bold01;1;TO;Resets: 0 visitNo: 6475039 candSize: 34
+
+gridworld.pm(N=50,p=0.999);cautious10;18;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;17;Resets 2 ;stepsInResetRuns 233;Resets: 2 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;15;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);bold01;13;Resets 6 ;stepsInResetRuns 9834;Resets: 6 visitNo: 411 candSize: 1
+
+herman17_oneinit.pm();bold01;11;TO;Resets: 0 visitNo: 10685561 candSize: 34
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;16;Resets 1 ;stepsInResetRuns 69;Resets: 1 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;14;Resets 0 ;stepsInResetRuns 0;init
+nand.pm(N=50,K=3);bold01;12;Resets 1 ;stepsInResetRuns 1515;Resets: 1 visitNo: 164 candSize: 1
+
+herman17_oneinit.pm();bold01;10;TO;Resets: 0 visitNo: 9106616 candSize: 34
+
+scale.pm(N=10,M=50);bold01;1;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 70 candSize: 50
+
+scale.pm(N=10,M=50);bold01;19;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 75 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;17;TO;Resets: 0 visitNo: 1660472 candSize: 2499
+
+scale.pm(N=10,M=50);cautious10;16;Resets 1 ;stepsInResetRuns 4734;Resets: 1 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+scale.pm(N=10,M=50);cautious10;17;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 50
+
+gridworld.pm(N=50,p=0.999);cautious10;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);cautious10;15;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;1;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;0;Resets 1 ;stepsInResetRuns 80;Resets: 1 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;19;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;18;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;17;Resets 1 ;stepsInResetRuns 1106;Resets: 1 visitNo: 422 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;12;Resets 3 ;stepsInResetRuns 248;Resets: 3 visitNo: 10 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;16;Resets 8 ;stepsInResetRuns 9636;Resets: 8 visitNo: 1314 candSize: 1
+
+nand.pm(N=50,K=3);bold01;15;Resets 0 ;stepsInResetRuns 0;init
+bluetooth_oneinit.pm(mrec=4);bold01;10;Resets 8 ;stepsInResetRuns 9892;Resets: 8 visitNo: 1314 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);cautious10;13;Resets 0 ;stepsInResetRuns 0;init
+herman17_oneinit.pm();bold01;13;TO;Resets: 0 visitNo: 6475039 candSize: 34
+
+nand.pm(N=50,K=3);bold01;14;Resets 1 ;stepsInResetRuns 1515;Resets: 1 visitNo: 164 candSize: 1
+
+scale.pm(N=10,M=50);bold01;0;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 73 candSize: 50
+
+nand.pm(N=50,K=3);bold01;8;Resets 3 ;stepsInResetRuns 4694;Resets: 3 visitNo: 263 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold01;11;Resets 0 ;stepsInResetRuns 0;init
+scale.pm(N=10,M=50);bold01;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 75 candSize: 50
+
+scale.pm(N=10,M=50);bold01;14;Resets 3 ;stepsInResetRuns 21646;Resets: 3 visitNo: 235 candSize: 50
+
+herman17_oneinit.pm();bold01;12;TO;Resets: 0 visitNo: 7001354 candSize: 34
+
+scale.pm(N=10,M=50);bold01;18;Resets 1 ;stepsInResetRuns 5;Resets: 1 visitNo: 73 candSize: 50
+
+scale.pm(N=10,M=50);bold01;13;Resets 2 ;stepsInResetRuns 12664;Resets: 2 visitNo: 161 candSize: 50
+
+scale.pm(N=10,M=50);bold01;15;Resets 1 ;stepsInResetRuns 19;Resets: 1 visitNo: 77 candSize: 50
+
+herman17_oneinit.pm();bold01;6;TO;Resets: 0 visitNo: 7001354 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold01;0;TO;Resets: 0 visitNo: 1641482 candSize: 2499
+
+nand.pm(N=50,K=3);bold01;9;Resets 6 ;stepsInResetRuns 9834;Resets: 6 visitNo: 411 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold01;12;TO;Resets: 0 visitNo: 1681462 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;12;Resets 3 ;stepsInResetRuns 17634;Resets: 3 visitNo: 165 candSize: 50
+
+scale.pm(N=10,M=50);bold01;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 79 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;16;TO;Resets: 0 visitNo: 1655475 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold01;11;TO;Resets: 0 visitNo: 1930337 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold01;13;TO;Resets: 0 visitNo: 1672466 candSize: 2499
+
+herman17_oneinit.pm();bold01;7;TO;Resets: 0 visitNo: 5948724 candSize: 34
+
+herman17_oneinit.pm();bold01;18;TO;Resets: 0 visitNo: 5948724 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold01;1;TO;Resets: 0 visitNo: 1544530 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold01;10;TO;Resets: 0 visitNo: 1666469 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;7;Resets 3 ;stepsInResetRuns 18588;Resets: 3 visitNo: 222 candSize: 50
+
+scale.pm(N=10,M=50);bold01;6;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 76 candSize: 50
+
+herman17_oneinit.pm();bold01;19;TO;Resets: 0 visitNo: 7527670 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold01;4;TO;Resets: 0 visitNo: 1682461 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold01;5;TO;Resets: 0 visitNo: 1664470 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;9;Resets 3 ;stepsInResetRuns 41940;Resets: 3 visitNo: 272 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;7;TO;Resets: 0 visitNo: 1522541 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;8;Resets 1 ;stepsInResetRuns 11222;Resets: 1 visitNo: 163 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;6;TO;Resets: 0 visitNo: 1606499 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;15;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 63 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;13;Resets 20 ;stepsInResetRuns 36619;Resets: 20 visitNo: 2640 candSize: 1
+
+nand.pm(N=50,K=3);bold05;11;Resets 15 ;stepsInResetRuns 26734;Resets: 15 visitNo: 777 candSize: 1
+
+herman17_oneinit.pm();bold05;9;TO;Resets: 0 visitNo: 7206913 candSize: 34
+
+scale.pm(N=10,M=50);bold01;11;Resets 1 ;stepsInResetRuns 9401;Resets: 1 visitNo: 145 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;9;TO;Resets: 0 visitNo: 1562521 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;10;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 77 candSize: 50
+
+scale.pm(N=10,M=50);bold01;4;Resets 1 ;stepsInResetRuns 8423;Resets: 1 visitNo: 152 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;18;TO;Resets: 0 visitNo: 1687459 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;10;Resets 2 ;stepsInResetRuns 412;Resets: 2 visitNo: 208 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold01;8;TO;Resets: 0 visitNo: 1809398 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;14;Resets 2 ;stepsInResetRuns 383;Resets: 2 visitNo: 266 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;9;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 77 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;11;Resets 1 ;stepsInResetRuns 120;Resets: 1 visitNo: 77 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold01;2;TO;Resets: 0 visitNo: 1564520 candSize: 2499
+
+scale.pm(N=10,M=50);bold01;5;Resets 1 ;stepsInResetRuns 7205;Resets: 1 visitNo: 157 candSize: 50
+
+bluetooth_oneinit.pm(mrec=4);bold05;8;Resets 0 ;stepsInResetRuns 0;init
+scale.pm(N=10,M=50);bold01;16;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 72 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;19;TO;Resets: 0 visitNo: 1616494 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;8;Resets 2 ;stepsInResetRuns 531;Resets: 2 visitNo: 252 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;12;Resets 4 ;stepsInResetRuns 3025;Resets: 4 visitNo: 599 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;9;Resets 8 ;stepsInResetRuns 8187;Resets: 8 visitNo: 1109 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;7;Resets 1 ;stepsInResetRuns 709;Resets: 1 visitNo: 216 candSize: 1
+
+scale.pm(N=10,M=50);bold01;17;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 77 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold01;3;TO;Resets: 0 visitNo: 1579513 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold01;14;TO;Resets: 0 visitNo: 1585510 candSize: 2499
+
+nand.pm(N=50,K=3);bold05;6;Resets 14 ;stepsInResetRuns 24605;Resets: 14 visitNo: 728 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;6;Resets 5 ;stepsInResetRuns 4340;Resets: 5 visitNo: 727 candSize: 1
+
+nand.pm(N=50,K=3);bold05;10;Resets 7 ;stepsInResetRuns 11090;Resets: 7 visitNo: 381 candSize: 1
+
+nand.pm(N=50,K=3);bold05;7;Resets 17 ;stepsInResetRuns 31140;Resets: 17 visitNo: 876 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;2;Resets 2 ;stepsInResetRuns 213;Resets: 2 visitNo: 106 candSize: 1
+
+nand.pm(N=50,K=3);bold05;5;Resets 18 ;stepsInResetRuns 33417;Resets: 18 visitNo: 926 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold01;15;TO;Resets: 0 visitNo: 1627489 candSize: 2499
+
+herman17_oneinit.pm();bold05;4;TO;Resets: 0 visitNo: 7733229 candSize: 34
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;3;Resets 1 ;stepsInResetRuns 198;Resets: 1 visitNo: 150 candSize: 1
+
+herman17_oneinit.pm();bold05;8;TO;Resets: 0 visitNo: 6680598 candSize: 34
+
+nand.pm(N=50,K=3);bold05;4;Resets 7 ;stepsInResetRuns 11090;Resets: 7 visitNo: 381 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;0;Resets 8 ;stepsInResetRuns 8411;Resets: 8 visitNo: 1109 candSize: 1
+
+herman17_oneinit.pm();bold05;5;TO;Resets: 0 visitNo: 7206913 candSize: 34
+
+herman17_oneinit.pm();bold05;3;TO;Resets: 0 visitNo: 5101652 candSize: 34
+
+herman17_oneinit.pm();bold05;2;TO;Resets: 0 visitNo: 4575337 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);bold05;1;Resets 1 ;stepsInResetRuns 677;Resets: 1 visitNo: 216 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;18;Resets 2 ;stepsInResetRuns 1289;Resets: 2 visitNo: 344 candSize: 1
+
+nand.pm(N=50,K=3);bold05;16;Resets 6 ;stepsInResetRuns 9357;Resets: 6 visitNo: 332 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;19;Resets 2 ;stepsInResetRuns 1417;Resets: 2 visitNo: 344 candSize: 1
+
+herman17_oneinit.pm();bold05;14;TO;Resets: 0 visitNo: 8259544 candSize: 34
+
+nand.pm(N=50,K=3);bold05;17;Resets 9 ;stepsInResetRuns 14704;Resets: 9 visitNo: 480 candSize: 1
+
+herman17_oneinit.pm();bold05;15;TO;Resets: 0 visitNo: 6154283 candSize: 34
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 92 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;3;Resets 16 ;stepsInResetRuns 24247;Resets: 16 visitNo: 2130 candSize: 1
+
+nand.pm(N=50,K=3);bold05;1;Resets 13 ;stepsInResetRuns 22526;Resets: 13 visitNo: 678 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;4;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 63 candSize: 1
+
+nand.pm(N=50,K=3);bold05;19;Resets 7 ;stepsInResetRuns 11090;Resets: 7 visitNo: 381 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;2;Resets 10 ;stepsInResetRuns 11293;Resets: 10 visitNo: 1364 candSize: 1
+
+herman17_oneinit.pm();bold05;17;TO;Resets: 0 visitNo: 3522706 candSize: 34
+
+nand.pm(N=50,K=3);bold05;0;Resets 9 ;stepsInResetRuns 14704;Resets: 9 visitNo: 480 candSize: 1
+
+nand.pm(N=50,K=3);bold05;18;Resets 1 ;stepsInResetRuns 1436;Resets: 1 visitNo: 84 candSize: 1
+
+herman17_oneinit.pm();bold05;16;TO;Resets: 0 visitNo: 7733229 candSize: 34
+
+scale.pm(N=10,M=50);bold05;7;Resets 1 ;stepsInResetRuns 2;Resets: 1 visitNo: 84 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;5;TO;Resets: 0 visitNo: 1817784 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;7;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 92 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;16;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 150 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;6;Resets 1 ;stepsInResetRuns 190;Resets: 1 visitNo: 164 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;5;Resets 0 ;stepsInResetRuns 0;init
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;0;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 77 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;14;Resets 1 ;stepsInResetRuns 421;Resets: 1 visitNo: 216 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;17;Resets 3 ;stepsInResetRuns 619;Resets: 3 visitNo: 295 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;4;Resets 9 ;stepsInResetRuns 10044;Resets: 9 visitNo: 1237 candSize: 1
+
+nand.pm(N=50,K=3);bold05;3;Resets 4 ;stepsInResetRuns 6040;Resets: 4 visitNo: 233 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;18;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 77 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;1;Resets 2 ;stepsInResetRuns 231;Resets: 2 visitNo: 135 candSize: 1
+
+nand.pm(N=50,K=3);bold05;12;Resets 0 ;stepsInResetRuns 0;init
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;12;Resets 7 ;stepsInResetRuns 2069;Resets: 7 visitNo: 426 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;15;Resets 1 ;stepsInResetRuns 581;Resets: 1 visitNo: 216 candSize: 1
+
+nand.pm(N=50,K=3);bold05;2;Resets 5 ;stepsInResetRuns 7674;Resets: 5 visitNo: 282 candSize: 1
+
+herman17_oneinit.pm();bold05;1;TO;Resets: 0 visitNo: 8259544 candSize: 34
+
+bluetooth_oneinit.pm(mrec=4);bold05;16;Resets 1 ;stepsInResetRuns 645;Resets: 1 visitNo: 216 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;13;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 63 candSize: 1
+
+herman17_oneinit.pm();bold05;10;TO;Resets: 0 visitNo: 6680598 candSize: 34
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold01;19;Resets 1 ;stepsInResetRuns 183;Resets: 1 visitNo: 179 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;10;Resets 12 ;stepsInResetRuns 15389;Resets: 12 visitNo: 1619 candSize: 1
+
+scale.pm(N=10,M=50);bold05;2;Resets 3 ;stepsInResetRuns 13;Resets: 3 visitNo: 82 candSize: 50
+
+nand.pm(N=50,K=3);bold05;13;Resets 5 ;stepsInResetRuns 7674;Resets: 5 visitNo: 282 candSize: 1
+
+scale.pm(N=10,M=50);bold05;6;Resets 2 ;stepsInResetRuns 5542;Resets: 2 visitNo: 149 candSize: 50
+
+herman17_oneinit.pm();bold05;0;TO;Resets: 0 visitNo: 8259544 candSize: 34
+
+scale.pm(N=10,M=50);bold05;3;Resets 2 ;stepsInResetRuns 18;Resets: 2 visitNo: 79 candSize: 50
+
+nand.pm(N=50,K=3);bold05;14;Resets 5 ;stepsInResetRuns 7674;Resets: 5 visitNo: 282 candSize: 1
+
+scale.pm(N=10,M=50);bold05;1;Resets 2 ;stepsInResetRuns 15;Resets: 2 visitNo: 84 candSize: 50
+
+bluetooth_oneinit.pm(mrec=4);bold05;11;Resets 2 ;stepsInResetRuns 1193;Resets: 2 visitNo: 344 candSize: 1
+
+bluetooth_oneinit.pm(mrec=4);bold05;17;Resets 8 ;stepsInResetRuns 8315;Resets: 8 visitNo: 1109 candSize: 1
+
+nand.pm(N=50,K=3);bold05;8;Resets 14 ;stepsInResetRuns 24605;Resets: 14 visitNo: 728 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold05;0;TO;Resets: 0 visitNo: 1707839 candSize: 2499
+
+herman17_oneinit.pm();bold05;11;TO;Resets: 0 visitNo: 4575337 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold05;4;TO;Resets: 0 visitNo: 1730828 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;0;Resets 1 ;stepsInResetRuns 2;Resets: 1 visitNo: 74 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;1;TO;Resets: 0 visitNo: 1691847 candSize: 2499
+
+herman17_oneinit.pm();bold05;12;TO;Resets: 0 visitNo: 7206913 candSize: 34
+
+scale.pm(N=10,M=50);bold05;19;Resets 3 ;stepsInResetRuns 14;Resets: 3 visitNo: 77 candSize: 50
+
+nand.pm(N=50,K=3);bold05;9;Resets 9 ;stepsInResetRuns 14704;Resets: 9 visitNo: 480 candSize: 1
+
+herman17_oneinit.pm();bold05;6;TO;Resets: 0 visitNo: 4575337 candSize: 34
+
+nand.pm(N=50,K=3);bold05;15;Resets 7 ;stepsInResetRuns 11090;Resets: 7 visitNo: 381 candSize: 1
+
+scale.pm(N=10,M=50);bold05;18;Resets 3 ;stepsInResetRuns 11488;Resets: 3 visitNo: 159 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;17;TO;Resets: 0 visitNo: 1998694 candSize: 2499
+
+herman17_oneinit.pm();bold05;7;TO;Resets: 0 visitNo: 5101652 candSize: 34
+
+herman17_oneinit.pm();bold05;13;TO;Resets: 0 visitNo: 6154283 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold05;16;TO;Resets: 0 visitNo: 1807789 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;12;Resets 2 ;stepsInResetRuns 16;Resets: 2 visitNo: 85 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;10;TO;Resets: 0 visitNo: 1706840 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;13;Resets 1 ;stepsInResetRuns 2;Resets: 1 visitNo: 79 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;11;TO;Resets: 0 visitNo: 1579903 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;15;Resets 1 ;stepsInResetRuns 3;Resets: 1 visitNo: 69 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;13;TO;Resets: 0 visitNo: 1824781 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;14;Resets 5 ;stepsInResetRuns 72505;Resets: 5 visitNo: 374 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;12;TO;Resets: 0 visitNo: 1616885 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;3;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 54 candSize: 1
+
+herman17_oneinit.pm();bold05;19;TO;Resets: 0 visitNo: 6154283 candSize: 34
+
+scale.pm(N=10,M=50);bold05;8;Resets 3 ;stepsInResetRuns 21093;Resets: 3 visitNo: 224 candSize: 50
+
+herman17_oneinit.pm();bold05;18;TO;Resets: 0 visitNo: 7206913 candSize: 34
+
+gridworld.pm(N=50,p=0.999);bold05;6;TO;Resets: 0 visitNo: 1551917 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold05;18;TO;Resets: 0 visitNo: 1672857 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;9;Resets 2 ;stepsInResetRuns 12378;Resets: 2 visitNo: 128 candSize: 50
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;2;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 69 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold05;19;TO;Resets: 0 visitNo: 1843771 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;10;Resets 2 ;stepsInResetRuns 8;Resets: 2 visitNo: 79 candSize: 50
+
+scale.pm(N=10,M=50);bold05;4;Resets 1 ;stepsInResetRuns 2;Resets: 1 visitNo: 72 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;7;TO;Resets: 0 visitNo: 2335525 candSize: 2499
+
+gridworld.pm(N=50,p=0.999);bold05;8;TO;Resets: 0 visitNo: 1614886 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;15;Resets 4 ;stepsInResetRuns 789;Resets: 4 visitNo: 228 candSize: 1
+
+scale.pm(N=10,M=50);bold05;5;Resets 1 ;stepsInResetRuns 5;Resets: 1 visitNo: 82 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;2;TO;Resets: 0 visitNo: 1559913 candSize: 2499
+
+scale.pm(N=10,M=50);bold05;11;Resets 8 ;stepsInResetRuns 116362;Resets: 8 visitNo: 515 candSize: 50
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;14;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 156 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold05;3;TO;Resets: 0 visitNo: 1545920 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;8;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 199 candSize: 1
+
+gridworld.pm(N=50,p=0.999);bold05;9;TO;Resets: 0 visitNo: 1951717 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;9;Resets 1 ;stepsInResetRuns 201;Resets: 1 visitNo: 185 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;11;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 25 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;10;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 83 candSize: 1
+
+scale.pm(N=10,M=50);bold05;17;Resets 7 ;stepsInResetRuns 92985;Resets: 7 visitNo: 436 candSize: 50
+
+scale.pm(N=10,M=50);bold05;16;Resets 6 ;stepsInResetRuns 70150;Resets: 6 visitNo: 382 candSize: 50
+
+gridworld.pm(N=50,p=0.999);bold05;15;TO;Resets: 0 visitNo: 1845770 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;4;Resets 4 ;stepsInResetRuns 776;Resets: 4 visitNo: 373 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;16;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 112 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;17;Resets 0 ;stepsInResetRuns 0;init
+gridworld.pm(N=50,p=0.999);bold05;14;TO;Resets: 0 visitNo: 1749818 candSize: 2499
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;5;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 112 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;6;Resets 1 ;stepsInResetRuns 123;Resets: 1 visitNo: 98 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;0;Resets 1 ;stepsInResetRuns 112;Resets: 1 visitNo: 112 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;1;Resets 1 ;stepsInResetRuns 133;Resets: 1 visitNo: 112 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;18;Resets 2 ;stepsInResetRuns 437;Resets: 2 visitNo: 214 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;19;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 25 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;7;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 40 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;13;Resets 3 ;stepsInResetRuns 660;Resets: 3 visitNo: 243 candSize: 1
+
+crowds_nodl.pm(TotalRuns=6,CrowdSize=15);bold05;12;Resets 0 ;stepsInResetRuns 0;Resets: 0 visitNo: 40 candSize: 1
+

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Effect of restrictive properties (satisfied in fewer states) on the runtime (in seconds) of BRTDP in the herman benchmarks.}
+\label{tab:herman-brtdp}
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\begin{tabular}{@{}lrrr@{}}
+	\toprule
+	& \multicolumn{3}{c}{Property}\\
+	\cmidrule(l){2-4}
+Model                & \texttt{2tokens} & \texttt{3tokens} & \texttt{4tokens} \\
+\midrule
+\texttt{herman-5} & 1                  & 2                     & TO                   \\
+\texttt{herman-7} & 1                  & 1                     & TO                   \\
+\texttt{herman-9} & 1                  & 2                     & TO                   \\
+\texttt{herman-11} & 2                  & 2                     & TO                   \\
+\texttt{herman-13} & 2                  & 2                     & TO                   \\
+\texttt{herman-15} & 3                  & 3                     & TO                   \\
+\texttt{herman-17} & 5                  & 6                     & TO                   \\
+\texttt{herman-19} & 9                   & 9                     & TO                   \\
+\texttt{herman-21} & 104                 & 111                   & TO                   \\
+\texttt{herman-23} & OOM                   & OOM                   & OOM                  
+\\ \bottomrule
+\end{tabular}
+\end{table}

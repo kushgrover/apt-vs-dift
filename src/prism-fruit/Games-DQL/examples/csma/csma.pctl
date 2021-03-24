@@ -1,0 +1,5 @@
+const int k;
+
+// message of some station eventually delivered before k backoffs
+Pmin=?[ F min_backoff_after_success<=k ]
+

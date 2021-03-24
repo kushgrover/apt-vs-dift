@@ -1,0 +1,24 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{lscape}
+\begin{table}[t]
+\centering
+\caption{Runtime (in seconds) of the various algorithms on the Herman self-stabilization protocol \cite{HermanPrism} with the property \texttt{4tokens}. The median runtimes are reported for grey SMC, black SMC \cite{DHKPjournal}, BRTDP \cite{atva14}, Bounded value iteration (BVI) and Value iteration (VI). The SMC algorithms use SPRT method with parameters $\alpha = 0.01$ and $\beta = 0.01$. BRTDP, BVI and VI run until  a relative error of 0.01 is obtained.}
+\label{tab:herman-short}
+\setlength{\tabcolsep}{6pt} % Default value: 6pt
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\begin{tabular}{@{}lrrr|rrr@{}}
+	\toprule
+	Model     & States & Grey SMC & Black SMC & BRTDP & BVI &  VI \\ \midrule
+	\texttt{herman-5}     & 32 &       11 &   15 &    TO &   1 &   1 \\
+	\texttt{herman-7}     & 128 &       12 &   57 &    TO &   1 &   1 \\
+	\texttt{herman-9}     & 512 &       10 &  775 &    TO &   1 &   1 \\
+	\texttt{herman-11}     & 2048 &       19 &   TO &    TO &   1 &   1 \\
+	\texttt{herman-13}     & 8192 &       18 &   TO &    TO &   1 &   1 \\
+	\texttt{herman-15}     & 33K &       17 &   TO &    TO &   9 &   3 \\
+	\texttt{herman-17}     & 131K &       49 &   TO &    TO &  98 &  21 \\
+	\texttt{herman-19}     & 524K &      252 &  OOM &    TO &  602 & 113 \\
+	\texttt{herman-21}     & 2M &      759 &  OOM &   OOM &  TO &  TO \\ \bottomrule& 
+\end{tabular}
+\end{table}

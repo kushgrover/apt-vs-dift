@@ -1,0 +1,28 @@
+PRISM-games
+===========
+
+Version: 2.0.beta3
+Date: Wed Mar 24 19:11:26 CET 2021
+Hostname: kush-ThinkPad-P53
+Memory limits: cudd=1g, java(heap)=910.5m
+Command line: prism results/nation_attack/model.prism props/init.props -outputDir results/nation_attack -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 3
+
+Parsing the model file "results/nation_attack/model.prism"...
+
+Parsing properties file "props/init.props"...
+
+1 property:
+(1) <<defender>> Pmax=? [ F s=n+3 ]
+
+Type:        SMG
+Modules:     game 
+Variables:   s p 
+
+Switching to explicit engine, which supports SMGs...
+
+---------------------------------------------------------------------
+
+Model checking: <<defender>> Pmax=? [ F s=n+3 ]
+Starting heuristic: RTDP_ADJ
+Computation successful, here is the colourParam-String. Note that e and d are your choice.
+S:43;Av:11;e:1e-3;d:0.01;p:0.014472629965166517;post:2

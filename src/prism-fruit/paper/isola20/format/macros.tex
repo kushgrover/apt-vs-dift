@@ -1,0 +1,396 @@
+% == TODOs
+\newcommand{\todojan}[1]{\todo{\color{blue}\textbf{Jan:\\}#1}}
+\newcommand{\todojulia}[1]{\todo{\highlight{Ju:\\}#1}}
+\newcommand{\todopranav}[1]{\todo{\textbf{Pranav:\\}#1}}
+\newcommand{\todomaxi}[1]{\todo{\textbf{Maxi:\\}#1}}
+
+\newcommand{\todoin}[1]{{\color{red}#1}}
+
+% == HIGHLIGHTING
+
+% highlight for text mode
+\newcommand{\highlighttext}[1]{\colorbox{black!15}{#1}}
+
+% highlight for math mode
+\newcommand{\highlight}[1]{\colorbox{black!15}{$\displaystyle#1$}}
+
+% == ALGORITHMS
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+%\algrenewcommand{\algorithmiccomment}[1]{\hskip1.5em \textbackslash *  #1 * \textbackslash}
+%\renewcommand{\algorithmiccomment}[1]{\bgroup\hfill\tiny//~#1\egroup}
+
+%define a marking command
+\newcommand*{\tikzmk}[1]{\tikz[remember picture,overlay,] \node (#1) {};\ignorespaces}
+%define a boxing command, argument = colour of box
+\newcommand{\boxit}[1]{\tikz[remember picture,overlay]{\node[yshift=3pt,fill=#1,opacity=.25,fit={(A)($(B)+(.95\linewidth,.8\baselineskip)$)}] {};}\ignorespaces}
+%define some colours according to algorithm parts (or any other method you like)
+\colorlet{pink}{red!40}
+\colorlet{blue}{cyan!60}
+
+% == TABLES
+\newcolumntype{L}{X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% Hidden column
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
+
+% == GRAPHICS
+\DeclareGraphicsExtensions{.pdf, .png, .jpg}
+
+% == LATEX
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+% == THEOREMS
+%\newtheorem{theo}{Theorem}[section]
+\newtheorem{cor}{Corollary}%[lemma]
+\newtheorem{ass}{Assumption}%[lemma]
+%\newtheorem{lem}[theo]{Lemma}
+  
+\def\qedtriangle{\hspace{\stretch1}\ensuremath\triangleleft}
+\def\qedsquare{\hspace{\stretch1}\ensuremath\square}
+
+% == SPACE
+
+%\usepackage{microtype}
+%\renewcommand{\baselinestretch}{0.975} % >=0.97
+
+%\newcommand{\spacefu}{\vspace*{-1.2em}}
+%\newcommand{\spacefl}{\vspace*{-0.8em}}
+\newcommand{\myspace}{\vspace*{-0.5em}}
+
+% == TODO
+
+\NewDocumentCommand{\todo}{m}{%
+	% Add to todo list
+	\begin{tikzpicture}[remember picture, baseline=-0.75ex]%
+	\node [coordinate] (inText) {};%
+	\end{tikzpicture}%
+	%
+	% Make the margin par
+	\marginpar{%
+		\begin{tikzpicture}[remember picture, font=\scriptsize]%
+		\draw node[draw=red, text width = 3.5cm, inner sep=0.3mm] (inNote){#1};%
+		\end{tikzpicture}%
+	}%
+	\begin{tikzpicture}[remember picture, overlay]%
+	\draw[draw=red]%
+	([yshift=-0.2cm] inText)%
+	% -| ([xshift=-0.05cm] inNote.west)%
+	-| (inNote.south);%
+	\end{tikzpicture}%
+}%
+% == SYMBOLS
+
+\RequirePackage{marvosym}
+\providecommand{\contradiction}{\Lightning}
+
+
+% == BOOLEAN
+
+\newcommand{\boolor}{\vee}
+\newcommand{\booland}{\wedge}
+\newcommand{\boolOr}{\bigvee}
+\newcommand{\boolAnd}{\bigwedge}
+\newcommand{\boolnot}{\lnot}
+
+
+% == BASIC OPERATORS
+
+\DeclarePairedDelimiter{\delimabs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\delimnorm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\delimpospart}{\lgroup}{\rgroup^+}
+\DeclarePairedDelimiter{\delimnegpart}{\lgroup}{\rgroup^-}
+\DeclarePairedDelimiterX{\deliminner}[2]{\lange}{\rangle}{#1, #2}
+\DeclarePairedDelimiter{\delimcardinality}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\delimset}{\lbrace}{\rbrace}
+\DeclarePairedDelimiter{\delimtuple}{(}{)}
+\DeclarePairedDelimiter{\delimlistt}{[}{]}
+\DeclarePairedDelimiter{\delimfun}{(}{)}
+
+\NewDocumentCommand{\abs}{sm}{\IfBooleanTF{#1}{\delimabs{#2}}{\delimabs*{#2}}}
+\NewDocumentCommand{\norm}{sm}{\IfBooleanTF{#1}{\delimnorm{#2}}{\delimnorm*{#2}}}
+\NewDocumentCommand{\pospart}{sm}{\IfBooleanTF{#1}{\delimpospart{#2}}{\delimpospart*{#2}}}
+\NewDocumentCommand{\negpart}{sm}{\IfBooleanTF{#1}{\delimnetpart{#2}}{\delimnetpart*{#2}}}
+\NewDocumentCommand{\inner}{sm}{\IfBooleanTF{#1}{\deliminner{#2}}{\deliminner*{#2}}}
+\NewDocumentCommand{\cardinality}{sm}{\IfBooleanTF{#1}{\delimcardinality{#2}}{\delimcardinality*{#2}}}
+\NewDocumentCommand{\set}{sm}{\IfBooleanTF{#1}{\delimset*{#2}}{\delimset{#2}}}
+\NewDocumentCommand{\tuple}{sm}{\IfBooleanTF{#1}{\delimtuple{#2}}{\delimtuple*{#2}}}
+\NewDocumentCommand{\closure}{sm}{\IfBooleanTF{#1}{\delimclosure{#2}}{\delimclosure*{#2}}}
+\NewDocumentCommand{\listt}{sm}{\IfBooleanTF{#1}{\delimlistt{#2}}{\delimlistt*{#2}}}
+\NewDocumentCommand{\fun}{smm}{\IfBooleanTF{#1}{{#2}\delimfun{#3}}{{#2}\delimfun*{#3}}}
+\NewDocumentCommand{\funMacro}{smm}{\IfNoValueTF{#3}{#1}{\fun{#2}{#3}}}
+
+\DeclareMathOperator{\ExistsOp}{\exists}
+\DeclareMathOperator{\ForallOp}{\forall}
+
+\NewDocumentCommand{\Exists}{gg}{\IfNoValueTF{#1}{\ExistsOp}{\ExistsOp #1. \, #2}}
+\NewDocumentCommand{\Forall}{gg}{\IfNoValueTF{#1}{\ForallOp}{\ForallOp #1. \, #2}}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+
+% == SETS OPERATORS
+
+\newcommand{\setcomplement}[1]{{#1}^c}
+\newcommand{\powerset}[1]{\mathcal{P}(#1)}
+
+\newcommand{\unionSym}{\cup}
+\newcommand{\unionBin}{\mathbin{\unionSym}}
+\newcommand{\strictunionSym}{\dot{\unionSym}}
+\newcommand{\strictunionBin}{\mathbin{\dot{\unionSym}}}
+\newcommand{\intersectionSym}{\cap}
+\newcommand{\intersectionBin}{\mathbin{\intersectionSym}}
+\newcommand{\UnionSym}{\bigcup}
+\newcommand{\UnionBin}{\mathbin{\UnionSym}}
+\newcommand{\strictUnionSym}{\dot{\UnionSym}}
+\newcommand{\strictUnionBin}{\mathbin{\strictUnionSym}}
+\newcommand{\IntersectionSym}{\bigcap}
+\newcommand{\IntersectionBin}{\mathbin{\IntersectionSym}}
+
+\newcommand{\union}{\unionBin}
+\newcommand{\strictunion}{\strictunionBin}
+\newcommand{\intersection}{\intersectionBin}
+\newcommand{\Union}{\UnionSym}
+\newcommand{\strictUnion}{\strictUnionSym}
+\newcommand{\Intersection}{\IntersectionSym}
+
+
+% == BASIC SETS
+
+\newcommand{\Continuous}{C}
+\newcommand{\Sobolev}{\mathcal{W}}
+\newcommand{\Naturals}{\mathbb{N}}
+\newcommand{\Domain}{\mathfrak{D}}
+\newcommand{\Measures}{\mathcal{M}}
+\newcommand{\Lebesgue}{\mathcal{L}}
+\newcommand{\Hilb}{H}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Orlicz}{{\tilde{\Lebesgue}}}
+\newcommand{\Distributions}{\mathcal{D}}
+
+
+% == LIMITS
+
+\NewDocumentCommand{\convto}{G{}}{\xrightarrow{#1}}
+\NewDocumentCommand{\weakto}{G{}}{\xrightharpoonup{#1}}
+\NewDocumentCommand{\weakstarto}{G{}}{\xrightharpoonup[*]{#1}}
+
+% == OPERATORS
+
+\newcommand{\gradient}{\nabla}
+\newcommand{\laplacian}{\Delta}
+ \DeclareDocumentCommand{\diff}{D<>{} O{}  D(){}}{\Delta_{#1}^{#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\newcommand{\boundary}{\partial}
+\DeclareMathOperator{\divergence}{div}
+\DeclareMathOperator{\distance}{dist}
+\DeclareMathOperator{\esssup}{ess sup}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\capacity}{cap}
+\DeclareMathOperator{\signum}{signum}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\const}{const}
+\DeclareMathOperator{\loc}{loc}
+\DeclareMathOperator*{\argmax}{arg\, max}
+\DeclareMathOperator*{\argmin}{arg\, min}
+\DeclareDocumentCommand{\post}{D<>{} O{} D(){}}{\mathsf{Post}_{#1}^{#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareMathOperator{\leaves}{\mathbin{\mathop{exits}}}
+\newcommand{\leaving}{exiting}
+\DeclareMathOperator{\stays}{\mathbin{\mathop{\mathsf{stays\_in}}}}
+\newcommand{\eqdef}{\vcentcolon=}
+\newcommand{\defeq}{=\vcentcolon}
+
+\newcommand{\qee}{\hfill$\triangle$} % quod erat exemplandum % TODO del
+
+% == LOGIC
+
+\newcommand{\ltl}{\operatorname{LTL}}
+\newcommand{\ctl}{\operatorname{CTL}}
+\newcommand{\pctl}{\operatorname{pCTL}}
+\newcommand{\Next}{\varbigcirc}
+\newcommand{\until}{\, \mathcal{U}}
+\newcommand{\wrel}{\mathcal{W}}
+\newcommand{\lang}[1]{\mathcal{L}(#1)}
+\newcommand{\reach}{\Diamond}
+\newcommand{\alws}{\Box}
+\newcommand{\true}{\mathsf{true}}
+\newcommand{\false}{\mathsf{false}}
+\newcommand{\turn}{\mathsf{turn}}
+\newcommand{\PQ}{\mathrm{PQ}}
+
+% == COMPLEXITY
+\newcommand{\NP}{\mathbf{NP}}
+\newcommand{\NEXP}{\mathbf{NEXP}}
+\newcommand{\PSPACE}{\mathbf{PSPACE}}
+
+% == PROBABILITY
+\NewDocumentCommand{\distributions}{d()}{\funMacro{\mathcal{D}}{#1}}
+\newcommand{\dirac}[1]{\delta_{#1}}
+\newcommand{\probability}{\mathbb{P}}
+\newcommand{\expectation}{\mathbb{E}}
+
+% == MC, MPD, Games
+
+\newcommand{\gain}{g} %value
+\newcommand{\bias}{b}
+\newcommand{\stat}{q}
+\newcommand{\outcomes}{\mathcal{O}}
+\newcommand{\salgebra}{\mathcal{F}}
+\newcommand{\mevent}{\mathcal{E}}
+\newcommand{\pmin}{p_{\min}}
+\newcommand{\rmax}{r_{\max}}
+\newcommand{\MECs}{\mathsf{MEC}}
+\newcommand{\GCs}{\mathsf{GC}}
+\DeclareDocumentCommand{\val}{D<>{} O{}  D(){} t'}{\mathsf{V}_{#1}^{\IfBooleanTF{#4}{\prime #2}{#2}}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareDocumentCommand{\ub}{D<>{} O{}  D(){} t'}{\mathsf{U}_{#1}^{\IfBooleanTF{#4}{\prime #2}{#2}}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareDocumentCommand{\gub}{D<>{} O{}  D(){} t'}{\mathsf{G}_{#1}^{\IfBooleanTF{#4}{\prime #2}{#2}}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareDocumentCommand{\lb}{D<>{} O{}  D(){} t'}{\mathsf{L}_{#1}^{\IfBooleanTF{#4}{\prime #2}{#2}}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareDocumentCommand{\game}{D<>{} O{} D(){} t'}{\mathsf{G}_{#1}^{\IfBooleanTF{#4}{\prime}{}#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+\DeclareDocumentCommand{\transition}{D<>{} O{} D(){}}{\rightarrow_{#1}^{#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+
+
+\newcommand{\Ts}{\mathcal{T}}
+\newcommand{\MC}{\mathsf{M}}
+\newcommand{\Mdp}{\mathcal{M}}
+\newcommand{\Pm}{\mathbf{P}}
+\newcommand{\SG}{\textrm{SG}}
+\newcommand{\SGs}{\textrm{SGs}}
+\newcommand{\M}{\mathsf{M}}
+\DeclareDocumentCommand{\G}{D<>{} O{} t' D(){}}{\mathsf{G}_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}}
+\DeclareDocumentCommand{\exGame}{D<>{} O{} t'  D(){}}{\mathsf{G}_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}=(\states<#1>[\IfBooleanTF{#3}{\prime}{}#2],\states<\Box\ifthenelse{\isempty{#1}}{}{,#1}>[\IfBooleanTF{#3}{\prime}{}#2],\states<\circ\ifthenelse{\isempty{#1}}{}{,#1}>[\IfBooleanTF{#3}{\prime}{}#2],\istate<#1>[\IfBooleanTF{#3}{\prime}{}#2],\actions<#1>[\IfBooleanTF{#3}{\prime}{}#2],\Av<#1>[\IfBooleanTF{#3}{\prime}{}#2],\trans<#1>[\IfBooleanTF{#3}{\prime}{}#2])}
+
+
+\newcommand{\ap}{Ap}
+\DeclareDocumentCommand{\states}{D<>{} O{}  t'}{\mathsf{S}_{#1}^{\IfBooleanTF{#3}{\prime~#2}{#2}}}
+\DeclareDocumentCommand{\state}{D<>{} O{}  t'}{\mathsf{s}_{#1}^{\IfBooleanTF{#3}{\prime #2}{#2}}}
+\DeclareDocumentCommand{\istate}{D<>{} O{} t'}{\mathsf{s}_{0\ifthenelse{\isempty{#1}}{}{,#1}}^{\IfBooleanTF{#3}{\prime~#2}{#2}}}
+\newcommand{\inv}{\nu}
+\newcommand{\lab}{L}
+
+\newcommand{\edges}{E}
+\newcommand{\statesone}{S^N}
+\newcommand{\statestwo}{S_2}
+\newcommand{\statesp}{S^P}
+\newcommand{\initstate}{\state<0>}
+\newcommand{\initdist}{\mu}
+\DeclareDocumentCommand{\trans}{D<>{} O{} t' D(){} D(){}}{\delta{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}\ifthenelse{\isempty{#5}}{}{(#5)}}
+\DeclareDocumentCommand{\Av}{D<>{} O{} t' D(){}}{\mathsf{Av}_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}}
+\newcommand{\rew}{r}
+\DeclareDocumentCommand{\F}{D<>{} O{} t' D(){}}{\mathsf{F}_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}}
+\newcommand{\lu}{\hat{l},\hat{u}}
+
+% = paths and strategies
+\newcommand{\Path}{\rho}
+\DeclareDocumentCommand{\Path}{D<>{} O{} t' D(){}}{\path<#1>[#2]\IfBooleanTF{#3}{'}{}(#4)}
+\DeclareDocumentCommand{\path}{D<>{} O{} t' D(){}}{\rho_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}}
+\newcommand{\fpath}{\mathsf{w}}
+\DeclareDocumentCommand{\Paths}{D<>{} O{} t' D(){}}{\Omega_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}\ifthenelse{\isempty{#4}}{}{(#4)}}
+\newcommand{\straa}{\sigma}
+\newcommand{\straas}{\Sigma}
+\newcommand{\strab}{\tau}
+\newcommand{\strabs}{\Tau}
+\newcommand{\plays}{\mathsf{Plays}}
+\newcommand{\play}{\mathsf{Play}}
+\newcommand{\last}[1]{\text{last}(#1)}%{#1\mathord\downarrow}
+\DeclareDocumentCommand{\strategy}{D<>{} O{} D(){}
+  t*}{{\IfBooleanTF{#4}{\tau}{\sigma}}_{#1}^{#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+
+% = probability
+
+\newcommand{\inits}{\hat s}
+\DeclareDocumentCommand{\actions}{D<>{} O{} t' d()}{{\IfNoValueTF{#4}{\mathsf{A}}{\fun{\mathsf{A}}{#4}}}_{#1}^{\IfBooleanTF{#3}{\prime~#2}{#2}}}
+\DeclareDocumentCommand{\action}{D<>{} O{} t'}{\mathsf{a}_{#1}^{\IfBooleanTF{#3}{\prime#2}{#2}}}
+\newcommand{\pat}{\omega}
+\newcommand{\Pat}{\mathsf{Runs}}
+\newcommand{\fpat}{w}
+\newcommand{\mem}{\mathsf{M}}
+\newcommand{\Cone}{\mathsf{Cone}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\mec}{\mathsf{MEC}}
+\newcommand{\scc}{\mathsf{SCC}}
+\newcommand{\ec} {\mathsf{EC}}
+\newcommand{\bscc}{\mathsf{BSCC}}
+
+\newcommand{\attractor}{\mathsf{prob1}}
+\newcommand{\pr}{\mathbb P}
+\renewcommand{\Pr}[3]{\pr^{#1}\hspace{-0.16em}\left[{#3}\right]}   %\Pr{strat}{state}{event}
+\newcommand{\PrS}[3]{\pr^{#1}_{#2}\hspace{-0.16em}\left[{#3}\right]}   %\Pr{strat}{state}{event}
+\newcommand{\expected}{\mathbb{E}}
+\newcommand{\expsucc}{\expected_\trans}
+\newcommand{\Ex}[3]{\expected^{#1}_{#2}\hspace{-0.16em}\left[{#3}\right]}   %\Ex{strat}{state}{f}
+\newcommand{\ExS}[3]{\expected^{#1}_{#2}\hspace{-0.16em}\left[{#3}\right]}   %\Ex{strat}{state}{f}
+
+
+% == LOCAL
+
+\newcommand{\push}{\mathrm{push}}
+\newcommand{\pop}{\mathrm{pop}}
+\newcommand{\topx}{\mathrm{top}}
+
+
+\newcommand{\reward}{\vec{r}}
+\newcommand{\ex}{\vecl{exp}}
+\newcommand{\sat}{\vecl{sat}}
+\newcommand{\satscalar}{\mathit{sat}}
+\newcommand{\psat}{\vecl{pr}}%{\vec{p^{sat}}}
+\newcommand{\psatscalar}{\mathit{pr}}%{\mathit{p^{sat}}}
+
+\newcommand{\lrLim}[1]{\mathrm{lr}(#1)}  %\lr{rew}{run}
+\newcommand{\lrSf}[1]{\mathrm{lr}_{\mathrm{sup}}(#1)}  %\lrS{rew}{run}
+\newcommand{\lrIf}[1]{\mathrm{lr}_{\mathrm{inf}}(#1)}  %\lrI{rew}{run}
+\newcommand{\lrInf}{\mathrm{lr}^{\mathrm{inf}}}  %\lrI{rew}{run}
+
+\newcommand{\appear}{\textsf{Appear}}
+
+\NewDocumentCommand{\spannorm}{m}{\fun{\operatorname{sp}}{#1}}
+
+% == OTHER
+
+\newcommand{\chapterSpace}{\vspace*{1cm}}
+
+% == Tikz
+\newcommand{\drawcirc}{\node[draw,circle,minimum size=.7cm, outer sep=1pt]}
+\newcommand{\drawbox}{\node[draw,rectangle,minimum size=.7cm, outer sep=1pt]}
+\newcommand{\drawdummy}{\node[minimum size=0,inner sep=0]}
+
+
+\newcommand{\para}[1]{\noindent\textbf{#1} }
+
+
+\newcommand{\sinks}{\mathsf{Zero}}
+
+
+% ===== Fruit
+% ===== Old but still used
+\newcommand{\best}{\mathsf{best}}
+\newcommand{\Vis}{\widehat{\states}}
+\DeclareDocumentCommand{\target}{D<>{} O{}
+  t'}{\mathfrak{1}_{#1}^{\IfBooleanTF{#3}{\prime}{}#2}}
+\NewDocumentCommand{\exit}{D<>{}D[]{}D(){}}{\mathsf{bestExit}_{#1}^{#2}\ifthenelse{\isempty{#3}}{}{(#3)}}
+
+
+
+% ====== New
+\newcommand{\targetset}{\mathsf{T}}
+\newcommand{\sink}{\mathfrak{0}} %set of states with no path to target, needed for bellman equations
+
+\newcommand{\Prob}{\mathbb{P}}
+
+
+\newcommand{\INITIALIZE}{\mathsf{INITIALIZE}}
+\newcommand{\UPDATE}{\mathsf{UPDATE}}
+\newcommand{\GETSTATES}{\mathsf{GET\_STATES}}
+\newcommand{\SIMULATE}{\mathsf{SIMULATE}}
+\newcommand{\STUCK}{\mathsf{STUCK}}
+\newcommand{\TERMCRIT}{\mathsf{TERM\_CRIT}}
+\newcommand{\nextstate}{\mathrm{NEXT\_STATE}}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

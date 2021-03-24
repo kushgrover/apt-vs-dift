@@ -1,0 +1,53 @@
+\begin{figure}[t]
+	\centering
+\subcaptionbox{\label{fig:brtdp}}
+{	
+	\begin{tikzpicture}[scale=1]
+	
+	\drawcirc (0) at (0,0) {$\state<0>$};
+	\drawdummy (mid) at (0.7,0) {};
+	\drawcirc (1) at (1.3,1) {$\state<1>$};
+	\drawcirc (2) at (2.3,1) {$\state<2>$};
+	\drawcirc (t) at (3.3,1) {$\mathsf t$};
+	
+	
+	\node [cloud, draw,cloud puffs=10,cloud puff arc=120, aspect=2, inner ysep=1em] (cloud) at (2.3,-0.7) {};
+	
+	
+	\draw[-] (0) to (mid);
+	\draw[->] (mid) to node [midway,anchor=west] {$1 - \varepsilon$} (1);
+	\draw[->] (mid) to node [midway,anchor=north] {$\varepsilon$} (cloud);
+	\draw[->] (1) to (2);
+	\draw[->] (2) to (t);
+
+	\draw[->]  (t) to [loop above] (t) ;	
+	
+	\end{tikzpicture}
+}\hspace{4em}
+\subcaptionbox{\label{fig:adv}}
+{	
+	\begin{tikzpicture}[scale=1]
+	
+	\drawcirc (0) at (0,0) {$\state<0>$};
+	\drawdummy (mid) at (0.7,0) {};
+	\drawcirc (a) at (1.5,2) {$\state<1>$};
+	\drawcirc (b) at (1.5,0.75) {$\state<2>$};
+	\drawdummy (d1) at (1.5,0) {\Large .};
+	\drawdummy (d2) at (1.5,-0.65) {\Large .};
+	\drawdummy (d3) at (1.5,-1.3) {\Large .};
+	%\drawcirc (c) at (1.5,-0.75) {$\mathsf t$};
+	\drawcirc (d) at (1.5,-2) {$\state<n>$};
+	\drawdummy (e) at (3.3,0) {};%to make pictures same width
+	
+	
+	\draw[-] (0) to (mid);
+	\draw[->] (mid) to node [midway,anchor=south east] {$\varepsilon$} (a);
+	\draw[->] (mid) to node [midway,anchor=south ] {$\varepsilon$} (b);
+	%\draw[->] (mid) to node [midway,anchor=north ] {$\varepsilon$} (c);
+	\draw[->] (mid) to node [midway,anchor=north west ] {$\varepsilon$} (d);	
+	
+	\end{tikzpicture}
+}
+\caption{(a) A Markov chain where exploring the whole state space can be avoided. $\varepsilon$ denotes a transition probability. The cloud represents an arbitrarily large state space. (b) A Markov chain with high branching. From $\initstate$, there is a uniform probabilistic choice with $n = \frac {1} {\varepsilon}$ successors.}
+\label{fig:brtdpAdv}
+\end{figure}

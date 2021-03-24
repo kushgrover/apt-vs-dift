@@ -1,0 +1,41 @@
+PRISM-games
+===========
+
+Version: 2.0.beta3
+Date: Wed Mar 24 19:10:41 CET 2021
+Hostname: kush-ThinkPad-P53
+Memory limits: cudd=1g, java(heap)=910.5m
+Command line: prism results/random_100/model.prism props/init.props -outputDir results/random_100 -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 1 -colourParams 'S:203;Av:53;e:1e-3;d:0.01;p:0.002484606491090391;post:2'
+
+Parsing the model file "results/random_100/model.prism"...
+
+Parsing properties file "props/init.props"...
+
+1 property:
+(1) <<defender>> Pmax=? [ F s=n+3 ]
+
+Type:        SMG
+Modules:     game 
+Variables:   s p 
+
+Switching to explicit engine, which supports SMGs...
+
+---------------------------------------------------------------------
+
+Model checking: <<defender>> Pmax=? [ F s=n+3 ]
+Starting heuristic: RTDP_ADJ
+IsMDP false Collapse false break false
+ColourParams: S:203 Av: 53 eps: 0.001 delta: 0.01 pmin: 0.002484606491090391
+TransDelta: 4.6472720513058837E-7
+HeuristicSG: Version try0
+Grey
+======================================
+
+JSON: {"Trials":100000,"Precision":0.028898168031668003,"PartialTransDelta":5.102040816326531E-5,"Value":{"Upper":1,"Lower":0.971101831968332},"ActionsOfs0":{"Action0":"[0.8567947979539831;1.0]","Action1":"[0.9729482180560913;1.0]"},"GlobalTimerSecs":4.866,"AvgConf":0.5900991514019018,"StateInfos":{"num00":0,"num11":193,"numStates":202,"num01":2,"avgDist":0.027097489466225217,"numWorking":7,"numUnset":0,"numClose":193}}
+JSON: {"Trials":200000,"Precision":0,"PartialTransDelta":5.0505050505050505E-5,"Value":{"Upper":1,"Lower":1},"ActionsOfs0":{"Action0":"[1.0;1.0]","Action1":"[1.0;1.0]"},"GlobalTimerSecs":7.466,"AvgConf":0.5949833137696712,"StateInfos":{"num00":0,"num11":203,"numStates":203,"num01":0,"avgDist":0,"numWorking":0,"numUnset":0,"numClose":203}}
+Exporting best and worst case games ... done
+
+Model checking completed in 7.689 secs.
+
+Result (result for coalition [defender]): 1.0
+

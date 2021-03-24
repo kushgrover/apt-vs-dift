@@ -1,0 +1,21 @@
+mdp
+
+module knownmp4
+
+	s : [0 .. 2] init 0;
+
+	[a0] s=0 -> (s'=1);
+	[a1] s=1 -> 0.9:(s'=0) + 0.1:(s'=2);
+	[a2] s=2 -> (s'=2);
+	[b2] s=2 -> (s'=0);
+
+endmodule
+
+rewards
+	
+	[a0] true : 0;
+	[a1] true : 0;
+	[a2] true : 0.8;
+	[b2] true : 1;
+
+endrewards

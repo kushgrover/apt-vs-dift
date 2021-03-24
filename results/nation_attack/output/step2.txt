@@ -1,0 +1,40 @@
+PRISM-games
+===========
+
+Version: 2.0.beta3
+Date: Wed Mar 24 19:11:26 CET 2021
+Hostname: kush-ThinkPad-P53
+Memory limits: cudd=1g, java(heap)=910.5m
+Command line: prism results/nation_attack/model.prism props/init.props -outputDir results/nation_attack -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 1 -colourParams 'S:43;Av:11;e:1e-3;d:0.01;p:0.014472629965166517;post:2'
+
+Parsing the model file "results/nation_attack/model.prism"...
+
+Parsing properties file "props/init.props"...
+
+1 property:
+(1) <<defender>> Pmax=? [ F s=n+3 ]
+
+Type:        SMG
+Modules:     game 
+Variables:   s p 
+
+Switching to explicit engine, which supports SMGs...
+
+---------------------------------------------------------------------
+
+Model checking: <<defender>> Pmax=? [ F s=n+3 ]
+Starting heuristic: RTDP_ADJ
+IsMDP false Collapse false break false
+ColourParams: S:43 Av: 11 eps: 0.001 delta: 0.01 pmin: 0.014472629965166517
+TransDelta: 1.0570824524312897E-5
+HeuristicSG: Version try0
+Grey
+======================================
+
+JSON: {"Trials":100000,"Precision":0,"PartialTransDelta":2.631578947368421E-4,"Value":{"Upper":1,"Lower":1},"ActionsOfs0":{"Action0":"[1.0;1.0]","Action1":"[1.0;1.0]"},"GlobalTimerSecs":1.301,"AvgConf":0.12237793587776138,"StateInfos":{"num00":0,"num11":43,"numStates":43,"num01":0,"avgDist":0,"numWorking":0,"numUnset":0,"numClose":43}}
+Exporting best and worst case games ... done
+
+Model checking completed in 1.345 secs.
+
+Result (result for coalition [defender]): 1.0
+

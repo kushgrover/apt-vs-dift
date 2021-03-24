@@ -1,0 +1,5 @@
+// RESULT : 2.1428571
+R{"think"}max=? [ MP ]
+
+// RESULT : 0.9090909
+R{"eat"}max=? [ MP ]

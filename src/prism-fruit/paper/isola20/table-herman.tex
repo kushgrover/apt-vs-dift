@@ -1,0 +1,22 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{lscape}
+\begin{table}[]
+\centering
+\caption{Runtime of the various algorithms on the Herman self-stabilization protocol \cite{herman}. The minimum, median and maximum runtimes are reported for greybox with 2-strong STUCK criterion, black SMC \cite{fsmc}, BRTDP \cite{brtdp}, Interval iteration (II) and Value iteration (VI). The SMC algorithms use SPRT method with parameters (0.01, 0.01). BRTDP, II and VI run until  a relative error of 0.01 is obtained. The number of states in the model herman-N is $2^N$. }
+\label{tab:herman}
+\begin{tabular}{l@{\hskip 1.5em}rrr@{\hskip 1.5em}rrr@{\hskip 1.5em}rrr@{\hskip 1.5em}rrr@{\hskip 1.5em}rrr@{}}
+	\toprule
+	\textit{}     & \multicolumn{3}{c}{2-Strong} & \multicolumn{3}{c}{Black SMC} & \multicolumn{3}{c}{BRTDP} & \multicolumn{3}{c}{BVI} & \multicolumn{3}{c}{VI} \\ \midrule
+	User time (s) & min & mid &              max & min & mid &          max & min & mid &           max & min & mid &         max & min & mid &        max \\
+	herman-05      &  10 &  11 &               12 &  11 &  15 &           18 &  TO &  TO &            TO &   1 &   1 &           1 &   1 &   1 &          1 \\
+	herman-07      &   9 &  12 &               13 &  45 &  57 &          169 &  TO &  TO &            TO &   1 &   1 &           1 &   1 &   1 &          1 \\
+	herman-09      &   6 &  10 &               18 & 245 & 775 &          818 &  TO &  TO &            TO &   1 &   1 &           1 &   1 &   1 &          1 \\
+	herman-11      &  14 &  19 &               23 &  TO &  TO &           TO &  TO &  TO &            TO &   1 &   1 &           1 &   1 &   1 &          1 \\
+	herman-13      &  13 &  18 &               33 &  TO &  TO &           TO &  TO &  TO &            TO &   1 &   1 &           1 &   1 &   1 &          1 \\
+	herman-15      &  11 &  17 &               33 &  TO &  TO &           TO &  TO &  TO &            TO &   8 &   8 &           8 &   3 &   3 &          3 \\
+	herman-17      &  44 &  49 &              130 &  TO &  TO &           TO &  TO &  TO &            TO &  52 &  52 &          52 &  21 &  21 &         21 \\
+	herman-19      &  96 & 252 &              414 &  OOM &  OOM &           OOM &  TO &  TO &            TO &  TO &  TO &          TO & 111 & 112 &        112 \\
+	herman-21      & 527 & 759 &               TO &  OOM &  OOM &           OOM &  OOM &  OOM &            OOM &  TO &  TO &          TO &  TO &  TO &         TO \\ \bottomrule
+\end{tabular}
+\end{table}

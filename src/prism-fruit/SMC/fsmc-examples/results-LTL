@@ -1,0 +1,651 @@
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking crowds_nodl.pm(TotalRuns=6,CrowdSize=15) with property P>=0.5 [F (G observe0=0 & observe1=0  )]
+
+[try=0]  res=false      time=12.43s     mem=1091MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1572 trans.=88       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1572
+
+[try=1]  res=false      time=7.41s      mem=711MB       visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=894  trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=894
+
+[try=2]  res=false      time=10.32s     mem=1091MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1208 trans.=88       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1208
+
+[try=3]  res=false      time=13.54s     mem=1374MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1968 trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1968
+
+[try=4]  res=false      time=12.84s     mem=1092MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1836 trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1836
+
+[try=5]  res=false      time=14.17s     mem=1090MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1852 trans.=88       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1852
+
+[try=6]  res=false      time=11.00s     mem=889MB       visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1518 trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1518
+
+[try=7]  res=false      time=10.31s     mem=1089MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1300 trans.=88       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1300
+
+[try=8]  res=false      time=11.60s     mem=1092MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1438 trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1438
+
+[try=9]  res=false      time=8.82s      mem=1090MB      visit no. (base, inc)=(111.28, 10.057)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1180 trans.=89       e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.0666, iterations=1180
+
+[Summary] path_len_avg=999.0    iterations=1476.6       result=false    e2b=0.0 time=11.2424898863      trans=88.6
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking crowds_nodl.pm(TotalRuns=7,CrowdSize=20) with property P>=0.5 [F (G observe0=0 & observe1=0  )]
+
+[try=0]  res=false      time=7.18s      mem=630MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=588  trans.=102      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=588
+
+[try=1]  res=false      time=6.16s      mem=712MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=762  trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=762
+
+[try=2]  res=false      time=13.36s     mem=1376MB      visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=1974 trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=1974
+
+[try=3]  res=false      time=8.38s      mem=713MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=934  trans.=104      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=934
+
+[try=4]  res=false      time=8.82s      mem=709MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=742  trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=742
+
+[try=5]  res=false      time=10.07s     mem=589MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=820  trans.=104      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=820
+
+[try=6]  res=false      time=6.25s      mem=586MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=636  trans.=102      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=636
+
+[try=7]  res=false      time=8.72s      mem=585MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=916  trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=916
+
+[try=8]  res=false      time=5.75s      mem=564MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=560  trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=560
+
+[try=9]  res=false      time=7.10s      mem=710MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=620  trans.=103      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=620
+
+[Summary] path_len_avg=999.0    iterations=855.2        result=false    e2b=0.0 time=8.17838861942      trans=103.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking crowds_nodl.pm(TotalRuns=8,CrowdSize=20) with property P>=0.5 [F (G observe0=0 & observe1=0  )]
+
+[try=0]  res=false      time=6.89s      mem=399MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=502  trans.=118      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=502
+
+[try=1]  res=false      time=4.98s      mem=397MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=476  trans.=119      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=476
+
+[try=2]  res=false      time=5.04s      mem=397MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=430  trans.=118      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=430
+
+[try=3]  res=false      time=6.76s      mem=486MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=536  trans.=118      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=536
+
+[try=4]  res=false      time=4.55s      mem=397MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=484  trans.=119      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=484
+
+[try=5]  res=false      time=6.09s      mem=638MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=582  trans.=117      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=582
+
+[try=6]  res=false      time=6.59s      mem=585MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=632  trans.=119      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=632
+
+[try=7]  res=false      time=4.62s      mem=398MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=460  trans.=116      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=460
+
+[try=8]  res=false      time=5.06s      mem=398MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=454  trans.=120      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=454
+
+[try=9]  res=false      time=5.87s      mem=595MB       visit no. (base, inc)=(149.19, 13.513)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=568  trans.=118      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.05, iterations=568
+
+[Summary] path_len_avg=999.0    iterations=512.4        result=false    e2b=0.0 time=5.64481780529      trans=118.2
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking brp_nodl.pm(N=500,MAX=500) with property P>=0.95 [ F G (srep=3) ]
+
+[try=0]  res=true       time=9.30s      mem=717MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3044  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=1]  res=true       time=8.71s      mem=659MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3043  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=2]  res=true       time=10.29s     mem=658MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3043  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=3]  res=true       time=9.10s      mem=657MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3044  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=4]  res=true       time=10.01s     mem=717MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3045  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=5]  res=true       time=8.39s      mem=717MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3043  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=6]  res=true       time=10.01s     mem=717MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3043  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=7]  res=true       time=10.00s     mem=716MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3044  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=8]  res=true       time=8.48s      mem=716MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3043  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=9]  res=true       time=9.39s      mem=715MB       visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=243  trans.=3044  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[Summary] path_len_avg=3999.0   iterations=243.0        result=true     e2b=0.0 time=9.36876988411      trans=3043.6
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking brp_nodl.pm(N=1500,MAX=1500) with property P>=0.95 [ F G (srep=3) ]
+
+[try=0]  res=true       time=15.80s     mem=1708MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9126  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=1]  res=true       time=17.34s     mem=1706MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9123  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=2]  res=true       time=16.79s     mem=1707MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=3]  res=true       time=15.98s     mem=1709MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=4]  res=true       time=17.43s     mem=1705MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=5]  res=true       time=16.53s     mem=1382MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=6]  res=true       time=15.37s     mem=1705MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9125  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=7]  res=true       time=15.18s     mem=1709MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=8]  res=true       time=16.61s     mem=1707MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9126  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=9]  res=true       time=15.97s     mem=1386MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(9999,9999.0)        iterations=243  trans.=9124  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[Summary] path_len_avg=9999.0   iterations=243.0        result=true     e2b=0.0 time=16.301086688       trans=9124.4
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking brp_nodl.pm(N=2000,MAX=2000) with property P>=0.95 [ F G (srep=3) ]
+
+[try=0]  res=true       time=21.01s     mem=1776MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(13999,13003.115226337448)   iterations=243  trans.=12166  e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=1]  res=true       time=21.99s     mem=1776MB      visit no. (base, inc)=(757.28, 68.968)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(12999,12999.0)      iterations=243  trans.=12165 e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.01, iterations=243
+
+[try=2]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking brp_nodl.pm(N=10000,MAX=10000) with property P>=0.95 [ F G (srep=3) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking nand.pm(N=50,K=3) with property prop1_qual.pctl
+
+[try=0]  res=true       time=2.66s      mem=239MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=186  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=186
+
+[try=1]  res=true       time=3.12s      mem=270MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=192  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=192
+
+[try=2]  res=true       time=4.22s      mem=247MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=186  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=186
+
+[try=3]  res=true       time=2.81s      mem=252MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=186  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=186
+
+[try=4]  res=true       time=2.23s      mem=238MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=202  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=202
+
+[try=5]  res=true       time=2.13s      mem=238MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=186  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=186
+
+[try=6]  res=true       time=2.02s      mem=240MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=182  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=182
+
+[try=7]  res=true       time=1.90s      mem=238MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=168  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=168
+
+[try=8]  res=true       time=2.05s      mem=238MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=180  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=180
+
+[try=9]  res=true       time=2.19s      mem=240MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=190  trans.=1401  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=190
+
+[Summary] path_len_avg=1999.0   iterations=185.8        result=true     e2b=0.0 time=2.53339800835      trans=1401.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking nand.pm(N=60,K=4) with property prop1_qual.pctl
+
+[try=0]  res=true       time=2.35s      mem=395MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=190  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=190
+
+[try=1]  res=true       time=2.34s      mem=394MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=176  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=176
+
+[try=2]  res=true       time=2.48s      mem=392MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=182  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=182
+
+[try=3]  res=true       time=2.31s      mem=392MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=168  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=168
+
+[try=4]  res=true       time=2.53s      mem=394MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=202  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=202
+
+[try=5]  res=true       time=2.21s      mem=394MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=164  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=164
+
+[try=6]  res=true       time=2.35s      mem=395MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=180  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=180
+
+[try=7]  res=true       time=2.54s      mem=395MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=190  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=190
+
+[try=8]  res=true       time=2.59s      mem=394MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=182  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=182
+
+[try=9]  res=true       time=3.38s      mem=392MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2999.0)        iterations=190  trans.=2161  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=190
+
+[Summary] path_len_avg=2999.0   iterations=182.4        result=true     e2b=0.0 time=2.5081592083       trans=2161.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking nand.pm(N=70,K=5) with property prop1_qual.pctl
+
+[try=0]  res=true       time=5.93s      mem=395MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=172  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=172
+
+[try=1]  res=true       time=4.58s      mem=399MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=174  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=174
+
+[try=2]  res=true       time=4.32s      mem=401MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=184  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=184
+
+[try=3]  res=true       time=5.92s      mem=401MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=190  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=190
+
+[try=4]  res=true       time=5.16s      mem=395MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=196  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=196
+
+[try=5]  res=true       time=4.64s      mem=401MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=174  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=174
+
+[try=6]  res=true       time=4.80s      mem=398MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=196  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=196
+
+[try=7]  res=true       time=4.41s      mem=399MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=174  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=174
+
+[try=8]  res=true       time=5.40s      mem=396MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=182  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=182
+
+[try=9]  res=true       time=4.41s      mem=394MB       visit no. (base, inc)=(377.23, 34.31)   no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,3999.0)        iterations=200  trans.=3081  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.02, iterations=200
+
+[Summary] path_len_avg=3999.0   iterations=184.2        result=true     e2b=0.0 time=4.95734300613      trans=3081.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking egl.pm(N=15,L=10) with property P<=0.56 [ G (F !"knowA" & "knowB") ]
+
+[try=0]  res=true       time=3.81s      mem=399MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=1]  res=true       time=3.76s      mem=400MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=2]  res=true       time=6.23s      mem=397MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=3]  res=true       time=4.07s      mem=400MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=4]  res=true       time=3.81s      mem=399MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=5]  res=true       time=3.58s      mem=398MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=6]  res=true       time=3.78s      mem=401MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=7]  res=true       time=6.23s      mem=396MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=8]  res=true       time=4.50s      mem=398MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=9]  res=true       time=3.74s      mem=392MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(999,999.0)  iterations=113  trans.=630      e2b=0Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[Summary] path_len_avg=999.0    iterations=113.0        result=true     e2b=0.0 time=4.35158085823      trans=630.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking egl.pm(N=20,L=15) with property P<=0.56 [ G (F !"knowA" & "knowB") ]
+
+[try=0]  res=true       time=5.51s      mem=712MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=1]  res=true       time=5.54s      mem=711MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=2]  res=true       time=7.04s      mem=709MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=3]  res=true       time=6.02s      mem=717MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=4]  res=true       time=5.70s      mem=586MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=5]  res=true       time=5.37s      mem=711MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=6]  res=true       time=7.20s      mem=586MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=7]  res=true       time=6.19s      mem=589MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=8]  res=true       time=5.87s      mem=713MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=9]  res=true       time=5.56s      mem=586MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1240  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[Summary] path_len_avg=1999.0   iterations=113.0        result=true     e2b=0.0 time=5.99960486889      trans=1240.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking egl.pm(N=20,L=20) with property P<=0.56 [ G (F !"knowA" & "knowB") ]
+
+[try=0]  res=true       time=5.65s      mem=716MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=1]  res=true       time=8.15s      mem=587MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=2]  res=true       time=6.05s      mem=587MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=3]  res=true       time=6.09s      mem=711MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=4]  res=true       time=7.49s      mem=713MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=5]  res=true       time=5.67s      mem=586MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=6]  res=true       time=6.53s      mem=586MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=7]  res=true       time=5.42s      mem=714MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=8]  res=true       time=7.24s      mem=713MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[try=9]  res=true       time=6.11s      mem=714MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=113  trans.=1640  e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=113
+
+[Summary] path_len_avg=1999.0   iterations=113.0        result=true     e2b=0.0 time=6.43855857849      trans=1640.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking leader6_5.pm with property prop1_qual.pctl
+
+[try=0]  res=true       time=302.26s    mem=1808MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=1]  res=true       time=319.05s    mem=1811MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=2]  res=true       time=526.33s    mem=1811MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=3]  res=true       time=496.54s    mem=1805MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=4]  res=true       time=465.40s    mem=1811MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=5]  res=true       time=444.89s    mem=1810MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=6]  res=true       time=491.49s    mem=1810MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=7]  res=true       time=472.84s    mem=1810MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=8]  res=true       time=474.64s    mem=1811MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[try=9]  res=true       time=439.50s    mem=1811MB      visit no. (base, inc)=(1.1876e+05, 1083)        no of cand. (max, avg)=(1, 1)   path len (max,avg)=(118999,118999.0)    iterations=243  trans.=7      e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=6.4E-5, iterations=243
+
+[Summary] path_len_avg=118999.0 iterations=243.0        result=true     e2b=0.0 time=443.293133307      trans=7.0
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking leader6_6.pm with property prop1_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking leader6_8.pm with property prop1_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking leader6_11.pm with property prop1_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking herman17_oneinit.pm with property P<=0.1 [ F ( G x1=0) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking herman19_oneinit.pm with property P<=0.1 [ F ( G x1=0) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking herman21_oneinit.pm with property P<=0.1 [ F ( G x1=0) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking bluetooth_oneinit.pm(mrec=4) with property prop1_qual.pctl
+
+[try=0]  res=false      time=8.55s      mem=715MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=301  trans.=488   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=301
+
+[try=1]  res=false      time=10.05s     mem=535MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=210  trans.=478   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=210
+
+[try=2]  res=false      time=8.60s      mem=712MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=235  trans.=498   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=235
+
+[try=3]  res=false      time=10.88s     mem=706MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=228  trans.=505   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=228
+
+[try=4]  res=false      time=8.61s      mem=406MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=200  trans.=494   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=200
+
+[try=5]  res=false      time=8.59s      mem=844MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=384  trans.=506   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=384
+
+[try=6]  res=false      time=8.88s      mem=713MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=291  trans.=498   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=291
+
+[try=7]  res=false      time=5.81s      mem=399MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=190  trans.=511   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=190
+
+[try=8]  res=false      time=6.73s      mem=395MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=186  trans.=509   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=186
+
+[try=9]  res=false      time=10.44s     mem=715MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(1999,1999.0)        iterations=237  trans.=487   e2b=0    Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=237
+
+[Summary] path_len_avg=1999.0   iterations=246.2        result=false    e2b=0.0 time=8.71517026424      trans=497.4
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking bluetooth_oneinit.pm(mrec=7) with property prop1_qual.pctl
+
+[try=0]  res=false      time=8.57s      mem=714MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2344.1327433628317)    iterations=226  trans.=949    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=226
+
+[try=1]  res=false      time=8.54s      mem=584MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2322.5294117647063)    iterations=204  trans.=954    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=204
+
+[try=2]  res=false      time=8.46s      mem=586MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2341.1052631578964)    iterations=266  trans.=958    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=266
+
+[try=3]  res=false      time=10.60s     mem=815MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2285.604361370717)     iterations=321  trans.=936    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=321
+
+[try=4]  res=false      time=7.05s      mem=586MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2334.195530726257)     iterations=179  trans.=952    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=179
+
+[try=5]  res=false      time=12.30s     mem=712MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2313.7410358565735)    iterations=251  trans.=936    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=251
+
+[try=6]  res=false      time=14.34s     mem=711MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2317.584070796461)     iterations=226  trans.=948    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=226
+
+[try=7]  res=false      time=10.43s     mem=627MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2354.0295857988153)    iterations=169  trans.=962    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=169
+
+[try=8]  res=false      time=5.77s      mem=584MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2302.317535545025)     iterations=211  trans.=940    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=211
+
+[try=9]  res=false      time=5.89s      mem=711MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2330.858407079647)     iterations=226  trans.=950    e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=226
+
+[Summary] path_len_avg=2324.60979455    iterations=227.9        result=false    e2b=0.0 time=9.19488267899      trans=948.5
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking bluetooth_oneinit.pm(mrec=10) with property prop1_qual.pctl
+
+[try=0]  res=false      time=6.26s      mem=710MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2954.5555555555543)    iterations=180  trans.=1379   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=180
+
+[try=1]  res=false      time=12.02s     mem=889MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2968.4444444444443)    iterations=360  trans.=1381   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=360
+
+[try=2]  res=false      time=8.12s      mem=791MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2962.4146341463406)    iterations=246  trans.=1388   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=246
+
+[try=3]  res=false      time=10.11s     mem=1092MB      visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2965.789667896679)     iterations=271  trans.=1366   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=271
+
+[try=4]  res=false      time=9.24s      mem=1097MB      visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,2967.6411149825776)    iterations=287  trans.=1408   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=287
+
+[try=5]  res=false      time=14.08s     mem=718MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2961.025316455696)     iterations=237  trans.=1390   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=237
+
+[try=6]  res=false      time=19.10s     mem=1093MB      visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2929.6358381502905)    iterations=346  trans.=1387   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=346
+
+[try=7]  res=false      time=12.51s     mem=892MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2931.721712538226)     iterations=327  trans.=1367   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=327
+
+[try=8]  res=false      time=22.39s     mem=1151MB      visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(3999,2950.04895104895)      iterations=429  trans.=1385   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=429
+
+[try=9]  res=false      time=9.93s      mem=583MB       visit no. (base, inc)=(970.42, 88.404)  no of cand. (max, avg)=(1, 1)   path len (max,avg)=(2999,2953.5454545454536)    iterations=154  trans.=1405   e2b=0   Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.00781, iterations=154
+
+[Summary] path_len_avg=2954.48226898    iterations=283.7        result=false    e2b=0.0 time=12.376982975       trans=1385.6
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking extreme.pm(N=18) with property prop2_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking extreme.pm(N=19) with property prop2_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking extreme.pm(N=20) with property prop2_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking scale.pm(N=1000,M=5) with property prop2_qual.pctl
+
+[try=0]  res=false      time=15.59s     mem=893MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.817)       path len (max,avg)=(2999,2976.853492333903)     iterations=1174       trans.=1999     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1174
+
+[try=1]  res=false      time=14.35s     mem=889MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.848)       path len (max,avg)=(2999,2987.1188118811883)    iterations=1010       trans.=2000     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1010
+
+[try=2]  res=false      time=13.93s     mem=1092MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.823)       path len (max,avg)=(2999,2981.0493642483166)    iterations=1337       trans.=2001     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1337
+
+[try=3]  res=false      time=19.92s     mem=1373MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.81)        path len (max,avg)=(2999,2981.5613079019045)    iterations=1835       trans.=1999     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1835
+
+[try=4]  res=false      time=8.25s      mem=587MB       visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.842)       path len (max,avg)=(2999,2984.507246376811)     iterations=621trans.=2001     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=621
+
+[try=5]  res=false      time=18.26s     mem=1093MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.827)       path len (max,avg)=(2999,2977.48716169327)      iterations=1441       trans.=2001     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1441
+
+[try=6]  res=false      time=19.67s     mem=1370MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.844)       path len (max,avg)=(2999,2979.737479361582)     iterations=1817       trans.=2001     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1817
+
+[try=7]  res=false      time=29.44s     mem=1699MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.826)       path len (max,avg)=(2999,2984.8156028368808)    iterations=2115       trans.=2000     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=2115
+
+[try=8]  res=false      time=17.62s     mem=1092MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.841)       path len (max,avg)=(2999,2984.1799576570224)    iterations=1417       trans.=2001     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1417
+
+[try=9]  res=false      time=19.14s     mem=1375MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(3, 1.834)       path len (max,avg)=(2999,2974.929978118159)     iterations=1828       trans.=2000     e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1828
+
+[Summary] path_len_avg=2981.22404024    iterations=1459.5       result=false    e2b=12.0        time=17.6177244425      trans=2000.3
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking scale.pm(N=10000,M=5) with property prop2_qual.pctl
+
+[try=0]  res=false      time=142.63s    mem=1788MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.71)      path len (max,avg)=(20999,20841.941443486146)   iterations=2203       trans.=19999    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=2203
+
+[try=1]  res=false      time=78.54s     mem=1780MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.77)      path len (max,avg)=(20999,20840.025641025604)   iterations=1170       trans.=19980    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1170
+
+[try=2]  res=false      time=101.37s    mem=1787MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.8)       path len (max,avg)=(20999,20830.417624521047)   iterations=1566       trans.=19989    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1566
+
+[try=3]  res=false      time=83.92s     mem=1789MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(17, 10.76)      path len (max,avg)=(20999,20818.52420016407)    iterations=1219       trans.=19973    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1219
+
+[try=4]  res=false      time=83.51s     mem=1788MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(17, 10.85)      path len (max,avg)=(20999,20856.25677830939)    iterations=1254       trans.=20004    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1254
+
+[try=5]  res=false      time=77.03s     mem=1786MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.81)      path len (max,avg)=(20999,20833.285714285717)   iterations=1050       trans.=19985    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1050
+
+[try=6]  res=false      time=34.68s     mem=1785MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(19, 10.83)      path len (max,avg)=(20999,20849.863422291997)   iterations=637trans.=19999    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=637
+
+[try=7]  res=false      time=124.99s    mem=1794MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.73)      path len (max,avg)=(20999,20840.2184057032)     iterations=1543       trans.=19991    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1543
+
+[try=8]  res=false      time=70.23s     mem=1788MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(18, 10.77)      path len (max,avg)=(20999,20829.052493438332)   iterations=1524       trans.=19989    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1524
+
+[try=9]  res=false      time=93.12s     mem=1789MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(17, 10.74)      path len (max,avg)=(20999,20817.481848184816)   iterations=1515       trans.=19977    e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1515
+
+[Summary] path_len_avg=20835.7067571    iterations=1368.1       result=false    e2b=12.0        time=89.0002452135      trans=19988.6
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking scale.pm(N=100000,M=5) with property prop2_qual.pctl
+
+[try=0]  res=false      time=510.33s    mem=1892MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(123, 101.2)     path len (max,avg)=(201999,201112.68421052632)  iterations=950trans.=199990   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=950
+
+[try=1]  res=false      time=409.67s    mem=1887MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(120, 100.2)     path len (max,avg)=(202999,200940.7773237997)   iterations=979trans.=199821   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=979
+
+[try=2]  res=false      time=641.26s    mem=1887MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(123, 100.9)     path len (max,avg)=(202999,201117.79194630883)  iterations=1490       trans.=200009   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1490
+
+[try=3]  res=false      time=736.63s    mem=1889MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(125, 100.9)     path len (max,avg)=(202999,201133.55657492366)  iterations=1635       trans.=200009   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1635
+
+[try=4]  res=false      time=447.70s    mem=1891MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(124, 100.5)     path len (max,avg)=(201999,200900.6018306637)   iterations=874trans.=199789   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=874
+
+[try=5]  res=false      time=343.42s    mem=1887MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(123, 100.4)     path len (max,avg)=(202999,201123.53300124526)  iterations=803trans.=200006   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=803
+
+[try=6]  res=false      time=641.22s    mem=1888MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(121, 100.8)     path len (max,avg)=(202999,200952.81062355678)  iterations=1299       trans.=199833   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1299
+
+[try=7]  res=false      time=676.20s    mem=1887MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(123, 100.8)     path len (max,avg)=(202999,200982.79779650035)  iterations=1543       trans.=199855   e2b=12  Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1543
+
+[try=8]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking scale.pm(N=1000,M=50) with property prop2_qual.pctl
+
+[try=0]  res=false      time=16.53s     mem=1380MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(6, 2.762)       path len (max,avg)=(12999,6660.728395061731)    iterations=810trans.=1998     e2b=1227        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=810
+
+[try=1]  res=false      time=14.51s     mem=1381MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(7, 2.825)       path len (max,avg)=(12999,6645.848989298451)    iterations=841trans.=2001     e2b=1238        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=841
+
+[try=2]  res=false      time=25.86s     mem=1784MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(7, 2.82)        path len (max,avg)=(12999,6730.686541737649)    iterations=1174       trans.=2001     e2b=1246        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1174
+
+[try=3]  res=false      time=36.59s     mem=1782MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(7, 2.861)       path len (max,avg)=(11999,6598.871547848426)    iterations=1557       trans.=1997     e2b=1237        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1557
+
+[try=4]  res=false      time=30.01s     mem=1383MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(7, 2.785)       path len (max,avg)=(11999,6652.937947494033)    iterations=1257       trans.=1999     e2b=1257        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1257
+
+[try=5]  res=false      time=19.69s     mem=1378MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(6, 2.783)       path len (max,avg)=(10999,6644.203679369251)    iterations=761trans.=2002     e2b=1237        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=761
+
+[try=6]  res=false      time=28.19s     mem=1778MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(6, 2.8) path len (max,avg)=(12999,6623.999999999998)    iterations=1184 trans.=2001   e2b=1215        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1184
+
+[try=7]  res=false      time=13.03s     mem=1371MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(6, 2.772)       path len (max,avg)=(11999,6606.700312174818)    iterations=961trans.=2000     e2b=1221        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=961
+
+[try=8]  res=false      time=15.41s     mem=1780MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(7, 2.831)       path len (max,avg)=(11999,6665.209732693631)    iterations=1459       trans.=1999     e2b=1259        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=1459
+
+[try=9]  res=false      time=9.80s      mem=1381MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(6, 2.838)       path len (max,avg)=(11999,6638.810426540284)    iterations=844trans.=2004     e2b=1249        Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=844
+
+[Summary] path_len_avg=6646.79975722    iterations=1084.8       result=false    e2b=1238.6      time=20.9624459982      trans=2000.2
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking scale.pm(N=1000,M=500) with property prop2_qual.pctl
+
+[try=0]  res=false      time=663.30s    mem=1986MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(40, 27.8)       path len (max,avg)=(861999,350796.1830985911)   iterations=710trans.=2001     e2b=125496      Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=710
+
+[try=1]  res=false      time=846.40s    mem=2002MB      visit no. (base, inc)=(11.966, 1)       no of cand. (max, avg)=(39, 27.43)      path len (max,avg)=(846999,349090.4634146346)   iterations=984trans.=2002     e2b=124582      Simulation method parameters: type I error=0.01, type II error=0.01, width=0.01, error=0.001, min. prob=0.5, iterations=984
+
+[try=2]  TO
+
+[Summary] result=TO
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking fms.sm(n=10) with property P>=0.95 [ G (F (M1=0 & M2=0 & M3=0) ) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking fms.sm(n=20) with property P>=0.95 [ G (F (M1=0 & M2=0 & M3=0) ) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking fms.sm(n=40) with property P>=0.95 [ G (F (M1=0 & M2=0 & M3=0) ) ]
+
+[try=0]  TO
+
+[Summary] result=TO
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking tandem.sm(c=500) with property P>=0.95 [ G (F sc=c) ];
+
+[try=0]  TO
+
+[Summary] result=TO
+
+---------------------------------------
+Sim. candidate (method=SPRTE, cnd. error=0.001, Type-I-II errors=0.01, indef. width=0.01, error ratio=0.5, reach bound=1000)
+Checking gridworld.pm(N=300,p=0.999) with property prop4_qual.pctl
+
+[try=0]  TO
+
+[Summary] result=TO
+
+

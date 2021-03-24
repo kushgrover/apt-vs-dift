@@ -1,0 +1,5 @@
+-ex -mecdec -mecreach interval -mecmpsoln valiter -epsilon 1e-8
+-ex -politer -mcgbsysmethod scc -mdppimethod full -epsilon 1e-8
+-ex -mecdec -mecreach interval -mecmpsoln politer -mcgbsysmethod scc -mdppimethod full -epsilon 1e-8
+
+

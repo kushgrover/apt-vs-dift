@@ -1,0 +1,53 @@
+\begin{figure}[t]
+\centering
+\subcaptionbox{\label{fig:VI_MC}}{
+	\begin{tikzpicture}[scale=1]
+	
+	\drawcirc (0) at (0,0) {$\state<0>$};
+	\drawcirc (1) at (1,0) {$\state<1>$};
+	\drawcirc (2) at (2,0) {$\state<2>$};
+	\drawdummy (mid) at (2.7,0) {};
+	\drawcirc (3) at (3.3,-1) {$\state<3>$};
+	\drawcirc (t) at (3.3,1) {$\mathsf t$};
+	
+	\draw[->] (0) to (1);
+	\draw[->] (1) to (2);
+	\draw[-] (2) to (mid);
+	
+	\draw (mid) --  (t);% node [midway,anchor=north east] {0.5};
+	\draw (mid) --  (3);%node [midway,anchor=south east] {0.5};
+	\draw (mid) to [bend left,looseness=2,out=290,in=270] (2) ;
+	
+	\draw[->]  (3) to [loop above]  (3);
+	\draw[->]  (t) to [loop above] (t) ;
+	
+	
+	\end{tikzpicture}
+} %\quad %
+\subcaptionbox{\label{fig:VI_table}}
+{	
+	\begin{tabular}{c c c c}
+		\toprule
+		Iter. & $\lb(\state<0>)$ & $\lb(\state<1>)$ & $\lb(\state<2>)$\\ \midrule
+		0	&	0			&	0			&	0			\\
+		1	& 	0			& 	0			&	$\sfrac 1 3$	\\
+		2	&	0			&	$\sfrac 1 3$	&	$\sfrac 4 9$ \\
+		3	&	$\sfrac 1 3$	&	$\sfrac 4 9$ &	$\sfrac{13}{27}$\\
+		4   &	$\sfrac 4 9$ & $\sfrac{13}{27}$ & $\sfrac{40}{81}$ \\ \bottomrule
+	\end{tabular}
+} %\quad %
+\subcaptionbox{\label{fig:BVI_table}}
+{	
+	\begin{tabular}{c l l}
+		\toprule
+		Iter. & $\lb(\state<2>)$ & $\ub(\state<2>)$\\ \midrule
+		0	&	0	 &	1		\\
+		1	& 	0.01  & 0.99 			\\
+		2	&	0.029~~& 0.980		\\
+		3	&	0.039 & 0.970\\
+		4   &	0.048 & 0.961	\\ \bottomrule
+	\end{tabular}
+}
+
+\caption{(a) Example Markov chain (b) Under approximations computed by value iteration, see Example \ref{ex:vi} (c) Under- and over-approximations computed by bounded value iteration, see Example \ref{ex:bvi}.}
+\end{figure}

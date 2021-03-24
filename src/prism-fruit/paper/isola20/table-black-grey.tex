@@ -1,0 +1,41 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{lscape}
+\begin{table}[t]
+\centering
+\caption{Runtime (in seconds) comparison of black and grey SMC for various benchmarks. BVI runtimes are also presented as a baseline.}
+\label{tab:grey-v-black}
+\setlength{\tabcolsep}{6pt} % Default value: 6pt
+\begin{tabular}{@{}l@{\hspace{-0.5em}}rrrrrr}
+	\toprule
+	Model/                                  &    Size &               $\pmin$ &             BSCC & \multicolumn{2}{c}{SMC} & BVI \\
+	\cmidrule(lr){5-6}
+	Property                                &         &                       & (No., Max. Size) & Black &            Grey &     \\ \midrule
+	\texttt{bluetooth(10)}                  & $>569K$ & $7.81 \times 10^{-3}$ &       $>5.8K, 1$ &     9 &               \textbf{7} &  TO \\
+	\vspace{0.5em}
+	\texttt{time\_qual}                     &         &                       &                  &       &                 &     \\
+	\texttt{brp\_nodl(10K,10K)}             &  $>40M$ &    $1 \times 10^{-2}$ &       $>4.5K, 1$ &    86 &              \textbf{84} &  TO \\
+	\vspace{0.5em}
+	\texttt{p1\_qual}                       &         &                       &                  &       &                 &     \\
+	\texttt{crowds\_nodl(8,20)}             &     68M &    $5 \times 10^{-2}$ &         $>3K, 1$ &    10 &               \textbf{8} &  TO \\
+	\vspace{0.5em}
+	\texttt{positive\_qual}                 &         &                       &                  &       &                 &     \\
+	\texttt{egl(20,20)}                     &   1719T &    $5 \times 10^{-1}$ &           $1, 1$ &    43 &              \textbf{25} &  TO \\
+	\vspace{0.5em}
+	\texttt{unfairA\_qual}                  &         &                       &                  &       &                 &     \\
+	\texttt{gridworld(400,0.999)}           &    384M &    $1 \times 10^{-3}$ &      $796, 160K$ &    15 &               \textbf{8} &  TO \\
+	\vspace{0.5em}
+	\texttt{prop\_qual}                     &         &                       &                  &       &                 &     \\
+	\texttt{herman-17}                      &     10G &  $4.7 \times 10^{-7}$ &          $1, 34$ &    TO &              \textbf{73} &  98 \\
+	\vspace{0.5em}
+	\texttt{4tokens}                        &         &                       &                  &       &                 &     \\
+	\texttt{leader6\_11}                    & $>280K$ &  $5.6 \times 10^{-7}$ &           $1, 1$ &   \textbf{106} &             152 & OOM \\
+	\vspace{0.5em}
+	\texttt{elected\_qual}                  &         &                       &                  &       &                 &     \\
+	\texttt{nand(50,3)}                     &     11M &    $2 \times 10^{-2}$ &          $51, 1$ &    11 &              \textbf{10} & 455 \\
+	\vspace{0.5em}
+	\texttt{reliable\_qual}                 &         &                       &                  &       &                 &     \\
+	\texttt{tandem(2K)}                     & $>1.7M$ &  $2.4 \times 10^{-5}$ &       $1, >501K$ &     \textbf{7} &               \textbf{7} &  62 \\
+	\texttt{reach\_qual}                    &         &                       &                  &       &                 &     \\ \bottomrule
+\end{tabular}
+\end{table}

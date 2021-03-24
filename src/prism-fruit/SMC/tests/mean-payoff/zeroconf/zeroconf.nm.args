@@ -1,0 +1,4 @@
+# -ex -aperiodicitytau 0.9 -next_state DETERMINISTIC -ontheflymp 1
+-ex -aperiodicitytau 0.9 -next_state MAX_DIFF -ontheflymp 1
+# -ex -aperiodicitytau 0.9 -next_state HIGH_PROB -ontheflymp 1
+# -ex -aperiodicitytau 0.9 -next_state UNIFORM -ontheflymp 1

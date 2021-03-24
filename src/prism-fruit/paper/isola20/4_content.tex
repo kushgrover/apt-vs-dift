@@ -1,0 +1,318 @@
+\section{Description of algorithms}\label{sec:algos}
+
+In this section, we describe all of the algorithms that we compare in this paper.
+They all use the framework of Algorithm \ref{alg:framework}. The differences are in the instantiations of the functions (written in capital letters).
+This allows for an easy and modular comparison.
+
+\begin{algorithm}[htbp]
+	\caption{Framework for all considered algorithms}\label{alg:framework}
+	\begin{algorithmic}[1]
+		\Require{MC $\MC$, reachability objective $\targetset$}
+		\Ensure{(An estimate of) $\probability_{\initstate}(\Diamond \targetset)$}
+		\Procedure{Compute reachability probability}{}
+		\State $\INITIALIZE$
+		
+		\Repeat
+		\State $X \gets \GETSTATES$
+		\State $\UPDATE(X)$
+		\Until{$\TERMCRIT$}
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+
+\subsection{Value iteration}
+
+\emph{Value iteration} (VI), e.g. \cite{Puterman}, computes the value for all states in the MC. 
+As memory, it saves a rational number (the current estimate of the value) for every state.
+In $\INITIALIZE$, the estimate is set to 1 for target states in $\targetset$ and to 0 for all others.
+$\GETSTATES$ returns the whole state space, as the estimate of all values is updated simultaneously.
+The $\UPDATE$ works by performing a so called \emph{Bellman backup}, i.e. given the current estimate function $\lb<i>$, the next estimate $\lb<i+1>$ is computed by applying the Bellman Equation (\ref{eq:Vs}) as follows:
+\[
+\lb<i+1>(\state) = \sum_{\mathsf{s'} \in \states} \trans(\state,\state') \cdot \lb<i>(\state')	
+\]
+
+\input{fig_VIMC}
+
+\begin{example}\label{ex:vi}
+	Consider the MC from Figure \ref{fig:VI_MC}, with $\trans(\state<2>,\state<2>)=\trans(\state<2>,\mathsf t)=\trans(\state<2>,\state<3>)=\frac 1 3$ and the reachability objective $\{t\}$.
+	The estimates that VI computes in the first 4 iterations are depicted in Figure \ref{fig:VI_table}.
+	The target state $\mathsf t$ is initialized to 1, everything else to 0. 
+	The estimate for $\state<3>$ stays at 0, as it is a BSCC with no possibility to reach the target state.
+	Since these two states do not change, they are omitted in the figure.
+	In every iteration, the estimates are updated and become more precise, coming closer to the true value $0.5$ for $\state<0>$, $\state<1>$ and $\state<2>$.
+	However, they converge to $0.5$ only in the limit, as for any finite number of iterations there is a positive probability to remain in $\state<2>$.
+	Note that $\initstate$ always is two steps behind $\state<2>$, as it takes two iterations to backpropagate the current estimate.
+	
+\end{example}
+
+VI converges to the true value only in the limit, hence we need some termination criterion $\TERMCRIT$ to stop when we are close enough. However, to be certain that the estimate is close, one has to perform an exponential number of iterations \cite{visurvey}, which is infeasible. Hence, usually this version of VI does not give convergence guarantees, but instead just runs until the difference between two successive iterations is small.
+The result of this heuristic is guaranteed to be a lower bound, but can be arbitrarily imprecise~\cite{HM}, as we will also see in Example \ref{ex:bvi}.
+
+
+\subsection{Bounded value iteration}
+To be able to give convergence guarantees, \emph{Bounded value iteration} (BVI, also called interval iteration) was introduced more generally for Markov decision processes in \cite{atva14,HM}. In this paper, we only focus on Markov chains, i.e. Markov decision processes with a single action in every state. 
+In addition to the under-approximation computed by VI, this approach also computes a convergent over-approximation. For this, it stores a second rational number for every state.
+Dually to the under-approximation, $\INITIALIZE$ sets the estimate to 0 in states that cannot reach the target and 1 everywhere else. Note that finding the states with value 0, i.e. BSCC that do not contain the target, BVI has to perform a graph analysis, e.g. a backwards search from the targets.
+BVI still works on the whole state space and the update is completely analogous to VI, only this time updating both approximations.
+As $\TERMCRIT$, BVI checks that difference between the over- and under-approximation in the initial state is smaller than a given precision $\varepsilon$.
+This guarantees that the returned value is $\varepsilon$-precise.
+
+\begin{example}\label{ex:bvi}
+		Consider the MC from Figure \ref{fig:VI_MC} with the same objective, but this time with 
+		$\trans(\state<2>,\state<2>)= 0.98$ and $\trans(\state<2>,\mathsf t)=\trans(\state<2>,\state<3>) = 0.01$.
+		Note that by pre-processing we set the over approximation $\ub(\state<3>)$ to 0, as it is a BSCC with no possibility of reaching the target. 
+		The estimates BVI computes for $\state<2>$ in the first 4 iterations are depicted in Figure \ref{fig:BVI_table}.
+		
+		If we were running VI only from below, we might stop after iteration 4, as the lower bound changes by less than $0.01$ between these iterations and hence it seems to have converged close to the value.
+		However, the difference between upper and lower bounds is still very high, so BVI knows that there still is a huge uncertainty in the values, as it could be anything between 0.048 and 0.961.
+		Eventually, both estimates converge close enough to 0.5; for example, after around 400 iterations the lower bound is 0.49 and the upper bound 0.51. 
+		Then BVI can return the value 0.5 (the center of the interval) with a precision of $0.01$, as this value is off by at most that.
+\end{example}
+
+\subsection{Simulation-based asynchronous value iteration}
+
+The biggest drawback of the two variants we introduced so far is that they always work on the whole state space. 
+Because of the state-space explosion, this is often infeasible.
+In contrast, asynchronous value iteration only updates parts of the state space in every iteration of the loop, i.e. $\GETSTATES$ does not return the whole state space, but instead heuristically selects the states to update next.
+This not only speeds up the main loop, but also allows the algorithm to reduce the memory requirements.
+Indeed, instead of storing estimates for all states, one stores estimates only for the partial model consisting of previously updated states.
+In~\cite{RTDP,BRTDP,atva14}, the heuristic for selecting the states is based on simulation: a path is sampled in the model, and only the states on that path are updated. 
+The partial model contains all states that have been encountered during some of the simulations. 
+If the part of the state space that is relevant for convergence of value iteration is small, this can lead to enormous speed-ups~\cite{atva14,cores}. For more details on why this happens and a formal definition of 'state space relevant for convergence', we refer the interested reader to~\cite{cores}.
+
+\begin{algorithm}[htbp]
+	\caption{Simulation-based implementation of $\GETSTATES$}\label{alg:simulate}
+	\begin{algorithmic}[1]
+		\Require{MC $\MC$, reachability objective $\targetset, \initstate$}
+		\Ensure{A set of states $X \subseteq \states$}
+		\Procedure{SIMULATE}{}
+		\State $\path \gets \initstate$		
+		\Repeat
+		\State $\state' \gets$ sample from $\delta(\last{\path})$ according to $\nextstate$
+		\State $\path \gets \path \state'$
+		\Until{$\last{\path} \in \targetset$ or $\STUCK$}
+		\State \Return $\path$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+Algorithm~\ref{alg:simulate} shows how states can be sampled through simulations, as done in \cite{atva14}:
+Starting from the initial state, in every step of the simulation a successor is chosen from the distribution of the last state on the path. 
+Note that this choice depends on another heuristic $\nextstate$. The successor can be chosen according to the transition probabilities $\delta$, but it has proven to be advantageous to additionally consider the difference between the upper and lower bound in the successor states \cite{BRTDP,atva14}. 
+In consequence, states where we already know a lot (under- and over-approximations are close to each other) are given less priority than states where we still need information.
+
+The simulation is stopped in two cases: Either (i) it reaches a target state or (ii) it is stuck in a BSCC with no path to the target.
+Different heuristics for checking whether the simulation is stuck are discussed in depth in Section \ref{sec:stuck}.
+Note that being able to differentiate between targets and non-target BSCCs during the simulations allows us not to do anything in $\INITIALIZE$; we can set the value to 1 when reaching a target and 0 in the other case.
+The $\UPDATE$ function for simulation based asynchronous value iteration again uses the Bellman equation (\ref{eq:Vs}) to update the estimates of all states on the path; 
+moreover, it can utilize additional information: Since $\GETSTATES$ returns a path, there is a notion of order of the states. Updating the states in reverse order backpropagates information faster.
+
+\input{fig_brtdp}
+
+\begin{example}
+	Consider the MC in Figure \ref{fig:brtdp}, again with reachability objective $\{t\}$.
+%	$\varepsilon$ and $1-\varepsilon$ denote transition probabilities.
+	The cloud represents an arbitrarily large state space.
+	However, since it is only reachable with a very small probability $\varepsilon$ (and we are interested in an $\varepsilon$-precise solution), it need not be explored.
+	Let the first sampled path be $\state<0> \state<1> \state<2> \mathsf t$. This happens with high probability, as the only other possibility would be to select a successor from the cloud in state $\state<0>$, but since the selection process depends on the transition probabilities $\trans$, going to $\state<1>$ has a higher probability.
+	After the simulation reaches $\mathsf t$, this value is backpropagated in reverse order. 
+	First the lower estimate $\lb(\state<2>)$ is set to 1, then $\lb(\state<1>)$ is set to 1, then $\lb(\state<0>)$ is set to $1-\varepsilon$. 
+	At this point the algorithm has converged, as difference between the lower and upper bound is~$\varepsilon$.
+	
+	So in this example, sampling the most probable path a single time gives a good approximation. The algorithm avoids exploring the large cloud and backprogagates values faster than synchronous VI.
+\end{example}
+
+\begin{example}\label{ex:adv}
+	As an adversarial example, consider the MC in Figure \ref{fig:adv}.
+	Here, the model exhibits high branching, so every single path has a low probability, and only by aggregating all paths we actually get a high value.
+	Unlike the previous example, there is no part of the state space that is clearly irrelevant.
+	In fact, to achieve precision of $\varepsilon$ the algorithm has to see so many paths that their cumulative probability is $1-\varepsilon$, which in this case means seeing all but one transition from the starting state. 
+	This needs at least $\frac 1 \varepsilon$ simulations, but since the successors are chosen probabilistically, most likely a lot more.
+\end{example}
+
+Note that similarly to synchronous VI, there are versions of asynchronous VI without (RTDP \cite{RTDP}) and with  (BRTDP \cite{BRTDP,atva14})\footnote{While all are more generally applicable to Markov decision processes, \cite{BRTDP} only ensures convergence if no end components \cite{BK08} are present (for MC, no BSCCs without a target are present) and \cite{atva14} lifts this restriction.} guaranteed error bounds.
+	
+\subsection{Statistical model checking}
+
+Algorithms for statistical model checking (SMC), \cite{Younes02}, are different from all previously described ones in two ways, namely what they store and what they return. 
+The VI-based algorithms store estimates for every (seen) state and they update these values to be ever more precise.
+Thus, the returned bounds on the values are certainly correct, although possibly quite loose.
+In contrast, SMC stores only a single accumulator (for the value of the initial state) and the returned value is probably approximately correct (PAC \cite{pac}).
+Being PAC with probability $\alpha$ and approximation $\epsilon>0$ guarantees the following:
+with high probability ($\alpha$), the returned value is close to the true value (off by at most $\varepsilon$).
+However, the returned confidence interval is not guaranteed to be a valid under- and over-approximation; 
+if we are unlucky (i.e. with the remaining probability $1-\alpha$), there is no guarantee whatsoever on the returned value.
+
+SMC does not need to do anything in $\INITIALIZE$.
+It only stores a single accumulator to remember how often a target state was reached.
+$\GETSTATES$ works as in Algorithm \ref{alg:simulate} with $\nextstate$ typically sampling the successor according to the transition probabilities $\trans$ (in some settings, importance sampling may also be possible, e.g. \cite{DBLP:conf/cav/JegourelLS12,DBLP:conf/setta/BuddeDH17}).
+$\UPDATE$ remembers whether we reached the target or not; in the end we can divide the number of reaches by the total number of samples to get the probability estimate. 
+$\TERMCRIT$ is a (typically low) number of samples that depends on the required probability of the guarantee and the width of the confidence interval; see \cite[Section 2.2]{DHKPjournal} for details or \cite{DBLP:journals/tomacs/JegourelSD19} for more advanced techniques.
+
+\begin{example}\label{ex:smc}
+	Consider again the MC depicted in Figure \ref{fig:VI_MC}.
+    Let the first sampled path be $\state<0> \state<1> \state<2> \state<2> \mathsf t$. At this point the simulation stops, as we have reached a target state, and we remember that we have seen a target once.
+    Let the second path be $\state<0> \state<1> \state<2> \state<2> \state<2> \state<3> \state<3> \dots$.
+    On the one hand, the $\STUCK$ function has to let the simulation continue, even though $\state<2>$ is seen 3 times and it looks like a cycle.  
+    On the other hand, it has to detect that the simulation will loop forever in $\state<3>$ and has to stop it.
+    Ways to detect this are discussed in Section \ref{sec:stuck}.
+    After detecting that we are stuck, we remember that the simulation did not reach the target.
+        
+    Let the required probability of the guarantee be $\alpha=0.9$ and the width of the confidence interval $\varepsilon=0.1$.
+    Using Hoeffding's inequality \cite{hoeffding} we can show that the required number of samples for this is 461.
+    So assume that after 461 simulations we have seen the target 223 times. 
+    Then we know that with probability at least $0.9$, the value is in the interval $\sfrac {223} {461} \pm 0.05$, i.e. $[0.434,0.534]$.
+    Increasing the number of simulations can both increase the confidence or decrease the width of the interval.
+    
+    Note that this number of simulations is independent of the system. While 461 simulations are a lot for this small system, the number would be the same if we were considering a model with several billion states where value iteration is impossible.
+\end{example}
+
+
+
+\section{STUCK}\label{sec:stuck}
+In this section, we discuss heuristics for detecting whether a simulation is stuck in a BSCC with no path to a target state.
+We also propose one new such heuristic with convenient theoretical properties.
+
+For simulation-based asynchronous value iteration, previous work either excluded the existence of non-target BSCCs in their assumptions \cite{RTDP,BRTDP} or used a heuristic with no false negatives, but the possibility of false positives \cite{atva14}.
+This means that if the simulation is stuck in a BSCC, the simulation definitely is stopped, which is required for termination. 
+However, if the simulation is not stuck in a BSCC, it might still be stopped, guessing the value of the last state in the path is 0, although it might not be.
+The $\STUCK$-heuristics used in previous work either depend on the path length (\cite{atva14}, \cite[Chapter 7.5]{ujma}) or simply stops exploring when any state is seen twice \cite[Appendix A.3]{cav19}.
+
+SMC has to be sure with high probability that the simulation is stuck, as otherwise it loses the probabilistic guarantee.
+In \cite{YCZ10}, two approaches are described. 
+The first approach requires knowledge of the second eigenvalue of the MC in order to guarantee asymptotic convergence. However, getting the second eigenvalue is as hard as the verification problem itself.
+The second approach works in the grey-box setting and pre-processes the MC so that all potentially infinite paths are eliminated.
+A similar transformation, using white-box information, was suggested in \cite{ase10}.
+However, both of these approaches transform the whole model and thus face problems in the case of very large models.
+% The second approach of [26] requires the knowledge of the chain’s topology, which is used to transform the chain so that all potentially infinite paths are eliminated. In [9], a similar transformation is performed, again requir-ing knowledge of the topology. The (pre)processing of the state space required by the topology-aware methods, as well as by traditional numerical methods for Markov chain analysis, is a major practical hurdle for large (or unknown) statespaces
+
+An alternative was suggested in \cite{DHKP16}.
+It monitors the finite path sampled during the simulation, implicitly constructing a graph with all seen states as nodes and all seen transitions as edges.
+The \emph{candidate} of the current path is the (possibly empty) set of states forming the maximal BSCC of this graph.
+Intuitively, it is what we believe to be a BSCC given the observation of the current simulation. 
+This candidate has to be validated, because as we saw in Example \ref{ex:smc}, a state set can look like a BSCC for several steps before being exited.
+In the black-box setting, this validation works by continuing the simulation until the probability of overlooking some transition exiting the candidate becomes very small \cite{DHKP16}.
+
+In this paper, we pinpoint that in the grey-box or white-box setting, this costly type of validation is not necessary. 
+Instead of validating the candidate by running around in it for a huge number of steps, one can verify it using the additional information on the model. 
+If no successor of any state in the candidate is outside of the candidate, then it indeed is a BSCC. 
+Formally, for a candidate $T$, we check that $\{\state \mid \exists \mathsf t \in T: \state \in \post(t)  \} \subseteq T$ (if the topology is known), or alternatively that $\forall \mathsf t\in T: |\widehat{\post}(t)|=|\post(t)|$ (in what we defined as the grey-box setting) where $\widehat{\post}$ yields the number of successors within the observed candidate.
+
+\begin{example}
+	Consider again the MC depicted in Figure \ref{fig:VI_MC}.
+	When a simulation enters $\state<3>$, $\STUCK$ should return true in order to stop the simulation, as it has reached a BSCC with no path to a target.
+	In the black box setting of \cite{DHKP16}, this is only possible after continuing the simulation for another huge amount of steps. 
+	For example, even in a BSCC with only a single state, hundreds of further steps can be necessary to reach the required confidence.
+	Given the grey-box information, the algorithm can determine that all successors of the states in the candidate ($\{\state<3>\}$) have been seen and conclude that the candidate is indeed a BSCC.
+\end{example}
+
+However, this check stops the simulation and can incur an overhead if there are many SCCs in the transient part of the state space. 
+Hence, we can delay it, not checking at the first occurrence of a cycle, but e.g. only when every state in the candidate has been seen twice.
+Alternatively, one can only allow the check every $n$ (e.g. hundred) steps of the simulation.
+Depending on the model and the implementation of the algorithm, these heuristics can have some impact on the runtime.
+% we only want to perform it every $n$ steps or after getting a candidate of a certain \emph{strength} $k$, i.e. every state of the candidate was seen at least $k$ times.
+%See Section~\ref{sec:discussion} for a discussion of the effect of these parameters. %\todo{this part kinda depends on what we want to say in discussion and what actually happens in experiments. Also check whether we actually keep the promise of investigating these parameters.}
+
+Furthermore, one might modify this heuristic even further.
+If a state of the BSCC is only reached with low probability, it takes many steps for the simulation to reach it.
+When we check whether the current candidate is a BSCC, this state might not have occurred in the simulation yet. 
+Instead of concluding that the information is insufficient and the simulation has to continue, one could deterministically explore the unknown successors and \emph{compute} the BSCC.
+On the one hand, for small to medium sized BSCCs, this could result in a speed-up. 
+%However, for large BSCCs or if the whole model forms an SCC, this could result in exploring the whole model.
+On the other hand,  it increases the overhead when transient SCCs are checked by $\STUCK$.
+%\todomaxi{I removed the comment on PRISM, cause we are not certain it is their fault. Also, the problem is not model construction, but checking whether some target is in the BSCC, as then you need to access model information, which takes a while. But we are not certain enough to say that, and it is not that interesting}
+%, particularly costly in PRISM, where simulation and model construction do not work efficiently together.
+Consequently, in the available benchmarks, this heuristic did not prove advantageous.
+Hence we do not even report on it in the evaluation section.
+
+%This STUCK also works for BRTDP. 
+%\todo{Did we implement that? Do we have models were it makes a difference? Do we want to explicitly say this?}
+	%Would have to have a large SCC in the transient part, which is hard to leave and always breaks the paths. 
+
+
+\section{Discussion}\label{sec:discussion}
+
+
+\subsection{Dependency of simulation length on topology}\label{sec:simBad}
+
+Although the number of samples in SMC is independent of the model size, the length of the simulations is highly dependent on the model size and even more on the structure.
+Indeed, any kind of cyclic behaviour in the transient part of the state space increases the simulation time for two reasons.
+Firstly, the simulation loops in transient SCCs and does not make progress towards a target or a BSCC.
+Secondly, the check whether the simulation is stuck in transient SCCs incurs an overhead.
+An adversarial handcrafted worst-case example where simulations struggle is given in~\cite[Figure 3]{HM}.
+Moreover, the structure of BSCCs affects the length of the simulation. 
+For cyclic BSCCs, the simulation easily encounters all states of the BSCC and can quickly terminate.
+For more complex topologies, some states are typically only seen with very low frequency and thus the simulation takes longer.
+
+If the model exhibits many transient SCCs, using any simulation-based technique is problematic. 
+
+\subsection{Black, grey and white SMC}
+
+The difference between the variants of SMC we report on are their knowledge of the transition system: $\pmin$ corresponds to black, the number of successors to grey and the exact successors and probabilities to the white-box setting.
+This information can be used in the $\STUCK$-check; apart from that, the algorithms are the same.
+
+%Our heuristic using the additional information of the white box setting did not speed up the algorithm, as the overhead for the additional checks was too large, see end of Section \ref{sec:stuck}.
+
+
+Comparing grey and black box, it is apparent that simulations in grey box can be much shorter, as upon detection of a candidate that is a BSCCs the simulation is immediately stopped, whereas in the black box setting it has to continue for a number of steps.
+This number of steps depends on two things: (i) The size of the BSCC, as larger BSCC take longer to explore, especially since all states, no matter how improbable, need to be seen a certain amount of times, and (ii) the given under-approximation of the minimum transition probability $p_{min}$, as this determines how often every state in the candidate has to be seen until the probability of a false positive is small enough.
+
+Thus, for large BSCCs or small $\pmin$, grey SMC is clearly better, as we also experimentally validate in Table \ref{tab:herman-short} (large BSCC) and Table \ref{tab:fsmc-vary-pmin} (various $\pmin$) in the next section.
+For small BSCCs (e.g. only of size 1) and not so small $p_{\min}$, black and grey SMC become more comparable, but grey SMC still has shorter simulations.
+However, practically, the overhead of verifying the candidates in grey SMC can be so large that black SMC can even be slightly faster than grey SMC (see e.g., \texttt{leader6\_11} in Table \ref{tab:grey-v-black}).
+
+Heuristically reducing the number of checks in grey SMC (as described in Section \ref{sec:stuck}) can make it faster again, but the effectiveness of the heuristics depends on the models. 
+So, if it is known that the BSCC-detection is very easy for black SMC (e.g. they are of size 1 or cyclic and $\pmin$ is not too small), black SMC can be a viable choice. 
+However, as black SMC is never far better, using grey SMC is the safer variant when facing models with uncertain topology.
+
+\subsection{Comparison of algorithms}
+%\todo{DT/Table for algo selection in final version?}
+Finally, we compare the (dis-)advantages of the different algorithms, giving a practical decision guidance.
+If hard guarantees are required, then  BVI or BRTDP are to be used.
+The latter is simulation based, and thus good if only a small part of the state space is relevant for convergence. 
+Additionally, if the model is too large for BVI, BRTDP still has a chance, but quite possibly the partial model will also be too large.
+Conversely, if the model contains lots of transient SCCs, BVI is preferable, as simulation based approaches fail on this kind of model, see Section \ref{sec:simBad}.
+Note that, if there are small probabilities present, it might take very long for BVI and BRTDP to converge, see Example \ref{ex:bvi}.
+
+For a quick estimate, or if PAC guarantees are sufficient, or if the system is too large, so that it is not possible to provide hard guarantees, SMC is to be used, if possible (white or grey box setting) in our grey variant.
+As both the memory and the termination criterion are independent of the size of the system, SMC always has a chance to yield an estimate, which additionally comes with a probabilistic guarantee.
+
+There is no case in which un-guaranteed (synchronous or asynchronous) VI are preferable, as they suffer from the same drawbacks as BVI and BRTDP, but additionally do not provide guarantees.
+Whenever hard guarantees are not of interest and the system is not strongly connected, grey SMC should be used for a quick estimate.
+%Whenever guarantees are not of interest, SMC yields the quickest estimate. => Actually not true, see exp; hermann17 has 130,000 states, but VI is faster.
+
+
+\subsection{Extensions to other unbounded-horizon properties}
+	For more complex unbounded-horizon properties \cite{BK08}, such as Until (avoid-reach), LTL or long-run average reward, (B)VI pre-processes the state space to analyze the BSCCs \cite{BK08} and BRTDP \cite{atva14} can either do the same  or analyze the encountered BSCCs only. 
+	Black SMC of \cite{DHKPjournal} is applicable through additional analysis of the BSCC candidates after they have been found likely to be BSCCs.
+	This is directly inherited by grey SMC and makes it available for these specifications with low overhead.
+
+
+
+%\para{INITIALIZE:}
+%For VI, set the initial values. 
+%For BRTDP and our SMC, nothing.
+%For the other SMC, precompute 0 states.
+%
+%
+%\para{TERM\_CRIT:}
+%For VI and BRTDP, $\varepsilon$-convergence.
+%For SMC, necessary number of samples.
+%
+%\para{GET\_STATES:}
+%For VI: Everything.
+%For BRTDP and SMC: Sample path until target or STUCK.
+%
+%\para{STUCK:}
+%For BRTDP: Some heuristic (increasing path length, state seen twice...)
+%For SMC: Depends. Can be our white thing (with different ideas), can be the candidate thing, can be importance sampling or whatever else there exists.
+%Different ideas: When we think we have candidate: Check. If true, done. Else: Continue simulation/Unfold for n steps.
+%
+%\para{UPDATE}
+%For VI: Bellman backup
+%For BRTDP: Infer value of place where path ended. (Might use STUCK ideas), then Bellman backup.
+%For SMC: Remember whether target or STUCK.
+
+
+

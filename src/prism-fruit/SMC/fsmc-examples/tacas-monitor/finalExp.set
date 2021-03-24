@@ -1,0 +1,7 @@
+# short name of the experiment; long name; cmd arguments
+
+cautious1;Cautious Monitor 1-strong;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.1
+#cautious4;Cautious Monitor 4-strong;-sim -simcandidate -simmethod monitor -simfalsecnd 0.5 -simcheckbound 1 -simratio 0.4
+#bold8;Bold Monitor with delta 0.125;-sim -simcandidate -simmethod monitor -simfalsecnd 0.6 -simcheckbound 1 -simratio 0.125
+#bold16;Bold Monitor with delta 0.0625;-sim -simcandidate -simmethod monitor -simfalsecnd 0.6 -simcheckbound 1 -simratio 0.0625
+bold2;Bold Monitor with delta 0.5;-sim -simcandidate -simmethod monitor -simfalsecnd 0.6 -simcheckbound 1 -simratio 0.5

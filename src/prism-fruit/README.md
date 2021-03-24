@@ -1,0 +1,6 @@
+- Follow [this](http://www.prismmodelchecker.org/games/installation.php), also using the following command: `./configure --with-java=/usr/lib/jvm/java-8-openjdk --enable-interfaces=java`
+- Take care to use Java 8
+- Make sure all necessary libraries are in 'lib' folder.
+- Replace the `ext` folder with one from some other installation
+- Add `ppl_java.jar` (located in `/usr/local/lib/ppl/ppl_java.jar`) to `lib` (seems optional)
+- For benchmarking, `pip install pueue` with python3

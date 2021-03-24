@@ -1,0 +1,74 @@
+\section{Trying around}
+
+\subsection{VI/BVI}
+
+Memory: 2 numbers for every state
+
+\begin{itemize}
+	\item Initialize.
+	
+	L = 1 if target else 0
+	
+	U = 0 if can't reach else 1
+	\item Repeat until U-L$<\varepsilon$ for initial state
+	\begin{itemize}
+		\item Bellman update for U and L on whole state space.
+	\end{itemize}
+\end{itemize}
+
+\subsection{BRTDP}
+
+Memory: 2 numbers for every seen state, potentially for every state.
+
+\nextstate: Det, Unif, Prob, MaxDiff.
+
+\stuck: PathLen (explored states, all states, iters, log, exp...), seenTwice, FSMC.
+May have false positives, but no false negatives.
+
+\begin{itemize}
+	\item Repeat until $U-L<\varepsilon$ for initial state
+	\begin{itemize}
+		\item Repeat until last state in path is target or \stuck.
+		\begin{itemize}
+		\item Simulate: Repeatedly pick successor according to \nextstate. Save path (list of states).
+		\end{itemize}
+	\item Bellman update for U and L on states in path. 
+	
+	New states always have L=0 and U=1, except target states have L=1 and we need some way to detect U=0. Using FSMC, we can set BSCC to 0. We can also check if we are in a BSCC when STUCK.
+	
+	\item Check BSCC without building full partial model (look for outgoing edges between the looping states)
+	\end{itemize}
+\end{itemize}
+
+\textcolor{red}{Compare to other STUCK heuristics (FSMC p2, para 2). Compare to importance sampling/splitting - see Modest papers.}
+
+\subsection{SMC}
+
+Memory: Number for initial state, path to detect candidate.
+
+\nextstate: Prob.
+
+\stuck: FSMC.
+Needs to be exact
+
+\begin{itemize}
+	\item Repeat enough times (enough depends on n and p and stuff)
+	\begin{itemize}
+		\item Repeat until last state in path is target or \stuck.
+		\begin{itemize}
+			\item Simulate: Repeatedly pick successor according to \nextstate. Save path (list of states).
+		\end{itemize}
+		\item Remember 0/1 depending on target or \stuck.
+	\end{itemize}
+\end{itemize}
+
+Result is sum of remembered 0/1 divided by how often we simulated.
+
+
+\subsection{Precise SMC}
+
+Use other SMC to guide BRTDP? We already have something better than 1.3 by using MaxDiff.
+
+\subsection{Experiments}
+
+MODEST/PRISM-SMC/PRISM (Standard)/Our BRTDP/PLASMA LAB/STORM

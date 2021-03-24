@@ -1,0 +1,14 @@
+// CONCUR 2015
+// Until
+
+// 10
+Pmax=? [left_n=16 U (left_n=15 U (left_n=14 U (left_n=13 U (left_n=12 U (left_n=11 U (left_n=10 U (left_n=9 U (left_n=8 U (left_n=7 U (left_n=6 U !(right_n=16)))))))))))]
+
+// 11
+Pmax=? [left_n=16 U (left_n=15 U (left_n=14 U (left_n=13 U (left_n=12 U (left_n=11 U (left_n=10 U (left_n=9 U (left_n=8 U (left_n=7 U (left_n=6 U (left_n=5 U !(right_n=16))))))))))))]
+
+// 12
+Pmax=? [left_n=16 U (left_n=15 U (left_n=14 U (left_n=13 U (left_n=12 U (left_n=11 U (left_n=10 U (left_n=9 U (left_n=8 U (left_n=7 U (left_n=6 U (left_n=5 U (left_n=4 U !(right_n=16)))))))))))))]
+
+// 13
+Pmax=? [left_n=16 U (left_n=15 U (left_n=14 U (left_n=13 U (left_n=12 U (left_n=11 U (left_n=10 U (left_n=9 U (left_n=8 U (left_n=7 U (left_n=6 U (left_n=5 U (left_n=4 U (left_n=3 U !(right_n=16))))))))))))))]

@@ -1,0 +1,13 @@
+# model;property;constants (if any);minimum probability; additional arguments for numerical model checking (if any)
+
+examples/bluetooth/bluetooth_oneinit.pm;examples/bluetooth/prop1_qual.pctl;mrec=4;7.81e-03;-m
+
+examples/nand/nand.pm;examples/nand/prop1_qual.pctl;N=50,K=3;0.02;	
+
+examples/self-stabilisation/herman/herman17_oneinit.pm;examples/self-stabilisation/herman/prop2_qual.pctl;;1.9e-06;
+
+examples/scale/scale.pm;examples/scale/prop2_qual.pctl;N=10,M=50;0.5;
+
+examples/gridworld/gridworld.pm;examples/gridworld/prop4_qual.pctl;N=50,p=0.999;0.001;
+
+examples/crowds/crowds_nodl.pm;examples/crowds/prop1_qual.pctl;TotalRuns=6,CrowdSize=15;0.0666;

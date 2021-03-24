@@ -1,0 +1,4 @@
+# name of the experiment; cmd arguments
+
+simcnd_rew;Sim. candidate (method=CI, cnd. error=0.011, conf=0.04, width=0.22, error ratio=0.5, reach bound=1000);-sim -simcandidate -simmethod ci -simfalsecnd 0.011 -simratio 0.5 -simconf 0.04 -simwidth 0.22 -simpathlen 10000000 -simmaxrwd 1 -simcheckbound 1000
+mc_rew;Model checking;

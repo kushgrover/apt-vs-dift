@@ -1,0 +1,90 @@
+\section{Experimental evaluation}\label{sec:experiments}
+
+%Exp:
+%prob0 then VI
+%prob0 then SMC
+%BRTDP
+%Black SMC
+%White SMC
+
+%Models:
+%QComp? Large MC with lots of branching
+%PRISM bench suite (Check there is nothing?)
+%handcraft sth
+%Pepa?
+%Hermann self-stabilization
+
+We implemented grey SMC in a branch of the PRISM Model Checker \cite{prism} extending the implementation of black SMC \cite{DHKPjournal}.
+We ran experiments on (both discrete- and continuous-time) Markov chains from the PRISM Benchmark Suite \cite{prism-benchmark-suite}.
+In addition to a comparison to black SMC, we also provide comparisons to VI and BVI of PRISM and BRTDP of \cite{atva14}.
+An interested reader may also want to refer \cite[Table II]{DHKPjournal} for a comparison of black SMC against two unbounded SMC techniques of \cite{YCZ10}.
+
+For every run configuration, we run 5 experiments and report the median.
+In black SMC, the check for candidates is performed every 1000 steps during path simulations, while in grey SMC the check is performed every 100 steps.
+Additionally, grey SMC checks if a candidate is indeed a BSCC once every state of the candidate is seen at least twice.
+In all our tables, `TO' denotes a timeout  of 15 minutes and `OOM' indicates that the tool ran out of memory restricted to 1GB RAM.
+
+\subsection{Comparison of black and grey SMC}
+
+\input{table-black-grey} 
+\input{table-pmin}
+
+Table \ref{tab:grey-v-black} compares black SMC and grey SMC on multiple benchmarks. 
+One can see that, except in the case of \texttt{leader6\_11} and \texttt{brp\_nodl}, grey SMC finishes atleast as soon as black SMC.
+In \texttt{bluetooth}, \texttt{gridworld}, \texttt{leader} and \texttt{tandem}, both the SMC methods are able to terminate without encountering any candidate (i.e. either the target is seen or the left side of the until formula is falsified).
+In \texttt{brp\_nodl}, \texttt{crowds\_nodl} and \texttt{nand}, the SMC methods encounter a candidate, however, since the candidate has only a single state (all BSCCs are trivial), black SMC is quickly able to confidently conclude that the candidate is indeed a BSCC.
+The only interesting behaviour is observed on the \texttt{herman-17} benchmark. 
+In this case, every path eventually encounters the only BSCC existing in the model.
+Grey SMC is able to quickly conclude that the candidate is indeed a BSCC, while black SMC has to sample for a long time in order to be sufficiently confident.
+
+The performance of black SMC is also a consequence of the $\pmin$ being quite small. 
+Table \ref{tab:fsmc-vary-pmin} shows that black SMC is very sensitive towards $\pmin$.
+Note that grey SMC is not affected by the changes in $\pmin$ as it always checks whether a candidate is a BSCC as soon as all the states in the candidate are seen twice.
+
+
+%Better if large BSCC or small pmin.
+%But also Black SMC often good.
+
+%various checkBound (how often to check): 1, 10, 100, 1000
+%various simminvisits (strength of candidate): 0, 2, 5, 20, 100, 1000
+
+%always report [min/mean/max]
+
+\subsection{Grey SMC vs. Black SMC/BRTDP/BVI/VI}
+
+\input{table-herman-shortened}
+
+We now look more closely at the self-stabilization protocol \texttt{herman} \cite{HermanPrism,Herman90}. 
+The protocol works as follows:
+\texttt{herman-N} contains N processes, each possessing a local boolean variable $x_i$. 
+A token is assumed to be in place $i$ if $x_i = x_{i-1}$.
+The protocol proceeds in rounds.
+In each round, if the current values of $x_i$ and $x_{i-1}$ are equal, the next value of $x_i$ is set uniformly at random, and otherwise it is set equal to the current value of $x_{i-1}$.
+The number of states in \texttt{herman-N} is therefore $2^N$.
+The goal of the protocol is to reach a stable state where there is exactly one token in place. 
+For example, in case of \texttt{herman-5}, a stable state might be $(x_1=0, x_2=0, x_3=1, x_4=0, x_5=1)$, which indicates that there is a token in place 2. 
+In every \texttt{herman} model, all stable states belong to the single BSCC. 
+The number of states in the BSCC range from 10 states in \texttt{herman-5} to 2,000,000 states in \texttt{herman-21}.
+
+For all \texttt{herman} models in Table \ref{tab:herman-short}, we are interested in checking if the probability of reaching an unstable state where there is a token in places 2-5, i.e. $(x_1=1, x_2=1, x_3=1, x_4=1, x_5=1)$ is less than 0.05.
+This property, which we name \texttt{4tokens}, identifies $2^{N-5}$ states as target in \texttt{herman-N}.
+The results in Table \ref{tab:herman-short} show how well grey SMC scales when compared to black SMC, BRTDP, BVI\footnote{We refrain from comparison to other guaranteed VI techniques such as sound VI \cite{DBLP:conf/cav/QuatmannK18} or optimistic VI \cite{DBLP:journals/corr/abs-1910-01100} as the implementations are not PRISM-based and hence would not be too informative in the comparison.} and VI.
+Black SMC times out for all models where $N \geq 11$. This is due to the fact that the larger models have a smaller $\pmin$, thereby requiring black SMC to sample extremely long paths in order to confidently identify candidates as BSCCs.
+BVI and VI perform well on small models, but as the model sizes grow and transition probabilities become smaller, propagating values becomes extremely slow.
+Interestingly, we found that in both grey SMC and black SMC, approximately 95\% of the time is spent in computing the next transitions, which grow exponentially in number; an improvement in the simulator implementation can possibly slow down the blow up in run time, allowing for a fairer comparison with the extremely performant symbolic value iteration algorithms.
+
+\input{table-herman-brtdp}
+
+Finally, we comment on the exceptionally poor performance of BRTDP on \texttt{herman} models. 
+In Table \ref{tab:herman-brtdp}, we run BRTDP on three different properties: (i) tokens in places 2-3 (\texttt{2tokens}); (ii) tokens in places 2-4 (\texttt{3tokens}); and (iii) tokens in places 2-5 (\texttt{4tokens}). 
+The number of states satisfying the property decrease when going from 2 tokens to 4 tokens.
+The table shows that BRTDP is generally better in situations where the target set is larger. %\todojan{quick jump to the conclusion; must be refined (or dropped)}
+
+In summary, the experiments reveal the following:
+\begin{itemize}
+	\item For most benchmarks, black SMC and grey SMC perform similar, as seen in Table \ref{tab:grey-v-black}. 
+	As expected, the advantages of grey SMC do not show up in these examples, which (almost all) contain only trivial BSCCs.
+	\item The advantage of grey SMC is clearly visible on the \texttt{herman-N} benchmarks, in which there are non-trivial BSCCs. Here, black SMC quickly fails while grey SMC is extremely competitive.
+	\item Classical techniques such as VI and BVI fail when either the model is too large or the transition probabilities are too small.
+	However, they are still to be used for strongly connected systems, where the whole state space needs to be analysed for every run in both SMC approaches, but only once for (B)VI.%\todojan{I want to add this, although maybe we don't have data here; Maxi: I see the point, but not sure that "only once" is correct. It still takes several iterations, and every iteration works on the whole state space.}
+\end{itemize}

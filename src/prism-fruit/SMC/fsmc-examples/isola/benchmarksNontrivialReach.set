@@ -1,0 +1,17 @@
+# model;property;constants (if any);minimum probability; additional arguments for numerical model checking (if any)
+
+examples/extreme/extreme_paper.pm;examples/extreme/prop1_qual.pctl;N=16;0.5;
+examples/extreme/extreme_paper.pm;examples/extreme/prop1_qual.pctl;N=18;0.5;
+examples/extreme/extreme_paper.pm;examples/extreme/prop1_qual.pctl;N=20;0.5;
+
+examples/scale/scale.pm;examples/scale/prop1_qual.pctl;N=1000,M=5;0.5;
+examples/scale/scale.pm;examples/scale/prop1_qual.pctl;N=10000,M=5;0.5;
+examples/scale/scale.pm;examples/scale/prop1_qual.pctl;N=100000,M=5;0.5;
+examples/scale/scale.pm;examples/scale/prop1_qual.pctl;N=1000,M=50;0.5;
+examples/scale/scale.pm;examples/scale/prop1_qual.pctl;N=1000,M=500;0.5;
+
+#pmin >= 1/(60 * 3n)
+examples/fms/fms.sm;examples/fms/reach_qual.pctl;n=10;4e-4; 
+examples/fms/fms.sm;examples/fms/reach_qual.pctl;n=20;2e-4; 
+examples/fms/fms.sm;examples/fms/reach_qual.pctl;n=40;1e-4; 
+

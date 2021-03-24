@@ -1,0 +1,30 @@
+smg
+
+player p1  
+    aut, [a], [b]
+endplayer
+
+player p2
+    [x], [y]
+endplayer
+
+module aut
+    s: [1..8] init 1;
+    [x] s=1 -> (s'=2);
+    [x] s=2 -> (s'=3);
+    [y] s=2 -> (s'=4);
+    [x] s=3 -> 0.5 : (s'=2) + 0.5 : (s'=4);
+    [x] s=5 -> (s'=4);   
+    [x] s=6 -> 0.5 : (s'=7) + 0.5 : (s'=8);
+
+    [a] s=4 -> (s'=3);
+    [b] s=4 -> 0.5 : (s'=5) + 0.5 : (s'=6);
+
+    [x] s=7 -> (s'=7);
+    [x] s=8 -> (s'=8);
+
+endmodule
+
+
+
+

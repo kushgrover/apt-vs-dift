@@ -1,0 +1,7 @@
+#!/bin/csh
+
+prism -explicit mutual3.nm mutual.pctl
+prism -explicit mutual4.nm mutual.pctl
+prism -explicit mutual5.nm mutual.pctl
+prism -explicit mutual8.nm mutual.pctl
+prism -explicit mutual10.nm mutual.pctl

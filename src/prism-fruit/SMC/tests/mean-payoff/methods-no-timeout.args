@@ -1,0 +1,6 @@
+-ex -mecdec -mecreach interval -mecmpsoln valiter -epsilon 1e-8
+-ex -heuristic RTDP_UNBOUNDED -heuristic_verbose -next_state MAX_DIFF -ontheflymp 5
+-ex -politer -mcgbsysmethod scc -mdppimethod full -epsilon 1e-8
+-ex -mecdec -mecreach interval -mecmpsoln politer -mcgbsysmethod scc -mdppimethod full -epsilon 1e-8
+
+

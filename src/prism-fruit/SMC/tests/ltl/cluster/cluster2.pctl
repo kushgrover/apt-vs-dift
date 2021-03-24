@@ -1,0 +1,14 @@
+// CONCUR 2015
+// GF \wedge
+
+// 3
+Pmax=? [((G F left_n=16) & ((F G right_n=16) | (F G right_n=15) | (F G right_n=14) | (F G right_n=13)))]
+
+// 4
+Pmax=? [((G F left_n=16) & ((F G right_n=16) | (F G right_n=15) | (F G right_n=14) | (F G right_n=13) | (F G right_n=12)))]
+
+// 5
+Pmax=? [((G F left_n=16) & ((F G right_n=16) | (F G right_n=15) | (F G right_n=14) | (F G right_n=13) | (F G right_n=12) | (F G right_n=11)))]
+
+// 6
+Pmax=? [((G F left_n=16) & ((F G right_n=16) | (F G right_n=15) | (F G right_n=14) | (F G right_n=13) | (F G right_n=12) | (F G right_n=11) | (F G right_n=10)))]

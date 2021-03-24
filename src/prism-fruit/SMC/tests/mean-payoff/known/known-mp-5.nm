@@ -1,0 +1,20 @@
+const N = 3;
+
+mdp
+
+module knownmp5
+
+	s : [0 .. N] init 0;
+	a : [0 .. 1] init 0;
+
+	[] s=0 -> 1:(s'=1) & (a'=0);
+	[] s=0 -> 1:(s'=1) & (a'=1);
+	[] s<N -> 0.1:(s'=s+1) + 0.9:(s'=0);
+	[] s=N -> (s'=0);
+	[] s=N -> (s'=N);
+endmodule
+
+rewards "final"
+	s=N & a=0 : 1;
+	s=N & a=1 : 2;
+endrewards

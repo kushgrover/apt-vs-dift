@@ -1,0 +1,1 @@
+-exporttarget robot.pm.ltl2.lab -ltl2damode LTL2DA

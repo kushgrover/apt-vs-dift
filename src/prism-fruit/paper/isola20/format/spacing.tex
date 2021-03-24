@@ -1,0 +1,72 @@
+% SPACE HACKS
+%\titlespacing*{\section}{0pt}{12pt plus 4pt minus 4pt}{12pt plus 2pt minus 2pt}
+%\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 3pt}{10pt plus 2pt minus 1pt}
+%\titlespacing\subsubsection{0pt}{8pt plus 2pt minus 2pt}{8pt plus 1pt minus 1pt}
+
+%\renewcommand{\baselinestretch}{0.98} % >=0.97
+\advance\textwidth3mm % <= 5mm
+\advance\hoffset-1.5mm
+\advance\textheight1mm
+%\advance\voffset-3mm
+
+%\setlength{\marginparwidth}{3.3cm}
+%\setlength{\marginparsep}{0.1cm}
+%\setlength{\textfloatsep}{0.8\textfloatsep} % Space below/above a float if its [t]
+%\setlength{\intextsep}{0.8\intextsep} % Space below/above a float if its [h]
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+      {-2ex \@plus -1ex \@minus -.2ex}% <beforeskip>
+      {1ex \@plus .2ex}% <afterskip>
+      {\normalfont\Large\bfseries\SS@sectfont}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+      {-2ex\@plus -1ex \@minus -.2ex}% <beforeskip>
+      {1ex \@plus .2ex}% <afterskip>
+      {\normalfont\large\bfseries\SS@subsectfont}}
+\makeatother
+
+% Gaps between titles
+
+% \titlespacing*{<command>}{<left>}{<before-sep>}{<after-sep>}
+%\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+% \titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% \titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% \titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+% \titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+
+% Alter some LaTeX defaults for better treatment of figures:
+% See p.105 of "TeX Unbound" for suggested values.
+% See pp. 199-200 of Lamport's "LaTeX" book for details.
+%   General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.95}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.95}	% max fraction of floats at bottom
+%   Parameters for TEXT pages (not float pages):
+% \setcounter{topnumber}{2} % number of floats that can be displayed at the top
+% \setcounter{bottomnumber}{2} % number of floats that can be displayed at the bottom
+% \setcounter{totalnumber}{4}     % 2 may work better
+% \setcounter{dbltopnumber}{2}    % for 2-column pages
+% \renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+%   Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.95}	% require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+% \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+% remember to use [htp] or [htpb] for placement
+
+
+% A good document on space hacks
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/squeeze.html
+
+
+% space left between floats (12.0pt plus 2.0pt minus 2.0pt).
+\setlength{\floatsep}{10pt}
+% space between last top float or first bottom float and the text (20.0pt plus 2.0pt minus 4.0pt).
+\setlength{\textfloatsep}{16pt}
+% space left on top and bottom of an in-text float (12.0pt plus 2.0pt minus 2.0pt).
+\setlength{\intextsep}{10pt}
+%\dbltextfloatsep is \textfloatsep for 2 column output (20.0pt plus 2.0pt minus 4.0pt).
+%\dblfloatsep is \floatsep for 2 column output (12.0pt plus 2.0pt minus 2.0pt).
+% space above caption (10.0pt).
+\setlength{\abovecaptionskip}{10pt}
+% space below caption (0.0pt).
+\setlength{\belowcaptionskip}{0pt}

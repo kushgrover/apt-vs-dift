@@ -1,0 +1,2 @@
+-ex -ltlda -ltl2damode Rabinizer
+-ex -ltlldba
