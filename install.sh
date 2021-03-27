@@ -36,7 +36,6 @@ cd ../../
 
 # Compile PRISM-games and run two tests
 # (should ultimately display: "Testing result: PASS")
-pwd
 cd src/prism-games/prism
 
 make PPL_DIR=/usr/local/lib
