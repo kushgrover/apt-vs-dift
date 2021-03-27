@@ -4,14 +4,21 @@ rm -rf temp/*
 mkdir -p temp/output
 mkdir -p temp/plots
 
-echo "Generating random model of size $1"
-python3 src/random_model_gen.py temp/model.prism $1
-echo "done"
-
-# echo "Generating PRISM model from adjacency matrix"
-# python3 src/matrix_model_gen.py examples/screen_grab/screen_grab.csv temp/model.prism
-# # python3 src/matrix_model_gen.py examples/nation_attack/nation_attack.csv temp/model.prism
-# echo "done"
+if [[ $1 -eq 1 ]]
+then
+  echo "Generating random model of size $2"
+  python3 src/random_model_gen.py temp/model.prism $2
+  echo "done"
+elif [[ $1 -eq 2 ]]
+then
+  echo "Generating PRISM model from $2"
+  python3 src/matrix_model_gen.py $2 temp/model.prism
+  # # python3 src/matrix_model_gen.py examples/nation_attack/nation_attack.csv temp/model.prism
+  echo "done"
+else
+  echo "Choose b/w 1 (random) or 2 (csv)"
+  exit
+fi
 
 echo "Generating colour parameters"
 src/prism-fruit/Games-DQL/bin/prism temp/model.prism props/init.props -heuristic RTDP_ADJ -RTDP_ADJ_OPTS 3 > temp/output/step1.txt
