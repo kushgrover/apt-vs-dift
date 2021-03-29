@@ -40,4 +40,6 @@ echo "Generating plots"
 python3 src/plot_pareto.py temp/ temp/plots/ > temp/output/plot.txt
 echo "done"
 
+echo "Output stored in ./temp/"
+
 
