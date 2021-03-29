@@ -34,13 +34,13 @@ Should this not work, the instructions below can be used for step by step instal
 - PPL  
   `sudo apt install gcc g++ make libgmp-dev m4`  
   Download PPL in lib folder  
-    `mkdir lib'  
-    `cd lib'  
+    `mkdir lib`  
+    `cd lib`  
     `wget http://www.bugseng.com/products/ppl/download/ftp/releases/1.2/ppl-1.2.tar.gz`  
     `tar xfz ppl-1.2.tar.gz`  
     `cd ppl-1.2`  
   For the next step make sure that Java 8 is selected by default.  
-    `./configure --enable-interfaces=java'  
+    `./configure --enable-interfaces=java`  
     `make`  
     `sudo make install`  
     `cd ../../`  
