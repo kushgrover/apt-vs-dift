@@ -18,19 +18,20 @@ For our modifications of the code, we give an MIT license. For the code that was
 To run the code and recreate the results, first install both prism-fruit as well as prism-games (the process is the same for both) and then run results.sh.
 
 ## Installation
-The whole thing can be installed on Linux using the script install.sh 
+We provide the script install.sh, which installs everything, given correct rights and configuration.
 `sudo ./install.sh`
 
-The instructions below can be used for step by step installation.
-### Dependencies
+Should this not work, the instructions below can be used for step by step installation.
+
+### Dependencies and step-by-step instructions
+- Update package cache
 `sudo apt-get -y update`
 - Java 8
 `sudo apt install openjdk-8-jdk`
 - Python 3.7 or more recent with matplotlib, scipy, numpy and pandas
 `sudo apt install python3 python3-pip`
 `pip3 install matplotlib scipy numpy pandas`
-- PRISM-Games (https://prismmodelchecker.org/games/installation.php)
-  - PPL
+- PPL 
   `sudo apt install gcc g++ make libgmp-dev m4`
   Download PPL in lib folder
   `mkdir lib'
@@ -43,6 +44,7 @@ The instructions below can be used for step by step installation.
   `make`
   `sudo make install`
   `cd ../../`
+- PRISM-Games (https://prismmodelchecker.org/games/installation.php)
 `cd src/prism-games/prism`
 `make PPL_DIR=/usr/local/lib`
 Run test to check if everything was installed properly
@@ -52,6 +54,8 @@ Run test to check if everything was installed properly
 `make PPL_DIR=/usr/local/lib`
 
 **We assume that you are using a Linux distribution.** For Windows and Mac OS users the guides we refer to also provide instructions, but you may encounter difficulties putting everything together.
+
+## Executing the code
 
 **Running it on an random example**
 Run the script ./run.sh
